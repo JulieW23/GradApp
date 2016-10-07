@@ -1,4 +1,5 @@
-# YOUR PRODUCT/TEAM NAME
+# Kiddo
+# Team_5
 
 ## Iteration 01
 
@@ -23,10 +24,10 @@ Next planned meeting: October 14th, 12:10pm, BA3200 (in person)
 
 #### Artifacts
 
-Please describe the artifacts that you will produce in order to organize and keep track of your team's progress.       
-For example:
- * To-do lists, burndown chart, schedule, etc.
- * If you include charts/diagrams, make sure to explain what they represent.
+ * To-do list
+   * created and maintained on Google Docs 
+   * 
+   * assigned to team members based on scope and member's role (eg. front-end-related task is assigned to front-end dev)
  * If you're maintaining a to-do list, make sure to mention which tool you're using, how you are prioritizing items and how items get assigned to team members.
 
 
@@ -34,8 +35,7 @@ For example:
 
 Goals and tasks:
 
- * Describe your goals for this iteration and the tasks that you will have to complete in order to achieve these goals.
- * When listing goals/tasks, order the items from most to least important.
+ * App 
  * Feel free (but not obligated) to specify some/all tasks as user stories.
 
 Artifacts
