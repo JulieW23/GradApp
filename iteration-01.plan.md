@@ -7,14 +7,19 @@
 
 #### Roles & responsibilities
 
-Developer (all):
-Specific responsibilities TBD (front-end, back-end, database, etc.)
+Developer:
+ * front-end
+ * back-end
+ * database
+ * Q.A.
 
 #### Events
 
-Please describe the meetings you planning to have:
- * When and where? In-person or online?
- * What's the purpose of each meeting?
+Next planned meeting: October 14th, 12:10pm, BA3200 (in person)
+ * Assign specific roles to individuals
+ * Plan workflow for following weeks
+ * Plan specifics of product (complete product.md)
+   * Consider user expectations, types of users
 
 #### Artifacts
 
