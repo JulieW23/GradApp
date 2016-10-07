@@ -1,18 +1,14 @@
 # YOUR PRODUCT/TEAM NAME
 
-## Iteration XX
+## Iteration 01
 
- * Start date: FILL IN THE DATE WHEN YOU HAD YOUR FIRST TEAM PLANNING MEETING
- * End date: FILL IN THE DATE WHEN YOU ARE PLANNING TO HAVE YOUR REVIEW MEETING
-
-## Process
-
-(Optional:) Introduction
+ * Start date: October 7th, 2016
+ * End date: TBD
 
 #### Roles & responsibilities
 
-Describe the different roles (e.g. developers, communication facilitator,
-proof-reader, etc.) on the team, and the responsibilities associated with each role.
+Developer (all):
+Specific responsibilities TBD (front-end, back-end, database, etc.)
 
 #### Events
 
