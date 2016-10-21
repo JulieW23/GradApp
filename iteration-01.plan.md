@@ -35,8 +35,6 @@ Next planned meeting: October 14th, 12:10pm, BA3200 (in person)
 
 Goals and tasks:
 
- * Mobile app: channel of communication (text and media) between parents and teachers, and between parents
-   * Users: elementary school and daycare teachers and parents
    * Objectives:
      * As a parent, I want to be more aware of what my child and his/her class are doing and learning at school, so that I feel more engaged with my child while he/she is at school, and so that I can reinforce his/her learning at home.
      * As a parent of a young child, I want a record (pictures, videos) of special moments in my child's school experience, although I can't be there, so that I can preserve and view them later.
