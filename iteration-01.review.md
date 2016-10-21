@@ -30,12 +30,12 @@ Decisions did not turn out as well as you hoped:
  
  * Designed for website
  * Designed for public schools
- * Intended to add too many features
 
 We are planning to make the following changes to our process:
 
  * List the changes you are planning to make, if any, from most to least important.
  * For each change, explain why you are making it by referring to a decision that didn't work well.
+
 
 
 ## Product - Review
