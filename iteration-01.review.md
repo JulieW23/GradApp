@@ -1,9 +1,9 @@
 # YOUR PRODUCT/TEAM NAME
 
-## Iteration XX - Review & Retrospect
+## Iteration 1 - Review & Retrospect
 
- * When: FILL IN THE DATE WHEN YOU ACTUALLY HAD YOUR REVIEW MEETING
- * Where: PHYSICAL LOCATION AND/OR ONLINE
+ * When: October 21, 2016
+ * Where: BA3200
 
 ## Process - Reflection
 
