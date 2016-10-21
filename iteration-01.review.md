@@ -46,7 +46,7 @@ Goals/tasks that were met/completed:
  * If a goal/task was not part of the original iteration plan, please mention it.
  * For each goal/task, refer to artifact(s) that show that it was met/completed.
  
- * Completed product.md
+ * Evaluated competition: A list was created for a number of similar apps and what they featured
  * Completed user stories
 
 Goals/tasks that were planned but not met/completed:
