@@ -24,8 +24,8 @@ Decisions did not turn out as well as you hoped:
  * As before, support your arguments by referring/linking to process artifacts.
  
    Designed for website
+   Designed for public schools
    Intended to add too many features
-   
 
 We are planning to make the following changes to our process:
 
