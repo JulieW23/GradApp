@@ -16,7 +16,7 @@ Developer:
 
 #### Events
 
-Next planned meeting: October 14th, 12:10pm, BA3200 (in person)
+Meeting: October 14th, 12:10pm, BA3200 (in person)
  * Assign specific roles to individuals
  * Plan workflow for following weeks
  * Plan specifics of product (complete product.md)
@@ -35,7 +35,9 @@ Next planned meeting: October 14th, 12:10pm, BA3200 (in person)
 
 Goals and tasks:
 
-   * Objectives:
+  * Evalute competition
+
+  * Objectives:
      * As a parent, I want to be more aware of what my child and his/her class are doing and learning at school, so that I feel more engaged with my child while he/she is at school, and so that I can reinforce his/her learning at home.
      * As a parent of a young child, I want a record (pictures, videos) of special moments in my child's school experience, although I can't be there, so that I can preserve and view them later.
      * As a parent, I want a direct channel of communication with my child's teacher, so that I can discuss my child's performance in school and any relevant details that my child's teacher should know about him/her (eg. illness/injuries, dietary restrictions).
