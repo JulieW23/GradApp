@@ -12,20 +12,20 @@ Decisions turned out well:
  * List a few (2-5) decisions, from most to least important.
  * Support your argument (that a decisions was successful) by referring/linking to process artifact(s).
  
-Application for Android
-Teacher-to-parent and parent-to-parent chat
-Calendar and event scheduling capabilities
-Designed for daycares and private schools
-Photo capabailities
+  Application for Android
+  Teacher-to-parent and parent-to-parent chat
+  Calendar and event scheduling capabilities
+  Designed for daycares and private schools
+  Photo capabailities
 
 Decisions did not turn out as well as you hoped:
 
  * Once again, list a few (2 - 5) decisions, from most to least important.
  * As before, support your arguments by referring/linking to process artifacts.
  
-Designed for website
-Designed for public schools
-Intended to add too many features
+  Designed for website
+  Designed for public schools
+  Intended to add too many features
 
 We are planning to make the following changes to our process:
 
