@@ -35,7 +35,8 @@ Meeting: October 14th, 12:10pm, BA3200 (in person)
 
 Goals and tasks:
 
-  * Evalute competition: See what features the competition have or lack.
+  * Evalute competition: See what features the competition have or lack
+  * Create user stories/objectives
 
   * Objectives:
      * As a parent, I want to be more aware of what my child and his/her class are doing and learning at school, so that I feel more engaged with my child while he/she is at school, and so that I can reinforce his/her learning at home.
