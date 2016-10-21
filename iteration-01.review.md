@@ -2,7 +2,7 @@
 
 ## Iteration 1 - Review & Retrospect
 
- * When: October 21, 2016
+ * When: October 21st, 2016
  * Where: BA3200
 
 ## Process - Reflection
@@ -23,9 +23,9 @@ Decisions did not turn out as well as you hoped:
  * Once again, list a few (2 - 5) decisions, from most to least important.
  * As before, support your arguments by referring/linking to process artifacts.
  
-  Designed for website
-  Designed for public schools
-  Intended to add too many features
+ * Designed for website
+ * Designed for public schools
+ * Intended to add too many features
 
 We are planning to make the following changes to our process:
 
