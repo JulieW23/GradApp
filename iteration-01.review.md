@@ -45,6 +45,9 @@ Goals/tasks that were met/completed:
  * List goals/tasks, from most to least important.
  * If a goal/task was not part of the original iteration plan, please mention it.
  * For each goal/task, refer to artifact(s) that show that it was met/completed.
+ 
+ * Completed product.md
+ * Completed user stories
 
 Goals/tasks that were planned but not met/completed:
 
