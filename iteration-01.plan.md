@@ -47,6 +47,7 @@ Goals and tasks:
      * As a parent, I want a direct channel of communication with the parents of other children in my child's class, so that I can easily organize/recruit other parents for class events.
      * As a parent, I want the parents of other children in my child's class to be able to communicate with me without having to share my contact details, so that I can protect my privacy, and so that I can keep this communication separate from other communication in my life.
      
+     
      * As a teacher, I want my students' parents to be aware of what their children are doing and learning at school, so that they can reinforce their children's learning at home.
      * As a teacher, I want a direct channel of communication with my students' parents, so that I can discuss their children's performance in school and any other relevant details (eg. behavioural incidents, illness/injuries).
      * As a teacher, I want a consistent, reliable, and convenient method of communicating with my students' parents, so that communication is as easy and quick as possible, and so that I have a point of communication about each student in case of emergency.
