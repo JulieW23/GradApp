@@ -13,9 +13,10 @@ Decisions turned out well:
  * Support your argument (that a decisions was successful) by referring/linking to process artifact(s).
  
    Application for Android
-   Chat capabilities
+   Communication capabilities
    Photo capabailities
    Designed for daycares
+   Calendar and event scheduling capabilities
 
 Decisions did not turn out as well as you hoped:
 
