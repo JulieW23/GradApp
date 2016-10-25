@@ -22,15 +22,14 @@ This turned out well because an Android application matches our skill set. All m
 Decisions did not turn out as well as you hoped:
  
 1. Website to faciliate parent-teacher communication.
-Some team members have little or no experience with web development so this will be difficult. Photo updates by a teacher on a mobile website will be more cumbersome as opposed to photo updates via a mobile application on a smartphone.
 
 2. Designed for public schools.
-We decided to design the application with private daycare and private schools in minded because the burden of purchasing the application and rolling it out falls on the school. A free, self opt-in application may not be very secure. Users of the application must be heavily vetted since photos and other personal data of young students are being shared.
 
 We are planning to make the following changes to our process:
-
- * List the changes you are planning to make, if any, from most to least important.
- * For each change, explain why you are making it by referring to a decision that didn't work well.
+ 
+ 1. We decided to make the product a mobile application over a website because it should be easier (with more mobility) to use a mobile phone over a computer in the classroom or daycare. Photo updates by a teacher on a mobile website will be more cumbersome as opposed to photo updates via a mobile application on a smartphone. Also, some team members have little or no experience with web development so this will be difficult.
+ 
+ 2. We decided to design the application with private daycare and private schools instead of public schools because the burden of purchasing the application and rolling it out falls on the school. A free, self opt-in application may not be very secure. Users of the application must be heavily vetted since photos and other personal data of young students are being shared. Also, parents of private schools or daycares are more likely to have smartphones.
 
 
 
