@@ -44,9 +44,6 @@ Goals/tasks that were planned but not met/completed:
 
 Going into the next iteration, our main insights are:
 
- * List the few (2-5) high-level concepts that should guide your work for the next few weeks.
- * These concepts should help you prioritize features and decide on where to focus your efforts.
-
 1. Establish main workflow of product.
 2. Create wireframe as a reference.
 3. Assign developer roles to each team member.
