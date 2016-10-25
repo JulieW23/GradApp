@@ -38,7 +38,7 @@ Goals/tasks that were met/completed:
  * For each goal/task, refer to artifact(s) that show that it was met/completed.
  
 1. Evaluated competition: 
-2. Established main features of the application: 
+2. Established main features of the application: Main features are listed above.
 3. Completed user stories: User stories are contained in user stories.txt.
 
 Goals/tasks that were planned but not met/completed:
