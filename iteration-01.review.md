@@ -21,7 +21,7 @@ This turned out well because an Android application matches our skill set. All m
 
 Decisions did not turn out as well as you hoped:
  
-1. Website to to faciliate parent-teacher communication.
+1. Website to faciliate parent-teacher communication.
 Some team members have little or no experience with web development so this will be difficult. Photo updates by a teacher on a mobile website will be more cumbersome as opposed to photo updates via a mobile application on a smartphone.
 
 2. Designed for public schools.
