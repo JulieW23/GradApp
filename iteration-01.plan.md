@@ -40,6 +40,7 @@ Goals and tasks:
 
 1. Evalute competition: See what features the competition have or lack
 2. Create user stories
+3. Establish main features
 
 Artifacts:
 
