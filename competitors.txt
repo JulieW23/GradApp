@@ -1,0 +1,6 @@
+After carefully evaluating number of compatitor apps and websites, we realized that most of them are providing 
+similare services such as easier and more efficient communication between parents and daycare workers, or allowing
+people to know about upcoming events. 
+they also automate some of the time consuming tasks daycare workers need to do such as writing report or sending 
+feedback to parents. In addition, parents can create journal for their kids and store their photos (like album) 
+and interesting daily stories.  
