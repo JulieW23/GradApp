@@ -52,3 +52,4 @@ Going into the next iteration, our main insights are:
 2. Create wireframe as a reference.
 3. Assign developer roles to each team member.
 4. Start coding the product.
+
