@@ -9,11 +9,14 @@
 
 Decisions turned out well:
 
-1. Deciding on building an Android application to faciliate parent-teacher communication in private daycare and private elementary schools. The application will have the following features:
+1. Deciding on building an Android application to faciliate parent-teacher communication in private daycare and private elementary schools. 
+
+The application will have the following features:
  * Teacher-to-parent and parent-to-parent chat
  * Calendar and event scheduling capabilities
  * Designed for daycares and private schools
  * Photo capabailities
+
 This turned out well because an Android application matches our skill set. All members have experience with Java and most with Android. Our research shows there are gaps in existing solutions (HiMama, Daily Sheets, and ClassDojo) our solution can fill (ex. calendar intregration)
 
 Decisions did not turn out as well as you hoped:
@@ -59,6 +62,7 @@ Going into the next iteration, our main insights are:
 
  * List the few (2-5) high-level concepts that should guide your work for the next few weeks.
  * These concepts should help you prioritize features and decide on where to focus your efforts.
+
 1. Establish main workflow of product.
 2. Create wireframe as a reference.
 3. Assign developer roles to each team member.
