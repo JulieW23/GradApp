@@ -8,25 +8,25 @@
 
 #### Roles & responsibilities
 
-Developer:
- * front-end
- * back-end
- * database
- * Q.A.
+Developer Roles:
+ 1. Front-end: Design user interface
+ 2. Back-end: Implement key functionalities in Java
+ 3. Database: Create database to store app data
+ 4. Quality Assurance: Write and execute test cases
 
 #### Events
 
 Meeting: October 14th, 12:10pm, BA3200 (in person)
- * Assign specific roles to individuals
- * Plan workflow for following weeks
- * Plan specifics of product (complete product.md)
+ 1. Assign specific roles to individuals
+ 2. Plan workflow for following weeks
+ 3. Plan specifics of product (complete product.md)
    * Consider user expectations, types of users
 
 #### Artifacts
 
- * To-do list
-   * created and maintained on Google Docs 
-   * items prioritized based on dependencies (i.e. an item on which a large number of other items depend has higher priority than an item on which few or no other items depend)
+* To-do list:
+1. Created and maintained on Google Docs 
+2. Items prioritized based on dependencies (i.e. an item on which a large number of other items depend has higher priority than an item on which few or no other items depend)
      *  eg. basic app framework has higher priority than low-level functionality, which has higher priority than high-level functionality (which can be mocked-up)
    * assigned to team members based on scope and member's role (eg. front-end-related task is assigned to front-end dev)
 
@@ -35,8 +35,8 @@ Meeting: October 14th, 12:10pm, BA3200 (in person)
 
 Goals and tasks:
 
-  * Evalute competition: See what features the competition have or lack
-  * Create user stories/objectives
+1. Evalute competition: See what features the competition have or lack
+2. Create user stories/objectives
 
   * Objectives:
      * As a parent, I want to be more aware of what my child and his/her class are doing and learning at school, so that I feel more engaged with my child while he/she is at school, and so that I can reinforce his/her learning at home.
