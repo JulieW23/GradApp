@@ -34,24 +34,14 @@ We are planning to make the following changes to our process:
 ## Product - Review
 
 Goals/tasks that were met/completed:
-
- * For each goal/task, refer to artifact(s) that show that it was met/completed.
  
-1. Evaluated competition: 
+1. Evaluated competition: A general competitor evaluation is contained in competitors.txt.
 2. Established main features of the application: Main features are listed above.
 3. Completed user stories: User stories are contained in user stories.txt.
 
 Goals/tasks that were planned but not met/completed:
 
- * List goals/tasks, from most to least important.
- * For each goal/task, explain why it was not met/completed.      
-   e.g. Did you change your mind, or did you just not get to it yet?
-
-(Optional) Goals/tasks that were not originally planned, but ended up being not met/completed:
-
- * List goals/tasks, from most to least important.
- * For each goal/task, explain why you decided to change your plan and add this goal/task.
-
+* There were no goals/tasks that were not completed.
 
 Going into the next iteration, our main insights are:
 
