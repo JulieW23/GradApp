@@ -31,15 +31,14 @@ We are planning to make the following changes to our process:
  
  2. We decided to design the application with private daycare and private schools instead of public schools because the burden of purchasing the application and rolling it out falls on the school. A free, self opt-in application may not be very secure. Users of the application must be heavily vetted since photos and other personal data of young students are being shared. Also, parents of private schools or daycares are more likely to have smartphones.
 
-
 ## Product - Review
 
 Goals/tasks that were met/completed:
 
  * For each goal/task, refer to artifact(s) that show that it was met/completed.
  
-1. Evaluated competition: plan.md has a list of features which were created from evaluating the competition.
-2. Established main features of the application: plan.md contains the main features.
+1. Evaluated competition: 
+2. Established main features of the application: 
 3. Completed user stories: User stories are contained in user stories.txt.
 
 Goals/tasks that were planned but not met/completed:
