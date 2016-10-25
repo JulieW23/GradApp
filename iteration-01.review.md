@@ -14,8 +14,7 @@ Decisions turned out well:
 The application will have the following features:
  * Teacher-to-parent and parent-to-parent chat
  * Calendar and event scheduling capabilities
- * Designed for daycares and private schools
- * Photo capabailities
+ * Photo and video sharing to individual or all parents
 
 This turned out well because an Android application matches our skill set. All members have experience with Java and most with Android. Our research shows there are gaps in existing solutions (HiMama, Daily Sheets, and ClassDojo) our solution can fill (ex. calendar intregration)
 
