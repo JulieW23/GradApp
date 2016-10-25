@@ -25,13 +25,13 @@ Meeting: October 14th, 12:10pm, BA3200 (in person)
 #### Artifacts
 
 * To-do list:
- 1. Created and maintained on Google Docs 
- 2. Items prioritized based on dependencies (i.e. an item on which a large number of other items depend has higher priority than an item on which few or no other items depend)
+ * Created and maintained on Google Docs 
+ * Items prioritized based on dependencies (i.e. an item on which a large number of other items depend has higher priority than an item on which few or no other items depend)
      *  eg. basic app framework has higher priority than low-level functionality, which has higher priority than high-level functionality (which can be mocked-up)
    * assigned to team members based on scope and member's role (eg. front-end-related task is assigned to front-end dev)
 * User stories
- 1. Contained in a text file
- 2. Used to help determine any additional features are necessary
+ * Contained in a text file
+ * Used to help determine any additional features are necessary
 
 
 ## Product
