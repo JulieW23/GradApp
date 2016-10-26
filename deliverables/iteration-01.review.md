@@ -39,11 +39,10 @@ We are planning to make the following changes to our process:
 Goals/tasks that were met/completed:
  
 1. Evaluated competition. 
-We looked at three rival solutions (HiMama, Daily Sheets, and ClassDojo).  Although they were quite similar to the product we propose, we determined there are still features missing in these solutions parents would like to have, particularly capability to receive longer video updates, and calendar integration for event and deadline reminders.
-Evaluation of competitors is contained in competitors.txt.
+Our finding are contained in competitors.md.
 2. Established main features of the application which are listed above.
 3. Completed user stories. 
-User stories are contained in user_stories.txt.
+User stories are contained in user_stories.md.
 
 Goals/tasks that were planned but not met/completed:
 
