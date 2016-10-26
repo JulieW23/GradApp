@@ -15,6 +15,8 @@
 
 * As a parent, I want the parents of other children in my child's class to be able to communicate with me without having to share my contact details, so that I can protect my privacy, and so that I can keep this communication separate from other communication in my life.
 
+* As a parent, I want to build a connection with my kids' teachers so that I know I am leaving my kids to someone I can trust to care for them.
+
 # Teacher User Stories
 * As a teacher, I want my students' parents to be aware of what their children are doing and learning at school, so that they can reinforce their children's learning at home.
 
@@ -32,3 +34,4 @@
 
 * As a teacher, I want to securely share pictures/videos of my students with their parents, so that my students are protected from having their pictures intercepted and distributed online without their parents' consent.
 
+* As a substitute teacher, I want a record of previous experiences with the class and each child so that I will not make the same mistake as previous teachers.
