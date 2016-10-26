@@ -39,7 +39,7 @@ We are planning to make the following changes to our process:
 Goals/tasks that were met/completed:
  
 1. Evaluated competition. 
-Our finding are contained in competitors.md.
+Our findings are contained in competitors.md.
 2. Established main features of the application which are listed above.
 3. Completed user stories. 
 User stories are contained in user_stories.md.
