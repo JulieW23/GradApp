@@ -12,11 +12,15 @@ Decisions turned out well:
 1. Deciding on building an Android application to faciliate parent-teacher communication in private daycare and private elementary schools. 
 
 The application will have the following features:
+ * A personalized update section where teachers can post and parents can receive both class updates and updates specific to their child
+ * A upcoming deadlines section where teachers can post and parents can view upcoming actions required of them (ex. tuition payment, permission form submission, items to bring on special event days or field trips)
+ * Push notification for new updates posted
  * Teacher-to-parent and parent-to-parent chat
- * Calendar and event scheduling capabilities
- * Photo and video sharing to individual or all parents
+ * Calendar integration of reminders for parents
+ * Event scheduling capabilities for teachers
+ * Photo and video sharing from teacher to individual or all parents
 
-This turned out well because an Android application matches our skill set. All members have experience with Java and most with Android. Our research shows there are gaps in existing solutions (HiMama, Daily Sheets, and ClassDojo) our solution can fill (ex. calendar intregration)
+This turned out well because an Android application matches our skill set. All members have experience with Java and most with Android. Our research shows there are gaps in existing solutions (HiMama, Daily Sheets, and ClassDojo) our solution can fill (ex. calendar integration, limit on length of videos)
 
 Decisions did not turn out as well as you hoped:
  
@@ -34,9 +38,11 @@ We are planning to make the following changes to our process:
 
 Goals/tasks that were met/completed:
  
-1. Evaluated competition: A general competitor evaluation is contained in competitors.txt.
-2. Established main features of the application: Main features are listed above.
-3. Completed user stories: User stories are contained in user stories.txt.
+1. Evaluated competition. 
+We looked at three rival solutions (HiMama, Daily Sheets, and ClassDojo).  Although they were quite similar to the product we propose, we determined there are still features missing in these solutions parents would like to have, particularly capability to receive longer video updates, and calendar integration for event and deadline reminders.
+2. Established main features of the application which are listed above.
+3. Completed user stories. 
+User stories are contained in user stories.txt.
 
 Goals/tasks that were planned but not met/completed:
 
@@ -44,7 +50,7 @@ Goals/tasks that were planned but not met/completed:
 
 Going into the next iteration, our main insights are:
 
-1. Establish main workflow of product.
+1. Establish main workflow of product for both teacher and parent users.
 2. Create wireframe as a reference.
 3. Assign developer roles to each team member.
 4. Start coding the product.
