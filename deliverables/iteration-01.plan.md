@@ -44,4 +44,5 @@ Goals and tasks:
 
 Artifacts:
 
-1. File containing user stories
+1. user_stories.md : File containing user stories
+2. competitors.md : File containing findings after competitor evaluation
