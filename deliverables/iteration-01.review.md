@@ -42,7 +42,7 @@ Goals/tasks that were met/completed:
 We looked at three rival solutions (HiMama, Daily Sheets, and ClassDojo).  Although they were quite similar to the product we propose, we determined there are still features missing in these solutions parents would like to have, particularly capability to receive longer video updates, and calendar integration for event and deadline reminders.
 2. Established main features of the application which are listed above.
 3. Completed user stories. 
-User stories are contained in user stories.txt.
+User stories are contained in user_stories.txt.
 
 Goals/tasks that were planned but not met/completed:
 
