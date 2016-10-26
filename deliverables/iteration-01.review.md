@@ -20,7 +20,7 @@ The application will have the following features:
  * Event scheduling capabilities for teachers
  * Photo and video sharing from teacher to individual or all parents
 
-This turned out well because an Android application matches our skill set. All members have experience with Java and most with Android. Our research shows there are gaps in existing solutions (HiMama, Daily Sheets, and ClassDojo) our solution can fill (ex. calendar integration, limit on length of videos)
+This turned out well because an Android application matches our skill set. All members have experience with Java and most with Android. Our research shows there are gaps in existing solutions (HiMama, Daily Sheets, ClassDojo and Tadpoles) our solution can fill (ex. calendar integration, limit on length of videos)
 
 Decisions did not turn out as well as you hoped:
  
