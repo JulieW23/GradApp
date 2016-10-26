@@ -1,3 +1,4 @@
+# Parent User Stories
 * As a parent, I want to be more aware of what my child and his/her class are doing and learning at school, so that I feel more engaged with my child while he/she is at school, and so that I can reinforce his/her learning at home.\
 
 * As a parent of a young child, I want a record (pictures, videos) of special moments in my child's school experience, although I can't be there, so that I can preserve and view them later.\
@@ -14,6 +15,7 @@
 
 * As a parent, I want the parents of other children in my child's class to be able to communicate with me without having to share my contact details, so that I can protect my privacy, and so that I can keep this communication separate from other communication in my life.\
 
+# Teacher User Stories
 * As a teacher, I want my students' parents to be aware of what their children are doing and learning at school, so that they can reinforce their children's learning at home.\
 
 * As a teacher, I want a direct channel of communication with my students' parents, so that I can discuss their children's performance in school and any other relevant details (eg. behavioural incidents, illness/injuries).\
