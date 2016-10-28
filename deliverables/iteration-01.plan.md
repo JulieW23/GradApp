@@ -1,45 +1,48 @@
-# YOUR PRODUCT/TEAM NAME
+# Product: Kiddo
+# Team: Team_5
 
-## Iteration XX
+## Iteration 01
 
- * Start date: FILL IN THE DATE WHEN YOU HAD YOUR FIRST TEAM PLANNING MEETING
- * End date: FILL IN THE DATE WHEN YOU ARE PLANNING TO HAVE YOUR REVIEW MEETING
-
-## Process
-
-(Optional:) Introduction
+ * Start date: October 7th, 2016
+ * End date: October 21st, 2016
 
 #### Roles & responsibilities
 
-Describe the different roles (e.g. developers, communication facilitator,
-proof-reader, etc.) on the team, and the responsibilities associated with each role.
+Developer Roles:
+ 1. Front-end: Design user interface
+ 2. Back-end: Implement key functionalities in Java
+ 3. Database: Create database to store app data
+ 4. Quality Assurance: Write and execute test cases
 
 #### Events
 
-Please describe the meetings you planning to have:
- * When and where? In-person or online?
- * What's the purpose of each meeting?
+Meeting: October 14th, 12:10pm, BA3200 (in person)
+ 1. Assign specific roles to individuals
+ 2. Plan workflow for following weeks
+ 3. Plan specifics of product (complete product.md)
+   * Consider user expectations, types of users
 
 #### Artifacts
 
-Please describe the artifacts that you will produce in order to organize and keep track of your team's progress.       
-For example:
- * To-do lists, burndown chart, schedule, etc.
- * If you include charts/diagrams, make sure to explain what they represent.
- * If you're maintaining a to-do list, make sure to mention which tool you're using, how you are prioritizing items and how items get assigned to team members.
+* To-do list:
+ * Created and maintained on Google Docs 
+ * Items prioritized based on dependencies (i.e. an item on which a large number of other items depend has higher priority than an item on which few or no other items depend)
+     *  eg. basic app framework has higher priority than low-level functionality, which has higher priority than high-level functionality (which can be mocked-up)
+   * assigned to team members based on scope and member's role (eg. front-end-related task is assigned to front-end dev)
+* User stories
+ * Contained in a text file
+ * Used to help determine any additional features are necessary
 
 
 ## Product
 
 Goals and tasks:
 
- * Describe your goals for this iteration and the tasks that you will have to complete in order to achieve these goals.
- * When listing goals/tasks, order the items from most to least important.
- * Feel free (but not obligated) to specify some/all tasks as user stories.
+1. Evalute competition: See what features the competition have or lack
+2. Create user stories
+3. Establish main features
 
-Artifacts
+Artifacts:
 
- * Describe the artifacts (diagrams, interactive mock-ups, wireframes, actual code, etc.)
-   that you are planning to produce by the end of (and during) this iteration.
- * Be precise.         
-   For example: "Build the website" is not precise at all, but "Build a static home page and upload it somewhere, so that it is publicly accessible" is much clearer.
+1. user_stories.md : File containing user stories
+2. competitors.md : File containing findings after competitor evaluation
