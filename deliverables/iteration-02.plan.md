@@ -1,10 +1,11 @@
-# YOUR PRODUCT/TEAM NAME
+# Product: Kiddo
+# Team: Team_5
 
-## Iteration XX
+## Iteration 02
 
- * Start date: FILL IN THE DATE WHEN YOU HAD YOUR FIRST TEAM PLANNING MEETING
- * End date: FILL IN THE DATE WHEN YOU ARE PLANNING TO HAVE YOUR REVIEW MEETING
-
+ * Start date: October 28th, 2016
+ * End date: TBD
+ 
 ## Process
 
 (Optional:) Introduction
