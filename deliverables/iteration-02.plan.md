@@ -40,6 +40,7 @@ Goals and tasks:
 
 Artifacts
 
+ * UML diagram: https://www.gliffy.com/go/publish/11370017
  * Describe the artifacts (diagrams, interactive mock-ups, wireframes, actual code, etc.)
    that you are planning to produce by the end of (and during) this iteration.
  * Be precise.         
