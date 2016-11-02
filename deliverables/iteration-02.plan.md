@@ -24,6 +24,7 @@ proof-reader, etc.) on the team, and the responsibilities associated with each r
   * designed user work flow(s)
   * follow-up questions:
     * should we create administrator users?
+    * how should teachers register for the app? how should parents register and become associated with a class? how should students be enrolled in a class?
     * team roles?
 * Meeting 3: 
   * assigned team roles
