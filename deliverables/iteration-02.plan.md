@@ -8,8 +8,6 @@
  
 ## Process
 
-(Optional:) Introduction
-
 #### Roles & responsibilities
 
 Describe the different roles (e.g. developers, communication facilitator,
@@ -17,9 +15,19 @@ proof-reader, etc.) on the team, and the responsibilities associated with each r
 
 #### Events
 
-Please describe the meetings you planning to have:
- * When and where? In-person or online?
- * What's the purpose of each meeting?
+* Meeting 1: October 28th
+  * discussed user roles/capabilities
+  * follow-up questions:
+    * should we create a desktop interface for admins so that it is easier for them to do their job (it is inconvenient to create lots and lots of user accounts on a phone)?
+    * team roles?
+* Meeting 2: November 1st
+  * designed user work flow(s)
+  * follow-up questions:
+    * should we create administrator users?
+    * team roles?
+* Meeting 3: 
+  * assigned team roles
+  * created wireframes for app
 
 #### Artifacts
 
@@ -40,8 +48,6 @@ Goals and tasks:
 
 Artifacts
 
+ * User workflow diagram: https://www.gliffy.com/go/publish/11386683
+ * Wireframe diagram: 
  * UML diagram: https://www.gliffy.com/go/publish/11370017
- * Describe the artifacts (diagrams, interactive mock-ups, wireframes, actual code, etc.)
-   that you are planning to produce by the end of (and during) this iteration.
- * Be precise.         
-   For example: "Build the website" is not precise at all, but "Build a static home page and upload it somewhere, so that it is publicly accessible" is much clearer.
