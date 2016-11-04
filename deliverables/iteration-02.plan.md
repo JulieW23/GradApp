@@ -41,7 +41,6 @@
  * Meeting 3: November 4th
    * completed user workflow diagram, incl. administrative user
    * assigned team roles
-   * 
 
 #### Artifacts
 
