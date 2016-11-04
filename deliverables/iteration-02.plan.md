@@ -30,7 +30,7 @@
  * Meeting 1: October 28th
    * discussed user roles/capabilities
    * follow-up questions:
-     * should we create a desktop interface for admins so that it is easier for them to do their job (it is inconvenient to create lots and lots of user accounts on a phone)?
+     * should we create a desktop interface for admins so that it is easier for them to do their job (it is inconvenient to create lots and lots of user accounts on a phone?
      * team roles?
  * Meeting 2: November 1st
    * designed user work flow(s)
