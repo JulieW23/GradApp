@@ -56,6 +56,7 @@ Goals and tasks:
  * Feel free (but not obligated) to specify some/all tasks as user stories.
  
  1. Create workflow
+   * This begins from the login screen, and branches to three different user categories: administrator, teacher, and parent
  2. Create wireframe
    * A workflow must be created to ease the creation of the wireframe
  3. Create a working prototype
