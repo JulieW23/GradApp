@@ -15,7 +15,14 @@
   * Julie
   * George
 * Back-end developers:
-  * 
+  * Database
+   * Hossein  
+  * Security
+  
+  * Gabrielle
+  * Matthew
+  * Jason
+
 
 #### Events
 
