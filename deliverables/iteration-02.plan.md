@@ -41,6 +41,9 @@
  * Meeting 3: November 4th
    * completed user workflow diagram, incl. administrative user
    * assigned team roles
+   * follow-up question:
+     * do we need to divide the back-end roles into more specific ones?
+     * if so, how do we divide the back-end roles?
 
 #### Artifacts
 
