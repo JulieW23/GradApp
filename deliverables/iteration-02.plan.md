@@ -54,6 +54,12 @@ Goals and tasks:
  * Describe your goals for this iteration and the tasks that you will have to complete in order to achieve these goals.
  * When listing goals/tasks, order the items from most to least important.
  * Feel free (but not obligated) to specify some/all tasks as user stories.
+ 
+ 1. Create workflow
+ 2. Create wireframe
+   * A workflow must be created to ease the creation of the wireframe
+ 3. Create a working prototype
+   * A wireframe must be created for the front-end developers to use as a guide for the interface
 
 Artifacts
 
