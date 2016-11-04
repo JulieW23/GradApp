@@ -29,7 +29,7 @@
      * should we create administrator users?
      * how should teachers register for the app? how should parents register and become associated with a class? how should students be enrolled in a class?
      * team roles?
- * Meeting 3: 
+ * Meeting 3: November 4th
    * completed user workflow diagram, incl. administrative user
    * assigned team roles
    * 
