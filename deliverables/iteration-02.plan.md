@@ -14,7 +14,8 @@
   * Shirley
   * Julie
   * George
-* 
+* Back-end developers:
+  * 
 
 #### Events
 
