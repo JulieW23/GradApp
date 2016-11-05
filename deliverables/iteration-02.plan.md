@@ -68,5 +68,5 @@ Goals and tasks:
 Artifacts
 
  * User workflow diagram: https://www.gliffy.com/go/publish/11386683
- * Wireframe diagram: 
+ * Wireframe diagram: https://www.gliffy.com/go/publish/11404469
  * UML diagram: https://www.gliffy.com/go/publish/11370017
