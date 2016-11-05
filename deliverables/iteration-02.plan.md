@@ -40,7 +40,7 @@
      * team roles?
  * Meeting 3: November 4th
    * completed user workflow diagram, incl. administrative user
-   * assigned team roles
+   * started assigning team roles
    * follow-up question:
      * do we need to divide the back-end roles into more specific ones?
      * if so, how do we divide the back-end roles?
@@ -67,6 +67,7 @@ Goals and tasks:
 
 Artifacts
 
- * User workflow diagram: https://www.gliffy.com/go/publish/11386683
+ * User workflow diagram: https://www.gliffy.com/go/publish/11406769
+ * User workflow diagram (detailed): https://www.gliffy.com/go/publish/11386683
  * Wireframe diagram: https://www.gliffy.com/go/publish/11404469
  * UML diagram: https://www.gliffy.com/go/publish/11370017
