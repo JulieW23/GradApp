@@ -70,4 +70,5 @@ Artifacts
  * User workflow diagram: https://www.gliffy.com/go/publish/11406769
  * User workflow diagram (detailed): https://www.gliffy.com/go/publish/11386683
  * Wireframe diagram: https://www.gliffy.com/go/publish/11404469
+ * Wireframe diagram for parent user: https://www.gliffy.com/go/publish/11409309
  * UML diagram: https://www.gliffy.com/go/publish/11370017
