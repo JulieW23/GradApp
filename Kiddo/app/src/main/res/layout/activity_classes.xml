@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/colorBackground"
+    android:background="@color/colorAccent"
     tools:context="com.team_05.kiddo.ClassesActivity">
 
     <TextView
@@ -20,9 +20,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="0dp"
         android:id="@+id/classesTextView"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorPrimary"
         android:textAlignment="center"
-        android:textColor="@color/colorHeaderText"
+        android:textColor="@color/colorAccent"
         android:textSize="@dimen/headerFontSize"
         android:gravity="center"/>
 
@@ -31,12 +31,12 @@
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_menu_preferences"
         android:id="@+id/imageButton"
-        android:backgroundTint="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorPrimary"
         android:layout_alignBottom="@+id/classesTextView"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="5dp"
         android:layout_marginEnd="5dp"
-        android:tint="@color/colorButtonText"/>
+        android:tint="@color/colorAccent"/>
 
 </RelativeLayout>

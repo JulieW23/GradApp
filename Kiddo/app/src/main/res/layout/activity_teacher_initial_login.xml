@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/colorBackground"
+    android:background="@color/colorAccent"
     tools:context="com.team_05.kiddo.TeacherInitialLoginActivity">
 
     <TextView
@@ -20,7 +20,7 @@
         android:layout_marginTop="128dp"
         android:id="@+id/newPasswordTextView"
         android:textSize="25dp"
-        android:textColor="@color/colorNormalText"/>
+        android:textColor="@color/colorPrimaryDark"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/passwordTextField1"
         android:hint="Password"
-        android:textColor="@color/colorNormalText"/>
+        android:textColor="@color/colorPrimaryDark"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
         android:layout_alignEnd="@+id/passwordTextField1"
         android:id="@+id/passwordTextField2"
         android:hint="Confirm password"
-        android:textColor="@color/colorNormalText"/>
+        android:textColor="@color/colorPrimaryDark"/>
 
     <Button
         android:text="Done"
@@ -53,8 +53,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="77dp"
         android:id="@+id/doneButton"
-        android:textColor="@color/colorButtonText"
-        android:background="@color/colorButton"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"
         android:layout_marginBottom="75dp" />
 
 </RelativeLayout>
