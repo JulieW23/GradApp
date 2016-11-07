@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,7 +19,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                // If login is admin
+
+                // If login is teacher
+
+                // If login is parent
+
+                // Temp login
+                // Switch to whatever activity you want to test it on
+                Intent intent = new Intent(MainActivity.this, TeacherInitialLoginActivity.class);
+                startActivity(intent);
             }
         });
     }
+
+
 }
