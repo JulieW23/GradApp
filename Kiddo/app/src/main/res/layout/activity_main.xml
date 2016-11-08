@@ -21,7 +21,7 @@
         android:id="@+id/logoTextView"
         android:textColor="@color/colorPrimary"
         android:fontFamily="casual"
-        android:textSize="75dp"/>
+        android:textSize="75dp" />
 
     <EditText
         android:layout_width="@dimen/textFieldWidth"
@@ -33,7 +33,8 @@
         android:id="@+id/emailTextField"
         android:hint="E-mail"
         android:textColor="@color/colorPrimaryDark"
-        android:fontFamily="@string/textFieldFont" />
+        android:fontFamily="@string/textFieldFont"
+        android:background="@android:color/transparent"/>
 
     <EditText
         android:layout_width="@dimen/textFieldWidth"
@@ -46,7 +47,9 @@
         android:id="@+id/passwordTextField"
         android:hint="Password"
         android:textColor="@color/colorPrimaryDark"
-        android:fontFamily="@string/textFieldFont"/>
+        android:fontFamily="@string/textFieldFont"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="@dimen/spaceBetweenTextFields"/>
 
     <Button
         android:text="Login"

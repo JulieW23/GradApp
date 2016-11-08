@@ -7,4 +7,5 @@
     <dimen name="headerFontSize">25dp</dimen>
     <dimen name="textFieldWidth">250dp</dimen>
     <dimen name="marginFromBottom">75dp</dimen>
+    <dimen name="spaceBetweenTextFields">15dp</dimen>
 </resources>

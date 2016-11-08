@@ -24,7 +24,7 @@
         android:fontFamily="@string/textFieldFont"/>
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/textFieldWidth"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
@@ -33,10 +33,11 @@
         android:id="@+id/passwordTextField1"
         android:hint="Password"
         android:textColor="@color/colorPrimaryDark"
-        android:fontFamily="@string/textFieldFont"/>
+        android:fontFamily="@string/textFieldFont"
+        android:background="@android:color/transparent"/>
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/textFieldWidth"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
@@ -46,7 +47,9 @@
         android:id="@+id/passwordTextField2"
         android:hint="Confirm password"
         android:textColor="@color/colorPrimaryDark"
-        android:fontFamily="@string/textFieldFont"/>
+        android:fontFamily="@string/textFieldFont"
+        android:layout_marginTop="@dimen/spaceBetweenTextFields"
+        android:background="@android:color/transparent"/>
 
     <Button
         android:text="Done"
