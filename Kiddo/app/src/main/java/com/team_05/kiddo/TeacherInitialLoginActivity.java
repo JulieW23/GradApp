@@ -20,6 +20,7 @@ public class TeacherInitialLoginActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(TeacherInitialLoginActivity.this, ClassesActivity.class);
+                finish();
                 startActivity(intent);
             }
         });
