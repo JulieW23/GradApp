@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Kiddo</string>
+    <string name="textFieldFont">sans-serif-smallcaps</string>
 </resources>
