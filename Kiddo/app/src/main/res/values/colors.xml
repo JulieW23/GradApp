@@ -3,4 +3,6 @@
     <color name="colorPrimary">#3b5998</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FFFFFF</color>
+    <color name="colorSubheader">#FCFCFC</color>
+    <color name="colorTabHost">#FAFAFA</color>
 </resources>
