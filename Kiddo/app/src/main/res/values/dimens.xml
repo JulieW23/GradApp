@@ -8,4 +8,6 @@
     <dimen name="textFieldWidth">250dp</dimen>
     <dimen name="marginFromBottom">75dp</dimen>
     <dimen name="spaceBetweenTextFields">15dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
 </resources>
