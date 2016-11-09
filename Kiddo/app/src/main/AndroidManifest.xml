@@ -36,11 +36,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        />
-        <activity
-            android:name=".TabActivity"
-            android:label="@string/title_activity_tab"
-            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".TabActivity"></activity>
     </application>
 
 </manifest>
