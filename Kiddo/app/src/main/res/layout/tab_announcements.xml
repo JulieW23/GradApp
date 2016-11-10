@@ -45,17 +45,4 @@
         android:layout_marginEnd="13dp"
         android:layout_alignBottom="@+id/cameraImageButton" />
 
-    <TextView
-        android:text="Announcements"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/headerHeight"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/announcementsTextView"
-        android:textColor="@color/colorPrimaryDark"
-        android:background="@color/colorSubheader"
-        android:textSize="@dimen/headerFontSize"
-        android:textAlignment="center"
-        android:gravity="center"/>
-
 </RelativeLayout>

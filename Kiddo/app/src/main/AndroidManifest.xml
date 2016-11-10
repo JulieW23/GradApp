@@ -36,7 +36,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".TabActivity"></activity>
+        <activity android:name=".TabActivity" />
     </application>
 
 </manifest>
