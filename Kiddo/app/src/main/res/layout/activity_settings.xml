@@ -26,7 +26,7 @@
         android:background="@color/colorPrimary"
         android:gravity="center"
         android:textColor="@color/colorAccent"
-        android:fontFamily="@string/textFieldFont"
+        android:fontFamily="@string/headerFont"
         android:textSize="@dimen/headerFontSize"/>
 
     <ImageButton

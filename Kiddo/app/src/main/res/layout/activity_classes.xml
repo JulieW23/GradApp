@@ -24,7 +24,8 @@
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/headerFontSize"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:fontFamily="@string/headerFont"/>
 
     <ImageButton
         android:layout_width="wrap_content"

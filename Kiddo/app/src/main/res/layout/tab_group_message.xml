@@ -5,49 +5,21 @@
     android:layout_height="match_parent"
     android:background="@color/colorAccent">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_send_black_24dp"
-        android:id="@+id/sendImageButton"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="10dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="5dp"
-        android:background="@color/colorAccent"
-        android:tint="@color/colorPrimary"/>
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_photo_camera_black_24dp"
-        android:layout_alignTop="@+id/sendImageButton"
-        android:layout_toLeftOf="@+id/sendImageButton"
-        android:layout_toStartOf="@+id/sendImageButton"
-        android:id="@+id/cameraImageButton"
-        android:background="@color/colorAccent"
-        android:tint="@color/colorPrimary"/>
-
-    <EditText
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/groupMessageTextField"
-        android:background="@color/colorAccent"
-        android:textColor="@color/colorPrimaryDark"
-        android:fontFamily="@string/textFieldFont"
-        android:hint="New group message"
-        android:layout_alignTop="@+id/cameraImageButton"
-        android:layout_toLeftOf="@+id/cameraImageButton"
-        android:layout_toStartOf="@+id/cameraImageButton"
-        android:layout_marginRight="13dp"
-        android:layout_marginEnd="13dp"
-        android:layout_alignBottom="@+id/cameraImageButton" />
-
     <ListView
         android:id="@+id/groupMessageListView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="375dp"
+        android:layout_alignParentTop="true"></ListView>
+
+    <Button
+        android:text="Create Message"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/sendButton"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="25dp"/>
 
 </RelativeLayout>

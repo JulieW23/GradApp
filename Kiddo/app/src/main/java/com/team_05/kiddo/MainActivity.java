@@ -1,5 +1,6 @@
 package com.team_05.kiddo;
 
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // Temp login
                 // Switch to whatever activity you want to test it on
-                Intent intent = new Intent(MainActivity.this, TeacherInitialLoginActivity.class);
+                Intent intent = new Intent(MainActivity.this, TabActivity.class);
                 finish();
                 startActivity(intent);
             }
