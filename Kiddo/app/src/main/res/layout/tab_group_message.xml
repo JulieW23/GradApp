@@ -45,4 +45,9 @@
         android:layout_marginEnd="13dp"
         android:layout_alignBottom="@+id/cameraImageButton" />
 
+    <ListView
+        android:id="@+id/groupMessageListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
 </RelativeLayout>
