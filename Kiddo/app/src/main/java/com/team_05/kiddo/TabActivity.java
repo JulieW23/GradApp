@@ -72,9 +72,17 @@ public class TabActivity extends AppCompatActivity {
         // Create announcements ListView
         ListView announcementsListView = (ListView)findViewById(R.id.announcementsListView);
         ArrayList<String> announcements = new ArrayList<String>();
-        announcements.add("Don't forget we have a picnic today!");
-        announcements.add("There is no school tomorrow.");
-        announcements.add("I am sick today.");
+        announcements.add("Nov 12\nDon't forget we have a picnic today!");
+        announcements.add("Nov 13\nThere is no school tomorrow.");
+        announcements.add("Nov 14\nI am sick today.");
+        announcements.add("Nov 15\nDon't forget we have a picnic today!");
+        announcements.add("Nov 16\nThere is no school tomorrow.");
+        announcements.add("Nov 17\nI am sick today.");
+        announcements.add("Nov 18\nDon't forget we have a picnic today!");
+        announcements.add("Nov 19\nThere is no school tomorrow.");
+        announcements.add("Nov 20\nI am sick today.");
+        announcements.add("Today\nThis is the latest announcement.");
+
 
         ArrayAdapter<String> announcementsAdapter;
         announcementsAdapter = new ArrayAdapter<String>(TabActivity.this, android.R.layout.simple_list_item_1, announcements);
@@ -83,6 +91,15 @@ public class TabActivity extends AppCompatActivity {
         // Create students ListView
         ListView studentsListView = (ListView)findViewById(R.id.studentsListView);
         ArrayList<String> students = new ArrayList<String>();
+        students.add("Jimmy");
+        students.add("Mike");
+        students.add("John");
+        students.add("Jimmy");
+        students.add("Mike");
+        students.add("John");
+        students.add("Jimmy");
+        students.add("Mike");
+        students.add("John");
         students.add("Jimmy");
         students.add("Mike");
         students.add("John");
@@ -103,6 +120,15 @@ public class TabActivity extends AppCompatActivity {
         // Create group message ListView
         ListView groupMessageListView = (ListView)findViewById(R.id.groupMessageListView);
         ArrayList<String> groupMessages = new ArrayList<String>();
+        groupMessages.add("Jimmy");
+        groupMessages.add("Mike");
+        groupMessages.add("John");
+        groupMessages.add("Jimmy");
+        groupMessages.add("Mike");
+        groupMessages.add("John");
+        groupMessages.add("Jimmy");
+        groupMessages.add("Mike");
+        groupMessages.add("John");
         groupMessages.add("Jimmy");
         groupMessages.add("Mike");
         groupMessages.add("John");
