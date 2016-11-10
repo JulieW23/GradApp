@@ -18,27 +18,27 @@ public class TabActivity extends AppCompatActivity {
         tabHost.setup();
 
         TabHost.TabSpec spec1 = tabHost.newTabSpec("announcements");
-        spec1.setIndicator("A");
+        spec1.setIndicator("", getResources().getDrawable(R.drawable.ic_announcement_black_24dp_rgb));
         spec1.setContent(R.id.announcements);
         tabHost.addTab(spec1);
 
         TabHost.TabSpec spec2 = tabHost.newTabSpec("students");
-        spec2.setIndicator("S");
+        spec2.setIndicator("", getResources().getDrawable(R.drawable.ic_people_black_24dp_rgb));
         spec2.setContent(R.id.students);
         tabHost.addTab(spec2);
 
         TabHost.TabSpec spec3 = tabHost.newTabSpec("groupMessage");
-        spec3.setIndicator("GM");
+        spec3.setIndicator("", getResources().getDrawable(R.drawable.ic_message_black_24dp_rgb));
         spec3.setContent(R.id.groupMessage);
         tabHost.addTab(spec3);
 
         TabHost.TabSpec spec4 = tabHost.newTabSpec("calendar");
-        spec4.setIndicator("C");
+        spec4.setIndicator("", getResources().getDrawable(R.drawable.ic_event_black_24dp_rgb));
         spec4.setContent(R.id.calendar);
         tabHost.addTab(spec4);
 
         TabHost.TabSpec spec5 = tabHost.newTabSpec("enrolmentRequests");
-        spec5.setIndicator("ER");
+        spec5.setIndicator("", getResources().getDrawable(R.drawable.ic_note_add_black_24dp_rgb));
         spec5.setContent(R.id.enrolmentRequests);
         tabHost.addTab(spec5);
 
