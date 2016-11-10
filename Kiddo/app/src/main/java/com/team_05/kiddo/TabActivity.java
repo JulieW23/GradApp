@@ -4,8 +4,16 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TabHost;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class TabActivity extends AppCompatActivity {
 
@@ -51,5 +59,57 @@ public class TabActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Back button
+        ImageButton backImageButton = (ImageButton)findViewById(R.id.backImageButton);
+        backImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        // Create announcements ListView
+        ListView announcementsListView = (ListView)findViewById(R.id.announcementsListView);
+        ArrayList<String> announcements = new ArrayList<String>();
+        announcements.add("Don't forget we have a picnic today!");
+        announcements.add("There is no school tomorrow.");
+        announcements.add("I am sick today.");
+
+        ArrayAdapter<String> announcementsAdapter;
+        announcementsAdapter = new ArrayAdapter<String>(TabActivity.this, android.R.layout.simple_list_item_1, announcements);
+        announcementsListView.setAdapter(announcementsAdapter);
+
+        // Create students ListView
+        ListView studentsListView = (ListView)findViewById(R.id.studentsListView);
+        ArrayList<String> students = new ArrayList<String>();
+        students.add("Jimmy");
+        students.add("Mike");
+        students.add("John");
+        Collections.sort(students);
+
+        ArrayAdapter<String> studentsAdapter;
+        studentsAdapter = new ArrayAdapter<String>(TabActivity.this, android.R.layout.simple_list_item_1, students);
+        studentsListView.setAdapter(studentsAdapter);
+
+        studentsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(TabActivity.this, MessageActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Create group message ListView
+        ListView groupMessageListView = (ListView)findViewById(R.id.groupMessageListView);
+        ArrayList<String> groupMessages = new ArrayList<String>();
+        groupMessages.add("Jimmy");
+        groupMessages.add("Mike");
+        groupMessages.add("John");
+        Collections.sort(groupMessages);
+
+        ArrayAdapter<String> groupMessageAdapter;
+        groupMessageAdapter = new ArrayAdapter<String>(TabActivity.this, android.R.layout.select_dialog_multichoice, groupMessages);
+        groupMessageListView.setAdapter(groupMessageAdapter);
     }
 }

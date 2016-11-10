@@ -1,11 +1,14 @@
 package com.team_05.kiddo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
-/**
- * Created by georgelam on 2016-11-09.
- */
+import java.util.ArrayList;
 
 public class AnnouncementsTab extends Activity {
 
@@ -13,5 +16,6 @@ public class AnnouncementsTab extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tab_announcements);
     }
+
 
 }
