@@ -10,18 +10,22 @@
 
 #### Roles & responsibilities
 
+* Planners:
+  * Design user workflows
+    * *all*
 * Front-end developers:
-  * Shirley
-  * Julie
-  * George
+  * Design wireframes
+  * Design and create user interfaces
+    * Shirley
+    * Julie
+    * George
 * Back-end developers:
   * Database
-    * Hossein  
-  * Security
-    * ??
-  * ??
-    * Gabrielle
     * Matthew
+    * Gabrielle
+  * Administrative web interface
+    * Hossein
+  * Class structures
     * Jason
 
 
@@ -41,9 +45,12 @@
  * Meeting 3: November 4th
    * completed user workflow diagram, incl. administrative user
    * started assigning team roles
-   * follow-up question:
+   * follow-up questions:
      * do we need to divide the back-end roles into more specific ones?
      * if so, how do we divide the back-end roles?
+ * Meeting 4: November 10th
+   * decided to add web interface for administrator users to create batches of teacher accounts/classes
+   * assigned back-end roles
 
 #### Artifacts
 
@@ -53,23 +60,28 @@
 ## Product
 
 Goals and tasks:
-
- * Describe your goals for this iteration and the tasks that you will have to complete in order to achieve these goals.
- * When listing goals/tasks, order the items from most to least important.
- * Feel free (but not obligated) to specify some/all tasks as user stories.
  
  1. Create workflow
    * Workflow begins from the login screen, and branches to three different user categories: administrator, teacher, and parent
  2. Create wireframe
    * A workflow must be created to ease the creation of the wireframe
- 3. Create a working prototype
+ 3. Create teacher interface
    * A wireframe must be created for the front-end developers to use as a guide for the interface
+ 4. Create parent interface
+   * A wireframe must be created for the front-end developers to use as a guide for the interface
+ 5. Create administrator interface
+   * A wireframe must be created for the front-end developers to use as a guide for the interface
+ 6. Create app class structure (eg. parent class)
+ 7. Create database
+   * Query results can be mocked within the app, if database is not functional
+ 8. Create web interface for administrator users to create batches of teacher accounts/classes
+   * This is meant to simplify the tasks of adding multiple teacher accounts/classes, but *can* be done one-by-one inside app
 
-Artifacts
+Artifacts:
 
  * User workflow diagram: https://www.gliffy.com/go/publish/11406769
  * User workflow diagram (detailed): https://www.gliffy.com/go/publish/11386683
  * Wireframe diagram for teacher user: https://www.gliffy.com/go/publish/11404469
  * Wireframe diagram for parent user: https://www.gliffy.com/go/publish/11409309
- * Wireframe diagram for administrator user :https://www.gliffy.com/go/share/sxaaegccvguge0dflxu6
- * UML diagram: https://www.gliffy.com/go/publish/11370017
+ * Wireframe diagram for administrator user: https://www.gliffy.com/go/share/sxaaegccvguge0dflxu6
+ * Data model for database: 
