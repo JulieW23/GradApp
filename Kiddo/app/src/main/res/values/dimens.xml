@@ -10,4 +10,5 @@
     <dimen name="spaceBetweenTextFields">15dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="normalTextSize">15dp</dimen>
 </resources>

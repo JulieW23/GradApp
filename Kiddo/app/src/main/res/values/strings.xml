@@ -4,6 +4,7 @@
     <string name="headerFont">sans-serif-smallcaps</string>
     <string name="title_activity_tab">TabActivity</string>
     <string name="action_settings">Settings</string>
+    <string name="normalTextFont">sans-serif-smallcaps</string>
 
     <string name="school_prompt">Choose your daycare or school</string>
     <string-array name="school_arrays">

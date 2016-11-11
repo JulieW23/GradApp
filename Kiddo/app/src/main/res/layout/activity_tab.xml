@@ -10,6 +10,7 @@
     android:paddingRight="0dp"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/colorTabHost"
+    android:fitsSystemWindows="true"
     tools:context="com.team_05.kiddo.TabActivity">
 
     <TextView
