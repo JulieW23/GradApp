@@ -47,7 +47,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MessageActivity" />
-        <activity android:name=".EventActivity"></activity>
+        <activity android:name=".EventActivity" />
+        <activity android:name=".ParentInfo" />
+        <activity android:name=".ChildInfoActivity"></activity>
     </application>
 
 </manifest>

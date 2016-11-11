@@ -4,4 +4,13 @@
     <string name="headerFont">sans-serif-smallcaps</string>
     <string name="title_activity_tab">TabActivity</string>
     <string name="action_settings">Settings</string>
+
+    <string name="school_prompt">Choose your daycare or school</string>
+    <string-array name="school_arrays">
+        <item>DayCare 1</item>
+        <item>Daycare 2</item>
+        <item>Daycare 3</item>
+        <item>School 1</item>
+        <item>School 2</item>
+    </string-array>
 </resources>
