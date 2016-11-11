@@ -1,12 +1,10 @@
 package com.team_05.kiddo;
 
-import android.content.Context;
-import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -16,26 +14,29 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Collections;
 import java.util.Date;
 import java.util.TimeZone;
 
-public class MessageActivity extends AppCompatActivity {
+public class GroupMessageActivity extends AppCompatActivity {
+
+    public static ArrayList<String> groupMessages;
 
     String newMessage = "";
 
-    public static ArrayList<String> messages = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_message);
+        setContentView(R.layout.activity_group_message);
+
+
+        // Clear history of group messages
+        groupMessages = new ArrayList<String>();
 
 
         // Back button
-        ImageButton backImageButton = (ImageButton)(findViewById(R.id.backImageButton));
+        ImageButton backImageButton = (ImageButton)findViewById(R.id.backImageButton);
         backImageButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 finish();
@@ -43,12 +44,12 @@ public class MessageActivity extends AppCompatActivity {
         });
 
 
-        // Create messages ListView
-        final ListView messagesListView = (ListView)findViewById(R.id.messagesListView);
+        // Create group messages ListView
+        ListView groupMessagesListView = (ListView)findViewById(R.id.groupMessagesListView);
 
-        final ArrayAdapter<String> messagesAdapter;
-        messagesAdapter = new ArrayAdapter<String>(MessageActivity.this, android.R.layout.simple_list_item_1, messages);
-        messagesListView.setAdapter(messagesAdapter);
+        final ArrayAdapter<String> groupMessagesAdapter;
+        groupMessagesAdapter = new ArrayAdapter<String>(GroupMessageActivity.this, android.R.layout.simple_list_item_1, groupMessages);
+        groupMessagesListView.setAdapter(groupMessagesAdapter);
 
         // Send button
         ImageButton sendImageButton = (ImageButton)findViewById(R.id.sendImageButton);
@@ -63,21 +64,21 @@ public class MessageActivity extends AppCompatActivity {
                 Date date = new Date();
                 String dateAndTime = sdf.format(date);
 
-                // Append new message to date and time
+                // Create message
                 // Send message
-                String dateAndTimeMessage = "Me\n" + dateAndTime + "\n" + newMessage;
-                messages.add(dateAndTimeMessage);
-                messagesAdapter.notifyDataSetChanged();
+                String dateAndTimeMessage = dateAndTime + "\n" + newMessage;
+                groupMessages.add(dateAndTimeMessage);
+                groupMessagesAdapter.notifyDataSetChanged();
 
                 // Clear message text field after sending
-                EditText messageTextField = (EditText)findViewById(R.id.messageTextField);
-                messageTextField.setText("");
+                EditText groupMessagesTextField = (EditText)findViewById(R.id.groupMessageTextField);
+                groupMessagesTextField.setText("");
             }
         });
 
-        // Message text field
-        EditText messageTextField = (EditText)findViewById(R.id.messageTextField);
-        messageTextField.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+        // Group message text field
+        EditText groupMessagesTextField = (EditText)findViewById(R.id.groupMessageTextField);
+        groupMessagesTextField.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 boolean handled = false;
