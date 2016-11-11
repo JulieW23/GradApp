@@ -5,9 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -160,25 +163,38 @@ public class TabActivity extends AppCompatActivity {
 
 
         // Create group message ListView
-        ListView groupMessageListView = (ListView)findViewById(R.id.groupMessageListView);
-        ArrayList<String> groupMessages = new ArrayList<String>();
-        groupMessages.add("Jimmy");
-        groupMessages.add("Mike");
-        groupMessages.add("John");
-        groupMessages.add("Jimmy");
-        groupMessages.add("Mike");
-        groupMessages.add("John");
-        groupMessages.add("Jimmy");
-        groupMessages.add("Mike");
-        groupMessages.add("John");
-        groupMessages.add("Jimmy");
-        groupMessages.add("Mike");
-        groupMessages.add("John");
+        final ListView groupMessageListView = (ListView)findViewById(R.id.groupMessageListView);
+        final ArrayList<String> groupMessages = new ArrayList<String>();
+        groupMessages.add("Parent: Jimmy Sung\nChild: Tony Sung");
+        groupMessages.add("Parent: Mike Lang\nChild: Laura Lang");
+        groupMessages.add("Parent: John Smith\nChild Edward Smith");
+        groupMessages.add("Parent: Alfred Moor\nChild: Will Moor");
+        groupMessages.add("Parent: Robert Wrench\nChild: Ted Wrench");
+        groupMessages.add("Parent: John Yu\nChild: Carrie Yu");
+        groupMessages.add("Parent: Lonnie Putz\nChild: Felcia Putz");
+        groupMessages.add("Parent: Gerald Ervin\nChild: Naomi Ervin");
+        groupMessages.add("Parent: Karen Coleman\nChild: Joan Coleman");
+        groupMessages.add("Parent: Carolyn Harvey\nChild: Marian Harvey");
+        groupMessages.add("Parent: Samuel Swain\nChild: Keith Swain");
+        groupMessages.add("Parent: Robert Acosta\nChild: Susan Acosta");
         Collections.sort(groupMessages);
 
         ArrayAdapter<String> groupMessageAdapter;
-        groupMessageAdapter = new ArrayAdapter<String>(TabActivity.this, android.R.layout.select_dialog_multichoice, groupMessages);
+        groupMessageAdapter = new ArrayAdapter<String>(TabActivity.this, android.R.layout.simple_list_item_checked, groupMessages);
         groupMessageListView.setAdapter(groupMessageAdapter);
+        groupMessageListView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+
+        groupMessageListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (groupMessageListView.isItemChecked(position) == true) {
+                    groupMessageListView.setItemChecked(position, true);
+                } else {
+                    groupMessageListView.setItemChecked(position, false);
+                }
+
+            }
+        });
 
 
         // Create calendar ListView
@@ -191,6 +207,35 @@ public class TabActivity extends AppCompatActivity {
         ArrayAdapter<String> calendarAdapter;
         calendarAdapter = new ArrayAdapter<String>(TabActivity.this, android.R.layout.simple_expandable_list_item_1, events);
         calendarListView.setAdapter(calendarAdapter);
+
+
+        // Check all button
+        ImageButton checkAllImageButton = (ImageButton)findViewById(R.id.checkAllImageButton);
+        checkAllImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (groupMessageListView.isItemChecked(0)) {
+                    for (int i = 0; i <= groupMessages.size(); i++) {
+                        groupMessageListView.setItemChecked(i, false);
+                    }
+                } else {
+                    for (int i = 0; i <= groupMessages.size(); i++) {
+                        groupMessageListView.setItemChecked(i, true);
+                    }
+                }
+            }
+        });
+
+
+        // Create group message button
+        Button createGroupMessageButton = (Button)findViewById(R.id.createMessageButton);
+        createGroupMessageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TabActivity.this, GroupMessageActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
