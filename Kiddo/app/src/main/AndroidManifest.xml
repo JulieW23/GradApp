@@ -36,8 +36,18 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".TabActivity" />
-        <activity android:name=".MessageActivity"></activity>
+        <activity
+            android:name=".TabActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AnnouncementsTab">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".EventActivity"></activity>
     </application>
 
 </manifest>
