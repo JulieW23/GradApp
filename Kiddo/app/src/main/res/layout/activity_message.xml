@@ -15,7 +15,7 @@
     tools:context="com.team_05.kiddo.MessageActivity">
 
     <TextView
-        android:text="Student's name or parent?"
+        android:text="Message"
         android:layout_width="match_parent"
         android:layout_height="@dimen/headerHeight"
         android:layout_alignParentTop="true"
@@ -82,13 +82,32 @@
         android:layout_marginEnd="13dp"
         android:layout_alignBottom="@+id/cameraImageButton" />
 
+    <TextView
+        android:text="To: Alfred Moor (Will Moor)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipientTextView"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/nameTextView"
+        android:layout_alignLeft="@+id/backImageButton"
+        android:layout_alignStart="@+id/backImageButton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@string/normalTextFont"
+        android:textSize="@dimen/normalTextSize"/>
+
     <ListView
         android:id="@+id/messagesListView"
-        android:layout_below="@id/nameTextView"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="425dp"
         android:background="@color/colorAccent"
         android:stackFromBottom="true"
-        android:transcriptMode="alwaysScroll"></ListView>
+        android:transcriptMode="alwaysScroll"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/recipientTextView"
+        android:layout_alignParentEnd="true"></ListView>
 
 </RelativeLayout>

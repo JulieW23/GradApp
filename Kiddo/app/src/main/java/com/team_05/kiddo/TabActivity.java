@@ -132,18 +132,18 @@ public class TabActivity extends AppCompatActivity {
         // Create students ListView
         ListView studentsListView = (ListView)findViewById(R.id.studentsListView);
         ArrayList<String> students = new ArrayList<String>();
-        students.add("Jimmy");
-        students.add("Mike");
-        students.add("John");
-        students.add("Jimmy");
-        students.add("Mike");
-        students.add("John");
-        students.add("Jimmy");
-        students.add("Mike");
-        students.add("John");
-        students.add("Jimmy");
-        students.add("Mike");
-        students.add("John");
+        students.add("Parent: Jimmy Sung\nChild: Tony Sung");
+        students.add("Parent: Mike Lang\nChild: Laura Lang");
+        students.add("Parent: John Smith\nChild Edward Smith");
+        students.add("Parent: Alfred Moor\nChild: Will Moor");
+        students.add("Parent: Robert Wrench\nChild: Ted Wrench");
+        students.add("Parent: John Yu\nChild: Carrie Yu");
+        students.add("Parent: Lonnie Putz\nChild: Felcia Putz");
+        students.add("Parent: Gerald Ervin\nChild: Naomi Ervin");
+        students.add("Parent: Karen Coleman\nChild: Joan Coleman");
+        students.add("Parent: Carolyn Harvey\nChild: Marian Harvey");
+        students.add("Parent: Samuel Swain\nChild: Keith Swain");
+        students.add("Parent: Robert Acosta\nChild: Susan Acosta");
         Collections.sort(students);
 
         ArrayAdapter<String> studentsAdapter;

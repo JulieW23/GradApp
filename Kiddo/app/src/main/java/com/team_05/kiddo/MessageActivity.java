@@ -1,23 +1,36 @@
 package com.team_05.kiddo;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
+import java.util.Date;
+import java.util.TimeZone;
 
 public class MessageActivity extends AppCompatActivity {
+
+    String newMessage = "";
+
+    public static ArrayList<String> messages = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
+
 
         // Back button
         ImageButton backImageButton = (ImageButton)(findViewById(R.id.backImageButton));
@@ -29,15 +42,49 @@ public class MessageActivity extends AppCompatActivity {
             }
         });
 
-        // Create messages ListView
-        ListView messagesListView = (ListView)findViewById(R.id.messagesListView);
-        ArrayList<String> messages = new ArrayList<String>();
-        messages.add("9:00PM Jimmy\nIn computer science, a data structure is a particular way of organizing data in a computer so that it can be used efficiently.[1][2] Data structures can implement one or more particular abstract data types (ADT), which specify the operations that can be performed on a data structure and the computational complexity of those operations. In comparison, a data structure is a concrete implementation of the specification provided by an ADT.");
-        messages.add("9:05PM Me\nDifferent kinds of data structures are suited to different kinds of applications, and some are highly specialized to specific tasks. For example, relational databases commonly use B-tree indexes for data retrieval,[3] while compiler implementations usually use hash tables to look up identifiers.");
-        messages.add("9:10PM Jimmy\nData structures provide a means to manage large amounts of data efficiently for uses such as large databases and internet indexing services. Usually, efficient data structures are key to designing efficient algorithms. Some formal design methods and programming languages emphasize data structures, rather than algorithms, as the key organizing factor in software design. Data structures can be used to organize the storage and retrieval of information stored in both main memory and secondary memory.");
 
-        ArrayAdapter<String> messagesAdapter;
+        // Create messages ListView
+        final ListView messagesListView = (ListView)findViewById(R.id.messagesListView);
+
+        final ArrayAdapter<String> messagesAdapter;
         messagesAdapter = new ArrayAdapter<String>(MessageActivity.this, android.R.layout.simple_list_item_1, messages);
         messagesListView.setAdapter(messagesAdapter);
+
+        // Send button
+        ImageButton sendImageButton = (ImageButton)findViewById(R.id.sendImageButton);
+        sendImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Set date and time
+                Calendar calendar = Calendar.getInstance();
+                TimeZone timeZone = calendar.getTimeZone();
+                SimpleDateFormat sdf = new SimpleDateFormat("EEE MMM d h:mm a");
+                sdf.setTimeZone(timeZone);
+                Date date = new Date();
+                String dateAndTime = sdf.format(date);
+
+                // Append new message to date and time
+                // Send message
+                String dateAndTimeMessage = "Me\n" + dateAndTime + "\n" + newMessage;
+                messages.add(dateAndTimeMessage);
+                messagesAdapter.notifyDataSetChanged();
+
+                // Clear message text field after sending
+                EditText messageTextField = (EditText)findViewById(R.id.messageTextField);
+                messageTextField.setText("");
+            }
+        });
+
+        // Message text field
+        EditText messageTextField = (EditText)findViewById(R.id.messageTextField);
+        messageTextField.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                boolean handled = false;
+                newMessage = v.getText().toString();
+
+                return handled;
+            }
+        });
     }
 }
