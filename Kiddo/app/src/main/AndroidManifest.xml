@@ -51,6 +51,8 @@
         <activity android:name=".EventActivity" />
         <activity android:name=".GroupMessageActivity"
             android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".ParentInfo" />
+        <activity android:name=".ChildInfoActivity"></activity>
     </application>
 
 </manifest>
