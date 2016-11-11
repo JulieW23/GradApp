@@ -3,19 +3,30 @@ package com.team_05.kiddo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TabHost;
+import android.widget.TextView;
 
-import java.lang.reflect.Array;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
-import java.util.List;
+import java.util.Date;
+import java.util.Locale;
+import java.util.TimeZone;
 
 public class TabActivity extends AppCompatActivity {
+
+    String newAnnouncement;
+
+    public static ArrayList<String> announcements = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +61,7 @@ public class TabActivity extends AppCompatActivity {
         spec5.setContent(R.id.enrolmentRequests);
         tabHost.addTab(spec5);
 
+
         // Settings button®
         ImageButton settingsImageButton = (ImageButton)(findViewById(R.id.settingsImageButton));
         settingsImageButton.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +72,7 @@ public class TabActivity extends AppCompatActivity {
             }
         });
 
+
         // Back button
         ImageButton backImageButton = (ImageButton)findViewById(R.id.backImageButton);
         backImageButton.setOnClickListener(new View.OnClickListener() {
@@ -69,24 +82,52 @@ public class TabActivity extends AppCompatActivity {
             }
         });
 
+
         // Create announcements ListView
-        ListView announcementsListView = (ListView)findViewById(R.id.announcementsListView);
-        ArrayList<String> announcements = new ArrayList<String>();
-        announcements.add("Nov 12\nDon't forget we have a picnic today!");
-        announcements.add("Nov 13\nThere is no school tomorrow.");
-        announcements.add("Nov 14\nI am sick today.");
-        announcements.add("Nov 15\nDon't forget we have a picnic today!");
-        announcements.add("Nov 16\nThere is no school tomorrow.");
-        announcements.add("Nov 17\nI am sick today.");
-        announcements.add("Nov 18\nDon't forget we have a picnic today!");
-        announcements.add("Nov 19\nThere is no school tomorrow.");
-        announcements.add("Nov 20\nI am sick today.");
-        announcements.add("Today\nThis is the latest announcement.");
+        final ListView announcementsListView = (ListView)findViewById(R.id.announcementsListView);
 
-
-        ArrayAdapter<String> announcementsAdapter;
+        final ArrayAdapter<String> announcementsAdapter;
         announcementsAdapter = new ArrayAdapter<String>(TabActivity.this, android.R.layout.simple_list_item_1, announcements);
         announcementsListView.setAdapter(announcementsAdapter);
+
+        // Send button
+        ImageButton sendImageButton = (ImageButton)findViewById(R.id.sendImageButton);
+        sendImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                // Set date and time
+                Calendar calendar = Calendar.getInstance();
+                TimeZone timeZone = calendar.getTimeZone();
+                SimpleDateFormat sdf = new SimpleDateFormat("EEE MMM d h:mm a");
+                sdf.setTimeZone(timeZone);
+                Date date = new Date();
+                String dateAndTime = sdf.format(date);
+
+                // Append new announcement to date and time
+                // Send announcement
+                String dateAndTimeAnnouncement = dateAndTime + "\n" + newAnnouncement;
+                announcements.add(dateAndTimeAnnouncement);
+                announcementsAdapter.notifyDataSetChanged();
+
+                // Clear announcements text field after sending
+                EditText announcementsEditText = (EditText)findViewById(R.id.announcementsTextField);
+                announcementsEditText.setText("");
+            }
+        });
+
+        // Announcements text field
+        EditText announcementsEditText = (EditText)findViewById(R.id.announcementsTextField);
+        announcementsEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                boolean handled = false;
+                newAnnouncement = v.getText().toString();
+
+                return handled;
+            }
+        });
+
 
         // Create students ListView
         ListView studentsListView = (ListView)findViewById(R.id.studentsListView);
@@ -117,6 +158,7 @@ public class TabActivity extends AppCompatActivity {
             }
         });
 
+
         // Create group message ListView
         ListView groupMessageListView = (ListView)findViewById(R.id.groupMessageListView);
         ArrayList<String> groupMessages = new ArrayList<String>();
@@ -137,5 +179,19 @@ public class TabActivity extends AppCompatActivity {
         ArrayAdapter<String> groupMessageAdapter;
         groupMessageAdapter = new ArrayAdapter<String>(TabActivity.this, android.R.layout.select_dialog_multichoice, groupMessages);
         groupMessageListView.setAdapter(groupMessageAdapter);
+
+
+        // Create calendar ListView
+        ListView calendarListView = (ListView)findViewById(R.id.calendarListView);
+        ArrayList<String> events = new ArrayList<String>();
+        events.add("Nov 12\nPicnic");
+        events.add("Nov 12\nPicnic");
+        events.add("Nov 12\nPicnic");
+
+        ArrayAdapter<String> calendarAdapter;
+        calendarAdapter = new ArrayAdapter<String>(TabActivity.this, android.R.layout.simple_expandable_list_item_1, events);
+        calendarListView.setAdapter(calendarAdapter);
     }
+
+
 }

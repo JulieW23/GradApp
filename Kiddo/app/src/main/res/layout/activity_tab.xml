@@ -13,7 +13,7 @@
     tools:context="com.team_05.kiddo.TabActivity">
 
     <TextView
-        android:text="Pull data (class name)"
+        android:text="CSC301"
         android:layout_width="match_parent"
         android:layout_height="@dimen/headerHeight"
         android:id="@+id/classTextView"
@@ -23,7 +23,7 @@
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/headerFontSize"
         android:gravity="center"
-        android:fontFamily=""/>
+        android:fontFamily="@string/headerFont"/>
 
     <ImageButton
         android:layout_width="wrap_content"

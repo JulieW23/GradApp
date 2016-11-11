@@ -17,7 +17,12 @@
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="5dp"
         android:background="@color/colorAccent"
-        android:tint="@color/colorPrimary"
-        />
+        android:tint="@color/colorPrimary" />
+
+    <ListView
+        android:id="@+id/calendarListView"
+        android:layout_width="match_parent"
+        android:layout_height="415dp"
+        android:background="@color/colorAccent"></ListView>
 
 </RelativeLayout>
