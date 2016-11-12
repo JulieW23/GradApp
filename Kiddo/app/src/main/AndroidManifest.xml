@@ -49,8 +49,10 @@
             android:name=".MessageActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity android:name=".EventActivity" />
-        <activity android:name=".GroupMessageActivity"
-            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".GroupMessageActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".EnrolmentRequestActivity"></activity>
     </application>
 
 </manifest>

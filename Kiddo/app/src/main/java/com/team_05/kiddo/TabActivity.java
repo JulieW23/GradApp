@@ -30,6 +30,9 @@ public class TabActivity extends AppCompatActivity {
     String newAnnouncement;
 
     public static ArrayList<String> announcements = new ArrayList<String>();
+    public static ArrayList<String> enrolmentRequests = new ArrayList<String>();
+    public static ArrayList<String> students = new ArrayList<String>();
+    public static ArrayList<String> events = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,7 +137,6 @@ public class TabActivity extends AppCompatActivity {
 
         // Create students ListView
         ListView studentsListView = (ListView)findViewById(R.id.studentsListView);
-        ArrayList<String> students = new ArrayList<String>();
         students.add("Parent: Jimmy Sung\nChild: Tony Sung");
         students.add("Parent: Mike Lang\nChild: Laura Lang");
         students.add("Parent: John Smith\nChild Edward Smith");
@@ -164,23 +166,9 @@ public class TabActivity extends AppCompatActivity {
 
         // Create group message ListView
         final ListView groupMessageListView = (ListView)findViewById(R.id.groupMessageListView);
-        final ArrayList<String> groupMessages = new ArrayList<String>();
-        groupMessages.add("Parent: Jimmy Sung\nChild: Tony Sung");
-        groupMessages.add("Parent: Mike Lang\nChild: Laura Lang");
-        groupMessages.add("Parent: John Smith\nChild Edward Smith");
-        groupMessages.add("Parent: Alfred Moor\nChild: Will Moor");
-        groupMessages.add("Parent: Robert Wrench\nChild: Ted Wrench");
-        groupMessages.add("Parent: John Yu\nChild: Carrie Yu");
-        groupMessages.add("Parent: Lonnie Putz\nChild: Felcia Putz");
-        groupMessages.add("Parent: Gerald Ervin\nChild: Naomi Ervin");
-        groupMessages.add("Parent: Karen Coleman\nChild: Joan Coleman");
-        groupMessages.add("Parent: Carolyn Harvey\nChild: Marian Harvey");
-        groupMessages.add("Parent: Samuel Swain\nChild: Keith Swain");
-        groupMessages.add("Parent: Robert Acosta\nChild: Susan Acosta");
-        Collections.sort(groupMessages);
 
         ArrayAdapter<String> groupMessageAdapter;
-        groupMessageAdapter = new ArrayAdapter<String>(TabActivity.this, android.R.layout.simple_list_item_checked, groupMessages);
+        groupMessageAdapter = new ArrayAdapter<String>(TabActivity.this, android.R.layout.simple_list_item_checked, students);
         groupMessageListView.setAdapter(groupMessageAdapter);
         groupMessageListView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
 
@@ -199,14 +187,28 @@ public class TabActivity extends AppCompatActivity {
 
         // Create calendar ListView
         ListView calendarListView = (ListView)findViewById(R.id.calendarListView);
-        ArrayList<String> events = new ArrayList<String>();
-        events.add("Nov 12\nPicnic");
-        events.add("Nov 12\nPicnic");
-        events.add("Nov 12\nPicnic");
 
         ArrayAdapter<String> calendarAdapter;
         calendarAdapter = new ArrayAdapter<String>(TabActivity.this, android.R.layout.simple_expandable_list_item_1, events);
         calendarListView.setAdapter(calendarAdapter);
+
+
+        // Create enrolment requests list view
+        ListView enrolmentRequestsListView = (ListView)findViewById(R.id.enrolmentRequestsListView);
+        enrolmentRequests.add("Parent: Reginald Rhodes\nChild: Daniel Rhodes");
+        enrolmentRequests.add("Parent: Eduardo Leal\nChild: Loretta Leal");
+
+        ArrayAdapter<String> enrolmentRequestsAdapter;
+        enrolmentRequestsAdapter = new ArrayAdapter<String>(TabActivity.this, android.R.layout.simple_list_item_1, enrolmentRequests);
+        enrolmentRequestsListView.setAdapter(enrolmentRequestsAdapter);
+
+        enrolmentRequestsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(TabActivity.this, EnrolmentRequestActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         // Check all button
@@ -215,11 +217,11 @@ public class TabActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (groupMessageListView.isItemChecked(0)) {
-                    for (int i = 0; i <= groupMessages.size(); i++) {
+                    for (int i = 0; i <= students.size(); i++) {
                         groupMessageListView.setItemChecked(i, false);
                     }
                 } else {
-                    for (int i = 0; i <= groupMessages.size(); i++) {
+                    for (int i = 0; i <= students.size(); i++) {
                         groupMessageListView.setItemChecked(i, true);
                     }
                 }

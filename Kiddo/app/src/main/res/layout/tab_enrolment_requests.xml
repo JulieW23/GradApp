@@ -4,4 +4,11 @@
     android:layout_height="match_parent"
     android:background="@color/colorAccent">
 
+    <ListView
+        android:id="@+id/enrolmentRequestsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

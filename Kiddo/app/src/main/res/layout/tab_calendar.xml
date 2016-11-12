@@ -4,25 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/colorAccent"
-    tools:context="com.team_05.kiddo.CalendarTab">
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_add_box_black_24dp"
-        android:id="@+id/sendImageButton"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="10dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="5dp"
-        android:background="@color/colorAccent"
-        android:tint="@color/colorPrimary" />
+    android:background="@color/colorAccent">
 
     <ListView
         android:id="@+id/calendarListView"
         android:layout_width="match_parent"
-        android:layout_height="415dp"
+        android:layout_height="375dp"
+        android:layout_alignParentTop="true"
         android:background="@color/colorAccent"></ListView>
+
+    <Button
+        android:text="Create Event"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:id="@+id/createMessageButton"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
