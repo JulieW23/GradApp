@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // Temp login
                 // Switch to whatever activity you want to test it on
-                Intent intent = new Intent(MainActivity.this, TeacherInitialLoginActivity.class);
+                Intent intent = new Intent(MainActivity.this, ChildrenActivity.class);
                 finish();
                 startActivity(intent);
             }

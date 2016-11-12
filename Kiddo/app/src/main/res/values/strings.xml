@@ -6,6 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="normalTextFont">sans-serif-smallcaps</string>
 
+    <!--Choose daycare/school drop menu-->
     <string name="school_prompt">Choose your daycare or school</string>
     <string-array name="school_arrays">
         <item>DayCare 1</item>
@@ -15,6 +16,7 @@
         <item>School 2</item>
     </string-array>
 
+    <!--Terms and Conditions-->
     <string name="terms_and_conditions">Please read these Terms and Conditions carefully before
         using the Kiddo android application.\n\n
 
@@ -45,4 +47,13 @@
 
         All provisions of the Terms which by their nature should surive termination shall survive
         termination. \n\n</string>
+
+    <!--Registration confirmation screen text-->
+    <string name="confirmation1">Here are your login details:</string>
+    <string name="confirmation_login">Email: johnsmith@email.com\nPassword: Abcd1234</string>
+    <string name="change_password">(You will have the option to change your password at any time
+        when using this application</string>
+    <string name="confirmation_info">Your information:\nFirst name: John\nLast name: Smith</string>
+    <string name="confirmation_done">Your registration is now complete. Click the "done" button
+        to login and begin using the app.</string>
 </resources>
