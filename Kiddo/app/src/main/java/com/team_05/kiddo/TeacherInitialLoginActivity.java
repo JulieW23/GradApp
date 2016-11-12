@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class TeacherInitialLoginActivity extends AppCompatActivity {
 
@@ -12,6 +13,7 @@ public class TeacherInitialLoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_initial_login);
+
 
         // Done button
         Button doneButton = (Button)(findViewById(R.id.doneButton));

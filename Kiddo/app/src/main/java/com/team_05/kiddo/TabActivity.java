@@ -5,9 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.WindowManager;
-import android.view.inputmethod.EditorInfo;
-import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -22,7 +19,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
-import java.util.Locale;
 import java.util.TimeZone;
 
 public class TabActivity extends AppCompatActivity {
@@ -192,6 +188,16 @@ public class TabActivity extends AppCompatActivity {
         calendarAdapter = new ArrayAdapter<String>(TabActivity.this, android.R.layout.simple_expandable_list_item_1, events);
         calendarListView.setAdapter(calendarAdapter);
 
+        calendarListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(TabActivity.this, EventDescriptionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        events.add("Sat Nov 12 12:00 PM\nPicnic");
+
 
         // Create enrolment requests list view
         ListView enrolmentRequestsListView = (ListView)findViewById(R.id.enrolmentRequestsListView);
@@ -235,6 +241,17 @@ public class TabActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(TabActivity.this, GroupMessageActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        // Create event button
+        Button createEvent = (Button)findViewById(R.id.createEventButton);
+        createEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TabActivity.this, CreateEventActivity.class);
                 startActivity(intent);
             }
         });
