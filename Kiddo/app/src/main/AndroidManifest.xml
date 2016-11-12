@@ -53,7 +53,8 @@
             android:name=".GroupMessageActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity android:name=".ParentInfo" />
-        <activity android:name=".TermsAndConditionsActivity"></activity>
+        <activity android:name=".TermsAndConditionsActivity" />
+        <activity android:name=".RegistrationConfirmationActivity"></activity>
     </application>
 
 </manifest>

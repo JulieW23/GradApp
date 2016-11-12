@@ -27,6 +27,17 @@ public class TermsAndConditionsActivity extends AppCompatActivity {
             }
         });
 
+        // Accept button
+        Button acceptButton = (Button)(findViewById(R.id.acceptButton));
+        acceptButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TermsAndConditionsActivity.this, RegistrationConfirmationActivity.class);
+                finish();
+                startActivity(intent);
+            }
+        });
+
         // Decline button
         Button declineButton = (Button)(findViewById(R.id.declineButton));
         declineButton.setOnClickListener(new View.OnClickListener() {
