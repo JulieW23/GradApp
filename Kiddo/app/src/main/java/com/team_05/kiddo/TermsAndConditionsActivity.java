@@ -7,12 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class ParentInfo extends AppCompatActivity {
+public class TermsAndConditionsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_parent_info);
+        setContentView(R.layout.activity_terms_and_conditions);
+
 
         // Back button
         ImageButton backImageButton = (ImageButton)(findViewById(R.id.backImageButton));
@@ -20,21 +21,22 @@ public class ParentInfo extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ParentInfo.this, MainActivity.class);
+                Intent intent = new Intent(TermsAndConditionsActivity.this, ParentInfo.class);
                 finish();
                 startActivity(intent);
             }
         });
 
-        // Next button
-        Button nextButton = (Button)(findViewById(R.id.nextButton));
-        nextButton.setOnClickListener(new View.OnClickListener() {
+        // Decline button
+        Button declineButton = (Button)(findViewById(R.id.declineButton));
+        declineButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ParentInfo.this, TermsAndConditionsActivity.class);
+                Intent intent = new Intent(TermsAndConditionsActivity.this, MainActivity.class);
                 finish();
                 startActivity(intent);
             }
         });
+
     }
 }
