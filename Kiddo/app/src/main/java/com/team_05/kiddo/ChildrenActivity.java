@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
@@ -19,7 +20,7 @@ public class ChildrenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_children);
 
-        // Settings button®
+        // Settings button
         ImageButton settingsImageButton = (ImageButton)(findViewById(R.id.settingsImageButton));
         settingsImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +48,17 @@ public class ChildrenActivity extends AppCompatActivity {
 //                startActivity(intent);
 //            }
 //        });
+
+        // Add child button
+        Button addChildButton = (Button)(findViewById(R.id.addChildButton));
+        addChildButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ChildrenActivity.this, AddChildActivity.class);
+                finish();
+                startActivity(intent);
+            }
+        });
 
     }
 }
