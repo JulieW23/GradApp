@@ -86,20 +86,6 @@
         android:layout_width="@dimen/textFieldWidth"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Pull data (last name)"
-        android:ems="10"
-        android:layout_above="@+id/oldPasswordTextField"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="75dp"
-        android:id="@+id/lastnameTextField"
-        android:textColor="@color/colorPrimaryDark"
-        android:fontFamily="@string/textFieldFont"
-        android:background="@android:color/transparent"/>
-
-    <EditText
-        android:layout_width="@dimen/textFieldWidth"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
         android:text="Pull data (first name)"
         android:ems="10"
         android:layout_above="@+id/lastnameTextField"
@@ -120,5 +106,34 @@
         android:id="@+id/doneButton"
         android:background="@color/colorGrey"
         android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:text="Log out"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/logoutButton"
+        android:background="@color/colorGrey"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/settingsTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="@dimen/textFieldWidth"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Pull data (last name)"
+        android:ems="10"
+        android:id="@+id/lastnameTextField"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@string/textFieldFont"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/oldPasswordTextField"
+        android:layout_alignLeft="@+id/oldPasswordTextField"
+        android:layout_alignStart="@+id/oldPasswordTextField"
+        android:layout_marginBottom="65dp" />
 
 </RelativeLayout>
