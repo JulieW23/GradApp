@@ -23,7 +23,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:id="@+id/settingsTextView"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorGrey"
         android:gravity="center"
         android:textColor="@color/colorAccent"
         android:fontFamily="@string/headerFont"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_arrow_back_black_24dp"
         android:id="@+id/backImageButton"
-        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTint="@color/colorGrey"
         android:layout_alignBottom="@+id/settingsTextView"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="5dp"
@@ -118,7 +118,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/marginFromBottom"
         android:id="@+id/doneButton"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorGrey"
         android:textColor="@color/colorAccent"/>
 
 </RelativeLayout>

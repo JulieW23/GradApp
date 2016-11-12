@@ -54,7 +54,8 @@
             android:windowSoftInputMode="adjustPan" />
         <activity android:name=".ParentInfo" />
         <activity android:name=".TermsAndConditionsActivity" />
-        <activity android:name=".RegistrationConfirmationActivity"></activity>
+        <activity android:name=".RegistrationConfirmationActivity" />
+        <activity android:name=".ChildrenActivity"></activity>
     </application>
 
 </manifest>
