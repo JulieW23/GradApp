@@ -49,10 +49,12 @@
             android:name=".MessageActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity android:name=".EventActivity" />
-        <activity android:name=".GroupMessageActivity"
-            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".GroupMessageActivity"
+            android:windowSoftInputMode="adjustPan" />
         <activity android:name=".ParentInfo" />
-        <activity android:name=".ChildInfoActivity"></activity>
+        <activity android:name=".TermsAndConditionsActivity" />
+        <activity android:name=".RegistrationConfirmationActivity"></activity>
     </application>
 
 </manifest>
