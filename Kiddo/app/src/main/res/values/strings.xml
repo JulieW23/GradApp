@@ -60,4 +60,6 @@
 
     <string name="add_child_prompt">Please enter the name of your child exactly as it is registered
         in your daycare/school records:</string>
+    <string name="title_activity_parent_tab1">ParentTab1Activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>
