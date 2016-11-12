@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
@@ -31,14 +33,38 @@ public class CourseEnrolmentActivity extends AppCompatActivity {
         });
 
         // Create classes ListView
-        ListView classEnrolListView = (ListView)findViewById(R.id.classEnrolListView);
+        final ListView classEnrolListView = (ListView)findViewById(R.id.classEnrolListView);
         ArrayList<String> classes = new ArrayList<String>();
         classes.add("Science");
         classes.add("English");
         Collections.sort(classes);
 
         ArrayAdapter<String> classEnrolAdapter;
-        classEnrolAdapter = new ArrayAdapter<String>(CourseEnrolmentActivity.this, android.R.layout.simple_list_item_1, classes);
+        classEnrolAdapter = new ArrayAdapter<String>(CourseEnrolmentActivity.this, android.R.layout.simple_list_item_checked, classes);
         classEnrolListView.setAdapter(classEnrolAdapter);
+        classEnrolListView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+
+        classEnrolListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (classEnrolListView.isItemChecked(position) == true) {
+                    classEnrolListView.setItemChecked(position, true);
+                } else {
+                    classEnrolListView.setItemChecked(position, false);
+                }
+
+            }
+        });
+
+        // Done button
+        Button doneButton = (Button)(findViewById(R.id.doneButton));
+        doneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CourseEnrolmentActivity.this, ChildrenActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
 }

@@ -41,10 +41,10 @@ public class ChildrenActivity extends AppCompatActivity {
         childrenAdapter = new ArrayAdapter<String>(ChildrenActivity.this, android.R.layout.simple_list_item_1, children);
         childrenListView.setAdapter(childrenAdapter);
 
-//        studentsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//        childrenListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //            @Override
 //            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Intent intent = new Intent(ChildrenActivity.this, MessageActivity.class);
+//                Intent intent = new Intent(ChildrenActivity.this, ParentTabActivity.class);
 //                startActivity(intent);
 //            }
 //        });

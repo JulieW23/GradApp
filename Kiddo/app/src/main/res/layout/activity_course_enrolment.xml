@@ -37,25 +37,16 @@
         android:layout_marginLeft="5dp"
         android:tint="@color/colorAccent" />
 
-    <ImageButton
-        android:layout_width="60dp"
-        android:layout_height="48dp"
-        app:srcCompat="@drawable/ic_playlist_add_check_black_24dp"
-        android:id="@+id/checkAllImageButton"
-        android:background="@color/colorPrimaryDark"
-        android:tint="@color/colorAccent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
-
     <Button
         android:text="Done"
-        android:layout_width="351dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/doneButton"
         android:background="@color/colorGreen"
         android:textColor="@color/colorAccent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentStart="true" />
 
     <ListView
