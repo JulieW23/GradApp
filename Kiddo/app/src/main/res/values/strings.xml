@@ -24,21 +24,22 @@
         Terms apply to all visitors, users, and others who access or use our service.\n\n
 
         By accessing or using Kiddo, you agree to be bound by these Terms. If you disagree with any
-        part of the terms then you may not access the service.\n\n
+        part of the terms then you may not access the service.\n\n\n
 
         Terms and Conditions of use:\n\n
 
         You agree to be responsible for maintaining the confidentiality of your password and other
-        account identifiers and all activities that occur under your account.\n\n
+        account identifiers and all activities that occur under your account.\n\n\n
 
         By registering to our application, you agree that:\n\n
 
         The full name, class names and teacher names of your child or children, and your own name
         will be provided to our service. We will not use any of this information other than to
-        serve the functionality of our application.\n\n
+        serve the functionality of our application. This information will not be provided to any
+        third parties outside of our application.\n\n
 
         The name(s) of a child and children that you input into this application are indeed the
-        name(s) of your own children that attend the daycare or school that you have stated.\n\n
+        name(s) of your own children that attend the daycare or school that you have stated.\n\n\n
 
         Termination:\n\n
 
@@ -56,4 +57,7 @@
     <string name="confirmation_info">Your information:\nFirst name: John\nLast name: Smith</string>
     <string name="confirmation_done">Your registration is now complete. Click the "done" button
         to login and begin using the app.</string>
+
+    <string name="add_child_prompt">Please enter the name of your child exactly as it is registered
+        in your daycare/school records:</string>
 </resources>
