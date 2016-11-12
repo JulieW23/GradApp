@@ -28,7 +28,18 @@ public class MainActivity extends AppCompatActivity {
 
                 // Temp login
                 // Switch to whatever activity you want to test it on
-                Intent intent = new Intent(MainActivity.this, TeacherInitialLoginActivity.class);
+                Intent intent = new Intent(MainActivity.this, ChildrenActivity.class);
+                finish();
+                startActivity(intent);
+            }
+        });
+
+        // Sign up button
+        Button signupButton = (Button)(findViewById(R.id.signupButton));
+        signupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ParentInfo.class);
                 finish();
                 startActivity(intent);
             }
