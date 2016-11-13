@@ -44,12 +44,7 @@
             android:id="@+id/adTeacherListView"
             android:layout_width="match_parent"
             android:layout_height="419dp"
-<<<<<<< HEAD
             android:layout_below="@+id/search"/>
-=======
-            android:layout_below="@+id/search">
-        </ListView>
->>>>>>> upstream/master
 
        <Button
         android:text="Back to Main Menu"
