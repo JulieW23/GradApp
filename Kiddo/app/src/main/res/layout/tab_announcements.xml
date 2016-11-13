@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent">
+    android:background="@color/colorAccent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -45,17 +47,12 @@
         android:layout_marginEnd="13dp"
         android:layout_alignBottom="@+id/cameraImageButton" />
 
-    <TextView
-        android:text="Announcements"
+    <ListView
+        android:id="@+id/announcementsListView"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/headerHeight"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/announcementsTextView"
-        android:textColor="@color/colorPrimaryDark"
-        android:background="@color/colorSubheader"
-        android:textSize="@dimen/headerFontSize"
-        android:textAlignment="center"
-        android:gravity="center"/>
+        android:layout_height="400dp"
+        android:background="@color/colorAccent"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"></ListView>
 
 </RelativeLayout>

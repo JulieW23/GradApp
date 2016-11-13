@@ -7,12 +7,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class SettingsActivity extends AppCompatActivity {
+public class AddChildActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        setContentView(R.layout.activity_add_child);
 
         // Back button
         ImageButton backImageButton = (ImageButton)(findViewById(R.id.backImageButton));
@@ -20,31 +20,21 @@ public class SettingsActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                finish();
-            }
-        });
-
-        // Done button
-        Button doneButton = (Button)findViewById(R.id.doneButton);
-        doneButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-        // Log out button
-        Button logoutButton = (Button)findViewById(R.id.logoutButton);
-        logoutButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
+                Intent intent = new Intent(AddChildActivity.this, ChildrenActivity.class);
                 finish();
                 startActivity(intent);
             }
         });
 
+        // Go to course enrolment button
+        Button courseEnrolButton = (Button)(findViewById(R.id.courseEnrolButton));
+        courseEnrolButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddChildActivity.this, CourseEnrolmentActivity.class);
+                finish();
+                startActivity(intent);
+            }
+        });
     }
-
-
 }

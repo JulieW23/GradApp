@@ -7,12 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class SettingsActivity extends AppCompatActivity {
+public class TermsAndConditionsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        setContentView(R.layout.activity_terms_and_conditions);
+
 
         // Back button
         ImageButton backImageButton = (ImageButton)(findViewById(R.id.backImageButton));
@@ -20,31 +21,33 @@ public class SettingsActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(TermsAndConditionsActivity.this, ParentInfo.class);
                 finish();
+                startActivity(intent);
             }
         });
 
-        // Done button
-        Button doneButton = (Button)findViewById(R.id.doneButton);
-        doneButton.setOnClickListener(new View.OnClickListener() {
+        // Accept button
+        Button acceptButton = (Button)(findViewById(R.id.acceptButton));
+        acceptButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(TermsAndConditionsActivity.this, RegistrationConfirmationActivity.class);
                 finish();
+                startActivity(intent);
             }
         });
 
-        // Log out button
-        Button logoutButton = (Button)findViewById(R.id.logoutButton);
-        logoutButton.setOnClickListener(new View.OnClickListener() {
+        // Decline button
+        Button declineButton = (Button)(findViewById(R.id.declineButton));
+        declineButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
+                Intent intent = new Intent(TermsAndConditionsActivity.this, MainActivity.class);
                 finish();
                 startActivity(intent);
             }
         });
 
     }
-
-
 }

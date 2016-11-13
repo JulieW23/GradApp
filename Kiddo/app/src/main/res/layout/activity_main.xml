@@ -58,8 +58,21 @@
         android:id="@+id/loginButton"
         android:background="@color/colorPrimary"
         android:textColor="@color/colorAccent"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/marginFromBottom" />
+        android:layout_below="@+id/passwordTextField"
+        android:layout_alignLeft="@+id/passwordTextField"
+        android:layout_alignStart="@+id/passwordTextField"
+        android:layout_marginTop="75dp" />
+
+    <Button
+        android:text="Parent Sign Up"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupButton"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/loginButton"
+        android:layout_alignLeft="@+id/loginButton"
+        android:layout_alignStart="@+id/loginButton" />
 
 </RelativeLayout>

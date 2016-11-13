@@ -24,7 +24,8 @@
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/headerFontSize"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:fontFamily="@string/headerFont"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -37,5 +38,11 @@
         android:layout_alignParentEnd="true"
         android:layout_marginRight="5dp"
         android:tint="@color/colorAccent" />
+
+    <ListView
+        android:id="@+id/classesListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/classesTextView"></ListView>
 
 </RelativeLayout>
