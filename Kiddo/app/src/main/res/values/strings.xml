@@ -79,4 +79,5 @@
         <item>October 2016</item>
         <item>November 2016</item>
     </string-array>
+    <string name="title_activity_admin_manage_classes">AdminManageClasses</string>
 </resources>

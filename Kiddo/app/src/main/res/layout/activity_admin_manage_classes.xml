@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_admin_teacher_invite_confirm"
+    android:id="@+id/activity_admin_manage_classes"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.team_05.kiddo.AdminTeacherInviteConfirm">
+    tools:context="com.team_05.kiddo.AdminManageClasses">
 
     <TextView
-        android:text="Teacher Deleted"
+        android:text="Classes"
         android:layout_width="match_parent"
         android:layout_height="@dimen/headerHeight"
         android:id="@+id/adTeachersTextView"
@@ -25,25 +25,45 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/search"
+        android:layout_below="@+id/adTeachersTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll"
+        android:layout_below="@+id/search"> -->
+
+    <ListView
+        android:id="@+id/adTeacherListView"
+        android:layout_width="match_parent"
+        android:layout_height="419dp"
+        android:layout_below="@+id/search"/>
+
     <Button
-        android:text="Teachers"
+        android:text="Back to Main Menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/mainMenuButton"
         android:background="@color/colorPrimary"
         android:textColor="@color/colorWhite"
 
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Main Menu"
+        android:text="Add Class"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/addTeacherButton"
         android:background="@color/colorPrimary"
         android:textColor="@color/colorWhite"
 
@@ -52,19 +72,5 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="The teacher account associated with Jenny Abrams has been successfully deleted."
-        android:ems="10"
-        android:layout_marginTop="87dp"
-        android:id="@+id/editText"
-        android:textSize="18sp"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:layout_below="@+id/adTeachersTextView"
-        android:layout_centerHorizontal="true" />
-
 
 </RelativeLayout>
