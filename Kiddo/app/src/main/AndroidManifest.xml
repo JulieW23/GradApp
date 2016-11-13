@@ -60,8 +60,14 @@
         <activity android:name=".EventDescriptionActivity" />
         <activity android:name=".AddChildActivity" />
         <activity android:name=".CourseEnrolmentActivity" />
+<<<<<<< HEAD
+        <activity android:name=".AdminAddTeacher" />
+        <activity android:name=".AdminTeacherInvite" />
+        <activity android:name=".AdminTeacherInviteConfirm"></activity>
+=======
         <activity android:name=".ParentTabActivity" />
         <activity android:name=".ParentClassTabActivity"></activity>
+>>>>>>> upstream/master
     </application>
 
 </manifest>
