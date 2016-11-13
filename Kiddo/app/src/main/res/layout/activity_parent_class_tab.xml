@@ -81,11 +81,38 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
+                    <Button
+                        android:text="view announcements for selected month"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/aViewButton"
+                        android:background="@color/colorGreen"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="13dp"
+                        android:layout_below="@+id/spinner2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
                     <ListView
                         android:layout_width="match_parent"
-                        android:layout_height="350dp"
-                        android:id="@+id/pClassesListView" />
+                        android:layout_height="match_parent"
+                        android:id="@+id/pAnnouncementsListView"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/aViewButton"
+                        android:layout_marginTop="10dp"/>
 
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner2"
+                        android:entries="@array/month_arrays"
+                        android:prompt="@string/month_prompt"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="11dp" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -94,14 +121,38 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:text="testing1"
-                        android:layout_width="340dp"
+                    <Button
+                        android:text="view updates for selected month"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/uViewButton"
+                        android:background="@color/colorGreen"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="13dp"
+                        android:layout_below="@+id/spinner3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/pUpdatesListView"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/uViewButton"
+                        android:layout_marginTop="10dp"/>
+
+                    <Spinner
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/testingTextView1"
-                        android:textSize="16dp"
+                        android:id="@+id/spinner3"
+                        android:entries="@array/month_arrays"
+                        android:prompt="@string/month_prompt"
                         android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true" />
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="11dp" />
                 </RelativeLayout>
 
                 <RelativeLayout

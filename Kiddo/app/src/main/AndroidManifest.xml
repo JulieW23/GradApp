@@ -61,7 +61,8 @@
         <activity android:name=".AddChildActivity" />
         <activity android:name=".CourseEnrolmentActivity" />
         <activity android:name=".ParentTabActivity" />
-        <activity android:name=".ParentClassTabActivity"></activity>
+        <activity android:name=".ParentClassTabActivity" />
+        <activity android:name=".AnnouncementDetailsActivity"></activity>
     </application>
 
 </manifest>

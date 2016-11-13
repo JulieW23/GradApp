@@ -4,8 +4,14 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TabHost;
+
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class ParentClassTabActivity extends AppCompatActivity {
 
@@ -53,5 +59,43 @@ public class ParentClassTabActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Create parent announcements ListView
+        ListView pAnnouncementsListView = (ListView)findViewById(R.id.pAnnouncementsListView);
+        ArrayList<String> announcements = new ArrayList<String>();
+        announcements.add("Sat Nov 12 2:13 PM\nAnnouncement!");
+        announcements.add("Sun Nov 13 10:59 AM\nAnnouncement again!");
+        Collections.sort(announcements);
+
+        ArrayAdapter<String> pAnnouncementsAdapter;
+        pAnnouncementsAdapter = new ArrayAdapter<String>(ParentClassTabActivity.this, android.R.layout.simple_list_item_1, announcements);
+        pAnnouncementsListView.setAdapter(pAnnouncementsAdapter);
+
+        pAnnouncementsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(ParentClassTabActivity.this, AnnouncementDetailsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Create parent updates ListView
+        ListView pUpdatesListView = (ListView)findViewById(R.id.pUpdatesListView);
+        ArrayList<String> updates = new ArrayList<String>();
+        updates.add("Sat Nov 12 2:13 PM\nUpdate!");
+        updates.add("Sun Nov 13 10:59 AM\nUpdate again!");
+        Collections.sort(updates);
+
+        ArrayAdapter<String> pUpdatesAdapter;
+        pUpdatesAdapter = new ArrayAdapter<String>(ParentClassTabActivity.this, android.R.layout.simple_list_item_1, updates);
+        pUpdatesListView.setAdapter(pUpdatesAdapter);
+
+//        pUpdatesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                Intent intent = new Intent(ParentClassTabActivity.this, AnnouncementDetailsActivity.class);
+//                startActivity(intent);
+//            }});
+//
     }
 }
