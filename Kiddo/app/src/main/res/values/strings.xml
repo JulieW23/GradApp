@@ -62,9 +62,7 @@
         in your daycare/school records:</string>
     <string name="title_activity_parent_tab1">ParentTab1Activity</string>
     <string name="section_format">Hello World from section: %1$d</string>
-<<<<<<< HEAD
     <string name="title_activity_admin_teacher_details">AdminTeacherDetails</string>
-=======
 
     <!--Choose month drop menu-->
     <string name="month_prompt">Choose month</string>
@@ -81,5 +79,4 @@
         <item>October 2016</item>
         <item>November 2016</item>
     </string-array>
->>>>>>> upstream/master
 </resources>

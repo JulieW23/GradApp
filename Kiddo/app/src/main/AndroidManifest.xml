@@ -65,15 +65,12 @@
         <activity android:name=".AdminTeacherInviteConfirm" />
         <activity android:name=".ParentTabActivity" />
         <activity android:name=".ParentClassTabActivity" />
-<<<<<<< HEAD
         <activity
             android:name=".AdminTeacherDetails"
             android:label="@string/title_activity_admin_teacher_details"
             android:theme="@style/AppTheme" />
         <activity android:name=".AdminViewTeacher"></activity>
-=======
         <activity android:name=".AnnouncementDetailsActivity"></activity>
->>>>>>> upstream/master
     </application>
 
 </manifest>
