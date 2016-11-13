@@ -62,4 +62,22 @@
         in your daycare/school records:</string>
     <string name="title_activity_parent_tab1">ParentTab1Activity</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_admin_teacher_details">AdminTeacherDetails</string>
+
+    <!--Choose month drop menu-->
+    <string name="month_prompt">Choose month</string>
+    <string-array name="month_arrays">
+        <item>January 2016</item>
+        <item>February 2016</item>
+        <item>March 2016</item>
+        <item>April 2016</item>
+        <item>May 2016</item>
+        <item>June 2016</item>
+        <item>July 2016</item>
+        <item>August 2016</item>
+        <item>September 2016</item>
+        <item>October 2016</item>
+        <item>November 2016</item>
+    </string-array>
+    <string name="title_activity_admin_manage_classes">AdminManageClasses</string>
 </resources>
