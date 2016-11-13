@@ -104,14 +104,10 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:text="testing"
-                        android:layout_width="340dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/addChildTextView2"
-                        android:textSize="16dp"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true" />
+                    <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:id="@+id/pEventsListView" />
 
                 </RelativeLayout>
 
