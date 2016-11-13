@@ -65,7 +65,8 @@
         <activity android:name=".AdminTeacherInvite" />
         <activity android:name=".AdminTeacherInviteConfirm"></activity>
         <activity android:name=".ParentTabActivity" />
-        <activity android:name=".ParentClassTabActivity"></activity>
+        <activity android:name=".ParentClassTabActivity" />
+        <activity android:name=".AnnouncementDetailsActivity"></activity>
     </application>
 
 </manifest>
