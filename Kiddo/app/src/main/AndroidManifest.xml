@@ -57,9 +57,12 @@
         <activity android:name=".TermsAndConditionsActivity" />
         <activity android:name=".RegistrationConfirmationActivity" />
         <activity android:name=".ChildrenActivity" />
-        <activity android:name=".EventDescriptionActivity"></activity>
+        <activity android:name=".EventDescriptionActivity" />
         <activity android:name=".AddChildActivity" />
-        <activity android:name=".CourseEnrolmentActivity"></activity>
+        <activity android:name=".CourseEnrolmentActivity" />
+        <activity android:name=".AdminAddTeacher" />
+        <activity android:name=".AdminTeacherInvite" />
+        <activity android:name=".AdminTeacherInviteConfirm"></activity>
     </application>
 
 </manifest>
