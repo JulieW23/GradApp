@@ -67,6 +67,15 @@
         <activity android:name=".ParentClassTabActivity" />
         <activity android:name=".AnnouncementDetailsActivity" />
         <activity android:name=".EventDetailsActivity"></activity>
+        <activity
+            android:name=".AdminTeacherDetails"
+            android:label="@string/title_activity_admin_teacher_details"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".AdminViewTeacher" />
+        <activity android:name=".AnnouncementDetailsActivity" />
+        <activity android:name=".AdminTeacherDelete" />
+        <activity android:name=".AdminManageClasses" />
+        <activity android:name=".AdminAddClass"></activity>
     </application>
 
 </manifest>
