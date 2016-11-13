@@ -57,9 +57,11 @@
         <activity android:name=".TermsAndConditionsActivity" />
         <activity android:name=".RegistrationConfirmationActivity" />
         <activity android:name=".ChildrenActivity" />
-        <activity android:name=".EventDescriptionActivity"></activity>
+        <activity android:name=".EventDescriptionActivity" />
         <activity android:name=".AddChildActivity" />
-        <activity android:name=".CourseEnrolmentActivity"></activity>
+        <activity android:name=".CourseEnrolmentActivity" />
+        <activity android:name=".ParentTabActivity" />
+        <activity android:name=".ParentClassTabActivity"></activity>
     </application>
 
 </manifest>
