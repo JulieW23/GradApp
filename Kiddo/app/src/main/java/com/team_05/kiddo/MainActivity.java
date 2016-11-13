@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 // Switch to whatever activity you want to test it on
                 Intent intent = new Intent(MainActivity.this, ChildrenActivity.class);
                 //Intent intent = new Intent(MainActivity.this, TeacherInitialLoginActivity.class);
+                //Intent intent = new Intent(MainActivity.this, AdminMainMenu.class);
                 finish();
                 startActivity(intent);
             }
