@@ -6,4 +6,6 @@
     <color name="colorTabHost">#FAFAFA</color>
     <color name="colorGreen">#3b985b</color>
     <color name="colorGrey">#898989</color>
+    <color name="colorRed">#CC3232</color>
+    <color name="colorWhite">#ffffff</color>
 </resources>
