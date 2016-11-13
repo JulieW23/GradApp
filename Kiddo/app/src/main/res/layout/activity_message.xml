@@ -22,7 +22,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:id="@+id/nameTextView"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorGrey"
         android:textSize="@dimen/headerFontSize"
         android:textColor="@color/colorAccent"
         android:textAlignment="center"
@@ -36,7 +36,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/backImageButton"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorGrey"
         android:tint="@color/colorAccent"
         android:layout_alignTop="@+id/nameTextView"
         android:layout_marginLeft="5dp"
@@ -52,7 +52,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="5dp"
         android:background="@color/colorAccent"
-        android:tint="@color/colorPrimary"/>
+        android:tint="@color/colorPrimaryDark"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -63,7 +63,7 @@
         android:layout_toStartOf="@+id/sendImageButton"
         android:id="@+id/cameraImageButton"
         android:background="@color/colorAccent"
-        android:tint="@color/colorPrimary"/>
+        android:tint="@color/colorPrimaryDark"/>
 
     <EditText
         android:layout_width="250dp"
