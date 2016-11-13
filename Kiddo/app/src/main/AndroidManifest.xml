@@ -60,12 +60,16 @@
         <activity android:name=".EventDescriptionActivity" />
         <activity android:name=".AddChildActivity" />
         <activity android:name=".CourseEnrolmentActivity" />
-
         <activity android:name=".AdminAddTeacher" />
         <activity android:name=".AdminTeacherInvite" />
-        <activity android:name=".AdminTeacherInviteConfirm"></activity>
+        <activity android:name=".AdminTeacherInviteConfirm" />
         <activity android:name=".ParentTabActivity" />
-        <activity android:name=".ParentClassTabActivity"></activity>
+        <activity android:name=".ParentClassTabActivity" />
+        <activity
+            android:name=".AdminTeacherDetails"
+            android:label="@string/title_activity_admin_teacher_details"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".AdminViewTeacher"></activity>
     </application>
 
 </manifest>
