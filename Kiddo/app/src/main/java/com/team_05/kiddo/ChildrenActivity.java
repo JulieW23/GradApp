@@ -41,13 +41,13 @@ public class ChildrenActivity extends AppCompatActivity {
         childrenAdapter = new ArrayAdapter<String>(ChildrenActivity.this, android.R.layout.simple_list_item_1, children);
         childrenListView.setAdapter(childrenAdapter);
 
-//        childrenListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Intent intent = new Intent(ChildrenActivity.this, ParentTabActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        childrenListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(ChildrenActivity.this, ParentTabActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // Add child button
         Button addChildButton = (Button)(findViewById(R.id.addChildButton));
