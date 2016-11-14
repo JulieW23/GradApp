@@ -16,7 +16,7 @@
        <div id="content">
               
           <div id="logindiv">
-           <p id="loginmessage">FitXFit  Login</p>
+           <p id="loginmessage"> Login</p>
            <div id="topline"> </div>
            <form> 
                  <table border=0 style="color:#595959; margin: 1.6em auto; font: 1em Arial, Helvetica, sans-serif;">
@@ -26,12 +26,13 @@
                  </table>
            </form>
            
+                     
            <a href="" id="loginlabel">Forgotten Your Username or Password?</a>
            
            <div id="bottomline"> </div>
-           <p style=" color:#456ab4; margin-left: 2.5em; margin-top: 1.8em; font: .8em Arial, Helvetica, sans-serif;">Don't have an account yet?<a href="SignUp.jsp" id="signuplink"> Click Here To Sign Up For FitXFit</a></p> 
-          </div>
+           </div>
            
+                      
        </div> <!-- End of content-->
        
         
