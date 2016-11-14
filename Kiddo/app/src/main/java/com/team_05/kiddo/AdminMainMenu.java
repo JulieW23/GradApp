@@ -27,7 +27,7 @@ public class AdminMainMenu extends AppCompatActivity {
 
 
         Button manageTeachers = (Button)(findViewById(R.id.manageTeachersButton));
-        manageClasses.setOnClickListener(new View.OnClickListener() {
+        manageTeachers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
