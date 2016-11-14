@@ -1,18 +1,20 @@
 # YOUR PRODUCT/TEAM NAME
 
-## Iteration XX - Review & Retrospect
+## Iteration 02 - Review & Retrospect
 
- * When: FILL IN THE DATE WHEN YOU ACTUALLY HAD YOUR REVIEW MEETING
- * Where: PHYSICAL LOCATION AND/OR ONLINE
+ * When: November 14th, 2016, 2:00pm
+ * Where: BA2270
 
 ## Process - Reflection
 
-(Optional) Short introduction
-
 Decisions turned out well:
 
- * List a few (2-5) decisions, from most to least important.
- * Support your argument (that a decisions was successful) by referring/linking to process artifact(s).
+ * Finalizing the user enrollment process (dividing responsibilities between administrator, parent, and teacher users)
+   * Choosing to include an administrator role with specific, limited responsibilities
+     * this was something that we had a lot of difficulty figuring out because so many possible arrangements exist with different benefits and drawbacks
+     * we had a number of factors to consider, including privacy, usability, time spent by users
+     * see user workflow diagram: https://www.gliffy.com/go/publish/11406769
+ * Adding an administrator web interface
 
 Decisions did not turn out as well as you hoped:
 
@@ -35,9 +37,8 @@ Goals/tasks that were met/completed:
 
 Goals/tasks that were planned but not met/completed:
 
- * List goals/tasks, from most to least important.
- * For each goal/task, explain why it was not met/completed.      
-   e.g. Did you change your mind, or did you just not get to it yet?
+ * 
+ * Displaying events as a calendar
 
 (Optional) Goals/tasks that were not originally planned, but ended up being not met/completed:
 
