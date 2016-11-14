@@ -1,4 +1,5 @@
-# YOUR PRODUCT/TEAM NAME
+# Product: Kiddo
+# Team: Team_5
 
 ## Iteration 02 - Review & Retrospect
 
@@ -9,22 +10,25 @@
 
 Decisions turned out well:
 
- * Finalizing the user enrollment process (dividing responsibilities between administrator, parent, and teacher users)
-   * Choosing to include an administrator role with specific, limited responsibilities
-     * this was something that we had a lot of difficulty figuring out because so many possible arrangements exist with different benefits and drawbacks
-     * we had a number of factors to consider, including privacy, usability, time spent by users
-     * see user workflow diagram: https://www.gliffy.com/go/publish/11406769
+ * Deciding on the user enrollment process (dividing responsibilities between administrator, parent, and teacher users)
+ * Also, choosing to include an administrator role with specific, limited responsibilities
+   * this was something that we had a lot of difficulty figuring out because so many possible arrangements exist with different benefits and drawbacks
+   * we had a number of factors to consider, including privacy, usability, time spent by users
+   * see user workflow diagram: https://www.gliffy.com/go/publish/11406769
  * Adding an administrator web interface
+   * this is something that we considered in our product design in iteration 01, in order to simplify the administrator's job, but initially decided not to do because we thought it would be too much to tackle in a single iteration
+   * we ended up having enough team resources to re-add this to our list of tasks
+ * Division of goals/tasks
+   * the fact that we were able to produce a working prototype suggests that we divided the work into tasks well, and that we divided those tasks well between team members
+   * see to-do list: https://docs.google.com/spreadsheets/d/15uk3JXhZX96OlqHsnvBWTcIhikaVs2HP3gFrKqHTBb0/pubhtml
 
 Decisions did not turn out as well as you hoped:
 
- * Once again, list a few (2 - 5) decisions, from most to least important.
- * As before, support your arguments by referring/linking to process artifacts.
+ * *none*
 
 We are planning to make the following changes to our process:
 
- * List the changes you are planning to make, if any, from most to least important.
- * For each change, explain why you are making it by referring to a decision that didn't work well.
+ * *none*
 
 
 ## Product - Review
