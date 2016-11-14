@@ -84,4 +84,4 @@ Artifacts:
  * Wireframe diagram for teacher user: https://www.gliffy.com/go/publish/11404469
  * Wireframe diagram for parent user: https://www.gliffy.com/go/publish/11409309
  * Wireframe diagram for administrator user: https://www.gliffy.com/go/share/sxaaegccvguge0dflxu6
- * Data model for database: [a relative link](kiddodbModel.pdf)
+ * Data model for database: [kiddodbModel.pdf](kiddodbModel.pdf)
