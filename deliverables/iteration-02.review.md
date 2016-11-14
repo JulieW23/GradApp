@@ -66,7 +66,7 @@ Goals/tasks that were planned but not met/completed:
 Going into the next iteration, our main insights are:
 
  * Implement as much functionality as possible
-   * Having this goal worked well in this iteration
+   * Having this goal worked well in this iteration: we ended up implementing almost all of the functionality we had planned, and adding more functionality than initially planned
  * Implement calendar functionality
    * This was attempted but unsuccessful so far
    * Examine more examples of app code that implements Android built-in calendar functionality, and model our app on this
