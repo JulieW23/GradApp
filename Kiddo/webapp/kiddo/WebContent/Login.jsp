@@ -34,10 +34,6 @@
            
        </div> <!-- End of content-->
        
-       
-       
-<div id="footer">
-  <jsp:include page="Footer.jsp"></jsp:include>
-</div>  
+        
 </body>
 </html>
