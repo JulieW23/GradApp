@@ -75,7 +75,10 @@
         <activity android:name=".AnnouncementDetailsActivity" />
         <activity android:name=".AdminTeacherDelete" />
         <activity android:name=".AdminManageClasses" />
-        <activity android:name=".AdminAddClass"></activity>
+        <activity android:name=".AdminAddClass" />
+        <activity android:name=".AdminViewClass" />
+        <activity android:name=".AdminClassList" />
+        <activity android:name=".AdminAddTeacherToClass"></activity>
     </application>
 
 </manifest>

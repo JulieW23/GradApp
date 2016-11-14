@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_admin_view_teacher"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_admin_add_teacher_to_class"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.team_05.kiddo.AdminViewTeacher">
+    tools:context="com.team_05.kiddo.AdminAddTeacherToClass">
 
     <TextView
         android:text="Jenny Abrams"
         android:layout_width="match_parent"
         android:layout_height="@dimen/headerHeight"
-        android:id="@+id/adTeachersTextView"
+        android:id="@+id/teacherNameTextView"
         android:background="@color/colorRed"
         android:fontFamily="@string/headerFont"
         android:textColor="@color/colorAccent"
@@ -41,15 +41,15 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Delete Teacher"
+        android:text="Add Teacher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/addTeacherButton"
         android:background="@color/colorPrimary"
         android:textColor="@color/colorWhite"
 
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -59,7 +59,7 @@
         android:layout_height="250dp"
         app:srcCompat="@drawable/teacher"
         android:id="@+id/imageView"
-        android:layout_below="@+id/adTeachersTextView"
+        android:layout_below="@+id/teacherNameTextView"
         android:layout_centerHorizontal="true" />
 
     <TextView
