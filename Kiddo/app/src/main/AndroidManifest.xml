@@ -72,9 +72,14 @@
             android:label="@string/title_activity_admin_teacher_details"
             android:theme="@style/AppTheme" />
         <activity android:name=".AdminViewTeacher" />
-        <activity android:name=".AnnouncementDetailsActivity" />
+        <activity android:name=".AdminMainMenu"/>
         <activity android:name=".AdminTeacherDelete" />
         <activity android:name=".AdminManageClasses" />
+        <activity android:name=".AdminManageTeachers"/>
+        <activity android:name=".AdminAddTeacher"/>
+        <activity android:name=".AdminAddTeacherToClass"/>
+        <activity android:name=".AdminTeacherInvite"/>
+        <activity android:name=".AdminTeacherInviteConfirm"/>
         <activity android:name=".AdminAddClass" />
         <activity android:name=".AdminViewClass" />
         <activity android:name=".AdminClassList" />

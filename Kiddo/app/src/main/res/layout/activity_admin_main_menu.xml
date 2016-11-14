@@ -29,26 +29,26 @@
         android:text="Manage Classes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button2"
+        android:id="@+id/manageClassesButton"
         android:background="@color/colorGreen"
         android:textColor="@color/colorWhite"
         android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button" />
+        android:layout_alignLeft="@+id/manageTeachersButton"
+        android:layout_alignStart="@+id/manageTeachersButton"
+        android:layout_alignRight="@+id/manageTeachersButton"
+        android:layout_alignEnd="@+id/manageTeachersButton" />
 
     <Button
         android:text="Manage Teachers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/manageTeachersButton"
         android:background="@color/colorPrimary"
         android:textColor="@color/colorWhite"
         android:layout_marginBottom="38dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:layout_above="@+id/button2"
+        android:layout_above="@+id/manageClassesButton"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
