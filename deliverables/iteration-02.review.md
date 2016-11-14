@@ -35,13 +35,27 @@ We are planning to make the following changes to our process:
 
 Goals/tasks that were met/completed:
 
+1. Create workflow
+  * User workflow diagram: https://www.gliffy.com/go/publish/11406769
+  * User workflow diagram (detailed): https://www.gliffy.com/go/publish/11386683
+2. Create wireframe
+ * Wireframe diagram for teacher user: https://www.gliffy.com/go/publish/11404469
+ * Wireframe diagram for parent user: https://www.gliffy.com/go/publish/11409309
+ * Wireframe diagram for administrator user: https://www.gliffy.com/go/share/sxaaegccvguge0dflxu6
+3. Create teacher interface
+4. Create parent interface
+5. Create administrator interface
+7. Create database
+ * Data model for database: [kiddodbModel.pdf](kiddodbModel.pdf)
+8. Create web interface for administrator users to create batches of teacher accounts/classes
+
  * List goals/tasks, from most to least important.
  * If a goal/task was not part of the original iteration plan, please mention it.
  * For each goal/task, refer to artifact(s) that show that it was met/completed.
 
 Goals/tasks that were planned but not met/completed:
 
- * 
+6. Create app class structure
  * Displaying events as a calendar
 
 (Optional) Goals/tasks that were not originally planned, but ended up being not met/completed:
