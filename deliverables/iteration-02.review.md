@@ -35,35 +35,40 @@ We are planning to make the following changes to our process:
 
 Goals/tasks that were met/completed:
 
-1. Create workflow
+* (1) Create workflow
   * User workflow diagram: https://www.gliffy.com/go/publish/11406769
   * User workflow diagram (detailed): https://www.gliffy.com/go/publish/11386683
-2. Create wireframe
+* (2) Create wireframe
   * Wireframe diagram for teacher user: https://www.gliffy.com/go/publish/11404469
   * Wireframe diagram for parent user: https://www.gliffy.com/go/publish/11409309
   * Wireframe diagram for administrator user: https://www.gliffy.com/go/share/sxaaegccvguge0dflxu6
-3. Create teacher interface
+* (3) Create teacher interface
   * [video](videoFile)
-4. Create parent interface
+* (4) Create parent interface
   * [video](videoFile)
-5. Create administrator interface
+* (5) Create administrator interface
   * [video](videoFile)
-7. Create database
+* (7) Create database
   * Data model for database: [kiddodbModel.pdf](kiddodbModel.pdf)
-8. Create web interface for administrator users to create batches of teacher accounts/classes
+* (8) Create web interface for administrator users to create batches of teacher accounts/classes
   * Web interface site: url
 
 Goals/tasks that were planned but not met/completed:
 
-3. Create teacher interface: display class events on a calendar
+* (3) Create teacher interface: display class events on a calendar
     * currently only displayed as list of events
-4. Create parent interface: display class events on a calendar
+* (4) Create parent interface: display class events on a calendar
     * currently only displayed as list of events
-6. Create app class structure: create database queries as part of methods
-7. Create database: connect database to front-end
+* (6) Create app class structure: create database queries as part of methods
+* (7) Create database: connect database to front-end
     * currently, database query results are mocked-up
 
 Going into the next iteration, our main insights are:
 
- * List the few (2-5) high-level concepts that should guide your work for the next few weeks.
- * These concepts should help you prioritize features and decide on where to focus your efforts.
+ * Implement calendar functionality
+   * This was attempted but unsuccessful so far
+   * Examine more examples of app code that implements Android built-in calendar functionality, and model our app on this
+ * Fully connect app back-end to front-end (incl. web interface)
+   * Replace mocked-up data with real functionality
+   * Populate database with fake data
+   * Developers of different app layers will collaborate to make the process easier
