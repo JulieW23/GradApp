@@ -28,15 +28,10 @@ public class ParentClassTabActivity extends AppCompatActivity {
         spec1.setIndicator("Announcements");
         tabHost.addTab(spec1);
 
-        TabHost.TabSpec spec2 = tabHost.newTabSpec("class_updates");
-        spec2.setContent(R.id.classUpdatesTab);
-        spec2.setIndicator("Class Updates");
+        TabHost.TabSpec spec2 = tabHost.newTabSpec("pmessages");
+        spec2.setContent(R.id.pMessagesTab);
+        spec2.setIndicator("Messages");
         tabHost.addTab(spec2);
-
-        TabHost.TabSpec spec3 = tabHost.newTabSpec("pmessages");
-        spec3.setContent(R.id.pMessagesTab);
-        spec3.setIndicator("Messages");
-        tabHost.addTab(spec3);
 
         // Settings button
         ImageButton settingsImageButton = (ImageButton)(findViewById(R.id.settingsImageButton));
@@ -79,23 +74,23 @@ public class ParentClassTabActivity extends AppCompatActivity {
             }
         });
 
-        // Create parent updates ListView
-        ListView pUpdatesListView = (ListView)findViewById(R.id.pUpdatesListView);
-        ArrayList<String> updates = new ArrayList<String>();
-        updates.add("Sat Nov 12 2:13 PM\nUpdate!");
-        updates.add("Sun Nov 13 10:59 AM\nUpdate again!");
-        Collections.sort(updates);
+        // Create parent messages ListView
+        ListView pMessagesListView = (ListView)findViewById(R.id.pMessagesListView);
+        ArrayList<String> messages = new ArrayList<String>();
+        messages.add("Teacher name 1");
+        messages.add("Teacher name 2");
+        Collections.sort(messages);
 
-        ArrayAdapter<String> pUpdatesAdapter;
-        pUpdatesAdapter = new ArrayAdapter<String>(ParentClassTabActivity.this, android.R.layout.simple_list_item_1, updates);
-        pUpdatesListView.setAdapter(pUpdatesAdapter);
+        ArrayAdapter<String> pMessagesAdapter;
+        pMessagesAdapter = new ArrayAdapter<String>(ParentClassTabActivity.this, android.R.layout.simple_list_item_1, messages);
+        pMessagesListView.setAdapter(pMessagesAdapter);
 
-//        pUpdatesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Intent intent = new Intent(ParentClassTabActivity.this, AnnouncementDetailsActivity.class);
-//                startActivity(intent);
-//            }});
-//
+        pMessagesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(ParentClassTabActivity.this, MessageActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
