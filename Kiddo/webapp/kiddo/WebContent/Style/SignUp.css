@@ -100,7 +100,10 @@ body> #content{
 }
 
 #signupbottomline{
-  margin: 17em 1.4em; 
+  margin: 17em 1.4em;
+  width: 90%; 
+    border-bottom: 1px solid #dedede;
+   
 }
 
 #loginmessage{
