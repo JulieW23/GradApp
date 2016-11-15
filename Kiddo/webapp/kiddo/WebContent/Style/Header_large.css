@@ -13,7 +13,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	z-index: 1;
-	height: 4.8em;
+	height: 5.6em;
 	background: #ffffff;
 }
 
@@ -27,12 +27,12 @@ html, body {
 
 #logo {
 	position: absolute;
-	background-image: url('../Images/logo.png');
-	width: 5em;
+	background-image: url('Images/logo.png');
+	width: 10em;
 	background-size: cover;
 	margin-top: .2em;
-	margin-left: 2em;
-	height: 4.4em;
+	margin-left: 0;
+	height: 3.8em;
 }
 
 #logo img {
@@ -41,8 +41,7 @@ html, body {
 
 #info_board {
 	position: relative;
-	/*background: #456ab4;*/
-	background: purple;
+	background: #456ab4;
 	margin-top: 0;
 	float: right;
 	width: 23em;
@@ -97,10 +96,8 @@ html, body {
 	width: 100%;
 	margin-left: 0;
 	margin-right: 0;
-	margin-top: .6em;
 	position: absolute;
-	/*background: #456ab4;*/
-	background: purple;	
+	background: #456ab4;
 	height: 1.25em;
 	border-bottom: 1px solid #888888;
 	border-top: 1px solid #888888;
