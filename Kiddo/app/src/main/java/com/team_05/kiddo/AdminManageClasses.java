@@ -52,13 +52,13 @@ public class AdminManageClasses extends AppCompatActivity {
         classes.add("Grade 2\nRoom 104");
 
 
-        ArrayAdapter<String> teachersAdapter;
-        teachersAdapter = new ArrayAdapter<String>(AdminManageClasses.this, android.R.layout.simple_list_item_1, classes);
-        classesListView.setAdapter(teachersAdapter);
+        ArrayAdapter<String> classesAdapter;
+        classesAdapter = new ArrayAdapter<String>(AdminManageClasses.this, android.R.layout.simple_list_item_1, classes);
+        classesListView.setAdapter(classesAdapter);
 
         classesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> classes, View view, int position, long id) {
                 Intent intent = new Intent(AdminManageClasses.this, AdminViewClass.class);
                 startActivity(intent);
             }

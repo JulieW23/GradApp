@@ -50,7 +50,6 @@ public class AdminManageTeachers extends AppCompatActivity {
         teachers.add("Tim Charles\nPending Invitation");
         teachers.add("Betty Edwards\nActive Account");
         teachers.add("Janet Ford\nPending Invitation");
-        Collections.sort(teachers);
 
         ArrayAdapter<String> teachersAdapter;
         teachersAdapter = new ArrayAdapter<String>(AdminManageTeachers.this, android.R.layout.simple_list_item_1, teachers);
@@ -58,7 +57,7 @@ public class AdminManageTeachers extends AppCompatActivity {
 
         teachersListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> teacher, View view, int position, long id) {
                 Intent intent = new Intent(AdminManageTeachers.this, AdminViewTeacher.class);
                 startActivity(intent);
             }
