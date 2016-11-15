@@ -14,7 +14,7 @@
         android:text="Invitation sent"
         android:layout_width="match_parent"
         android:layout_height="@dimen/headerHeight"
-        android:id="@+id/adTeachersTextView"
+        android:id="@+id/inviteTextView"
         android:background="@color/colorRed"
         android:fontFamily="@string/headerFont"
         android:textColor="@color/colorAccent"
@@ -26,29 +26,12 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Cancel"
-        android:layout_width="wrap_content"
+        android:text="Main Menu"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/mainMenuButton"
         android:background="@color/colorPrimary"
         android:textColor="@color/colorWhite"
-
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:text="Send Invite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/colorWhite"
-
-        android:paddingLeft="60dp"
-        android:paddingRight="60dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -59,11 +42,11 @@
         android:text="Your invitation to John Smith at john.smith@example.ca has been successfully sent."
         android:ems="10"
         android:layout_marginTop="87dp"
-        android:id="@+id/editText"
+        android:id="@+id/inviteMsgEditText"
         android:textSize="18sp"
         android:textAlignment="center"
         android:gravity="center"
-        android:layout_below="@+id/adTeachersTextView"
+        android:layout_below="@+id/inviteTextView"
         android:layout_centerHorizontal="true" />
 
 

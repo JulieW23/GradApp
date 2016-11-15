@@ -29,7 +29,7 @@
         android:text="Cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/cancelButton"
         android:background="@color/colorPrimary"
         android:textColor="@color/colorWhite"
 
@@ -43,10 +43,9 @@
         android:text="Send Invite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/inviteButton"
         android:background="@color/colorPrimary"
         android:textColor="@color/colorWhite"
-
         android:paddingLeft="60dp"
         android:paddingRight="60dp"
         android:layout_alignParentBottom="true"
@@ -59,7 +58,7 @@
         android:text="First Name: John"
         android:ems="10"
         android:layout_marginTop="82dp"
-        android:id="@+id/editText"
+        android:id="@+id/fnEditText"
         android:textSize="18sp"
         android:layout_marginLeft="57dp"
         android:layout_marginStart="57dp"
@@ -72,25 +71,25 @@
         android:layout_height="wrap_content"
         android:text="Last Name: Smith"
         android:ems="10"
-        android:id="@+id/editText2"
+        android:id="@+id/lnEditText"
         android:textSize="18sp"
-        android:layout_below="@+id/editText"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/fnEditText"
+        android:layout_alignLeft="@+id/fnEditText"
+        android:layout_alignStart="@+id/fnEditText"
         android:layout_marginTop="16dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:id="@+id/editText4"
+        android:id="@+id/emailEditText"
         android:text="Email: john.smith@example.ca"
         android:includeFontPadding="true"
         android:textSize="18sp"
         android:layout_marginTop="16dp"
-        android:layout_below="@+id/editText2"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignStart="@+id/editText2" />
+        android:layout_below="@+id/lnEditText"
+        android:layout_alignLeft="@+id/lnEditText"
+        android:layout_alignStart="@+id/lnEditText" />
 
 
 </RelativeLayout>
