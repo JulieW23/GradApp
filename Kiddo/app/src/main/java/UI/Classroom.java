@@ -16,7 +16,7 @@ public class Classroom {
     public Classroom (String name, Teacher teacher){
         teachers = new ArrayList<Teacher>();
         teachers.add(teacher);
-        parents = new ArrayList<Parent>()
+        parents = new ArrayList<Parent>();
     }
 
     public void addTeacher (Teacher teacher){
