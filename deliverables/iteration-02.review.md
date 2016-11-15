@@ -10,8 +10,8 @@
 
 Decisions that turned out well:
 
- * Deciding on the user enrollment process (dividing responsibilities between administrator, parent, and teacher users)
- * Also, choosing to include an administrator role with specific, limited responsibilities
+ * Deciding on the user-specific enrollment process and dividing responsibilities between administrator, parent, and teacher users
+ * Also, choosing to include an administrator role whose main responsibility to view/create/delete teacher accounts and classes
    * this was something that we had a lot of difficulty figuring out because so many possible arrangements exist with different benefits and drawbacks
    * we had a number of factors to consider, including privacy, usability, time spent by users
    * *see* user workflow diagram: https://www.gliffy.com/go/publish/11406769
