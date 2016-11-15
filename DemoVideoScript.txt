@@ -1,7 +1,10 @@
 Introduction (~30s)
 ------------
 
-Hello, we are building an Android app to faciliate easier communication between teachers and parents. Teachers can use our app to post class and  student-specific updates to parents. Parents can read these updates in the app and follow-up with the teachers via a private chat. We will demo the main workflow of the parent user and discuss the other 2 user types, teacher and admin.
+Hello, we are building an Android app to faciliate easier communication between teachers and parents. 
+Teachers can use our app to post class and  student-specific updates to parents. 
+Parents can read these updates in the app and follow-up with the teachers via a private chat. 
+We will demo the main workflow of the parent user and discuss the other 2 user types, teacher and admin.
 
 Parent Demo
 ------------
@@ -16,4 +19,5 @@ Similarly, the admin can view (manage classes screen), create (create class scre
 
 Conclusion
 ----------
-That concludes the demo. We saw the main workflow of the parent user and discussed the features in the teacher and admin users. We have completed most of the user interfaces and we plan to concentrate on building the back-end functionality. 
+That concludes the demo. We saw the main workflow of the parent user and discussed the features in the teacher and admin users. 
+We have completed most of the user interfaces and we plan to concentrate on building the back-end functionality. 
