@@ -21,10 +21,9 @@
 	<div id="header">
 	
 		<div id="logocontainer">
-		
-	
+			
 			<div id="logo">
-				<img src="Style/Images/logo_small.png"> <a href="http://www.google.com"	style="display: block; height: 100%; width: 100%;"></a>
+				<img src="../Images/logo.png"> <a href="http://www.google.com"	style="display: block; height: 100%; width: 100%;"></a>
 			</div>	<!--end of Logo div -->
 			
 	            <div id="info_board">
