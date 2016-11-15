@@ -83,7 +83,7 @@
         android:layout_alignBottom="@+id/cameraImageButton" />
 
     <TextView
-        android:text="To: Alfred Moor (Will Moor)"
+        android:text="To: Alfred Moor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/recipientTextView"
