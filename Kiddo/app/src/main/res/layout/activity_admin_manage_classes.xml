@@ -14,7 +14,7 @@
         android:text="Classes"
         android:layout_width="match_parent"
         android:layout_height="@dimen/headerHeight"
-        android:id="@+id/adTeachersTextView"
+        android:id="@+id/adClassTextView"
         android:background="@color/colorRed"
         android:fontFamily="@string/headerFont"
         android:textColor="@color/colorAccent"
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:id="@+id/search"
-        android:layout_below="@+id/adTeachersTextView"
+        android:layout_below="@+id/adClassTextView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -40,7 +40,7 @@
         android:layout_below="@+id/search"> -->
 
     <ListView
-        android:id="@+id/adTeacherListView"
+        android:id="@+id/adClassListView"
         android:layout_width="match_parent"
         android:layout_height="419dp"
         android:layout_below="@+id/search"/>
@@ -63,7 +63,7 @@
         android:text="Add Class"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/addTeacherButton"
+        android:id="@+id/addClassButton"
         android:background="@color/colorPrimary"
         android:textColor="@color/colorWhite"
 

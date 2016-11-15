@@ -4,7 +4,7 @@
 ## Iteration 02
 
  * Start date: October 28th, 2016
- * End date: TBD
+ * End date: November 14th, 2016
  
 ## Process
 
@@ -84,4 +84,4 @@ Artifacts:
  * Wireframe diagram for teacher user: https://www.gliffy.com/go/publish/11404469
  * Wireframe diagram for parent user: https://www.gliffy.com/go/publish/11409309
  * Wireframe diagram for administrator user: https://www.gliffy.com/go/share/sxaaegccvguge0dflxu6
- * Data model for database: 
+ * Data model for database: [kiddodbModel.pdf](kiddodbModel.pdf)

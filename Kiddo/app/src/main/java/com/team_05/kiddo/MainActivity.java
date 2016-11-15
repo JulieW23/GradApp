@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,23 +17,34 @@ public class MainActivity extends AppCompatActivity {
 
         // Login button
         Button loginButton = (Button)(findViewById(R.id.loginButton));
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                EditText email   = (EditText)findViewById(R.id.emailTextField);
 
-                // If login is admin
+                //Dummy logins for testing UI
+                // Teacher
+                if(email.getText().toString().equals("teacher@email.com")){
+                    Intent intent = new Intent(MainActivity.this, TeacherInitialLoginActivity.class);
+                    finish();
+                    startActivity(intent);
 
-                // If login is teacher
+                }
+                // Parent
+                else if (email.getText().toString().equals("parent@email.com")){
+                    Intent intent = new Intent(MainActivity.this, ChildrenActivity.class);
+                    finish();
+                    startActivity(intent);
+                }
 
-                // If login is parent
+                // Admin
+                else {
+                    Intent intent = new Intent(MainActivity.this, AdminMainMenu.class);
+                    finish();
+                    startActivity(intent);
+                }
 
-                // Temp login
-                // Switch to whatever activity you want to test it on
-                Intent intent = new Intent(MainActivity.this, ChildrenActivity.class);
-                //Intent intent = new Intent(MainActivity.this, TeacherInitialLoginActivity.class);
-                //Intent intent = new Intent(MainActivity.this, AdminMainMenu.class);
-                finish();
-                startActivity(intent);
             }
         });
 

@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_admin_add_class"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_admin_add_teacher_to_class"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.team_05.kiddo.AdminAddClass">
+    tools:context="com.team_05.kiddo.AdminAddTeacherToClass">
 
     <TextView
-        android:text="Create a new class"
+        android:text="Jenny Abrams"
         android:layout_width="match_parent"
         android:layout_height="@dimen/headerHeight"
-        android:id="@+id/adTeachersTextView"
+        android:id="@+id/teacherNameTextView"
         android:background="@color/colorRed"
         android:fontFamily="@string/headerFont"
         android:textColor="@color/colorAccent"
@@ -26,57 +27,59 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Cancel"
+        android:text="Back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/cancelButton"
+        android:id="@+id/backButton"
         android:background="@color/colorPrimary"
         android:textColor="@color/colorWhite"
 
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Confirm"
+        android:text="Add Teacher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/confirmButton"
+        android:id="@+id/addTeacherButton"
         android:background="@color/colorPrimary"
         android:textColor="@color/colorWhite"
 
-        android:paddingLeft="65dp"
-        android:paddingRight="65dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="Class Room"
-        android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:textColor="@color/colorGrey"
-        android:background="@android:color/transparent"/>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/teacher"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/teacherNameTextView"
+        android:layout_centerHorizontal="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="Class Name"
-        android:ems="10"
-        android:layout_marginTop="103dp"
-        android:id="@+id/editText"
-        android:layout_below="@+id/adTeachersTextView"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/colorGrey"
-        android:background="@android:color/transparent"/>
+    <TextView
+        android:text="Teaching"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headerHeight"
+        android:id="@+id/teachingTextView"
+        android:background="@color/colorGreen"
+        android:fontFamily="@string/headerFont"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/headerFontSize"
+
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/imageView" />
+
+    <ListView
+        android:id="@+id/adTeacherListView"
+        android:layout_width="match_parent"
+        android:layout_height="419dp"
+        android:layout_below="@+id/teachingTextView" />
 
 </RelativeLayout>
