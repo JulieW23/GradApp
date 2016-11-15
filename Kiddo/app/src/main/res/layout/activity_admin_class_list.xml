@@ -40,7 +40,7 @@
         android:layout_below="@+id/search"> -->
 
     <ListView
-        android:id="@+id/adTeacherListView"
+        android:id="@+id/classListView"
         android:layout_width="match_parent"
         android:layout_height="419dp"
         android:layout_below="@+id/search"/>
