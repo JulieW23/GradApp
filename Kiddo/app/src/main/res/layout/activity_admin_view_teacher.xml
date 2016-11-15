@@ -44,10 +44,9 @@
         android:text="Delete Teacher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/deleteButton"
         android:background="@color/colorPrimary"
         android:textColor="@color/colorWhite"
-
         android:paddingLeft="40dp"
         android:paddingRight="40dp"
         android:layout_alignParentBottom="true"
