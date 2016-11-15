@@ -8,7 +8,7 @@ body> #content{
     width: 100%;
     background: #dedede;
 	border-top: 1px solid #888888;
-	height: 25em;
+	height: 35em;
 	min-width: 84em;
 	padding-bottom: 6em;
 	padding-top: 6em;
@@ -38,41 +38,21 @@ body> #content{
 
 #formpanel button{
 	width: 100%;
-    border: 1px solid #888888;
+    border: 3px solid purple;
 	color:#00004d;
-	background : linear-gradient(#f2f2f2,#a6a6a6);
-	background : -moz-linear-gradient(#f2f2f2,#a6a6a6);
-	background : -webkit-linear-gradient(#f2f2f2,#a6a6a6);
+	background : white;
 	box-shadow: 0 .1em .1em #888888;
 	outline: none;
 	type:button; 
 }
 
 #formpanel button:hover{
-	background : #d9d9d9;
+	color:white;	
+	background : purple;
 	cursor: pointer;
 }	
 
-#formpanel button:active{
-    background : linear-gradient(#a6a6a6,#f2f2f2);
-	background : -moz-linear-gradient(#a6a6a6,#f2f2f2);
-	background : -webkit-linear-gradient(#a6a6a6,#f2f2f2);
-	
-	
-}
-#formpanel button::-moz-focus-inner {
-  border: 0;
-}
 
-#signupbottomline{
-  width: 90%;
-  background: red;  
-  border-bottom: 1px solid #dedede;
-}
-
-#loginmessage{
-    color:#456ab4; 
-}
 
 #signuplabel{
     text-decoration: none; 
@@ -89,7 +69,7 @@ body> #content{
 
 #signupformpanel{
 	width: 30em;
-	height: 20em;
+	height: 35em;
 	margin: 0 auto; /*6em*/
 	border-radius: 15px;
 }
@@ -120,7 +100,7 @@ body> #content{
 }
 
 #signupbottomline{
-  margin: -.5em 1.4em; 
+  margin: 17em 1.4em; 
 }
 
 #loginmessage{

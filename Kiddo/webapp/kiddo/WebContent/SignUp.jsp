@@ -15,9 +15,14 @@
           <p id="signuptitle">How Can We Help ?</p>
           <div id="signuptopline"> </div>
           <div id="formpanel">
-            <button id="clientselectbutton">Add Teacher</button><br>
-            <button id="expertselectbutton">Delete Teacher</button><br>
-            <button id="businessselectbutton">Add New Student</button><br>
+            <button id="businessselectbutton">List Of Teachers</button><br>
+            <button id="clientselectbutton">Add Teacher Profile</button><br>
+            <button id="expertselectbutton">Delete Teacher Profile</button><br>
+            <button id="expertselectbutton">Lookup a Teacher Profile</button><br>
+            <button id="businessselectbutton">List Of Students</button><br>
+            <button id="businessselectbutton">Add New Student Profile</button><br>
+            <button id="businessselectbutton">Remove Student Profile</button><br>
+            <button id="expertselectbutton">Lookup a Teacher Profile</button><br>
           </div>
           <div id="signupbottomline"> </div>
          </div>    
