@@ -8,12 +8,12 @@ html, body {
 
 #header {
     position: relative;
-    min-width: 84em;
+    /*min-width: 62em;*/
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	z-index: 1;
-	height: 5.6em;
+	height: 4.8em;
 	background: #ffffff;
 }
 
@@ -27,12 +27,12 @@ html, body {
 
 #logo {
 	position: absolute;
-	background-image: url('Images/logo.png');
-	width: 10em;
+	background-image: url('../Images/logo.png');
+	width: 5em;
 	background-size: cover;
 	margin-top: .2em;
-	margin-left: 0;
-	height: 3.8em;
+	margin-left: 2em;
+	height: 4.4em;
 }
 
 #logo img {
@@ -41,7 +41,8 @@ html, body {
 
 #info_board {
 	position: relative;
-	background: #456ab4;
+	/*background: #456ab4;*/
+	background: purple;
 	margin-top: 0;
 	float: right;
 	width: 23em;
@@ -73,12 +74,13 @@ html, body {
 #info_board ul li a {
 	color: #ffffff;
 	position: relative;
-	width: 9em;
+	width: 8em;
 	font-size: 1.1em;
 	margin-top: 0;
 	text-align: center;
 	display: inline-block;
 	text-decoration: none;
+	padding-left: .5em;
 	white-space: nowrap;
 	outline: none;
 }
@@ -96,8 +98,10 @@ html, body {
 	width: 100%;
 	margin-left: 0;
 	margin-right: 0;
+	margin-top: .6em;
 	position: absolute;
-	background: #456ab4;
+	/*background: #456ab4;*/
+	background: purple;	
 	height: 1.25em;
 	border-bottom: 1px solid #888888;
 	border-top: 1px solid #888888;

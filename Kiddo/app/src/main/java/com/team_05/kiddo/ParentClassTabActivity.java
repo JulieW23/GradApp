@@ -58,8 +58,8 @@ public class ParentClassTabActivity extends AppCompatActivity {
         // Create parent announcements ListView
         ListView pAnnouncementsListView = (ListView)findViewById(R.id.pAnnouncementsListView);
         ArrayList<String> announcements = new ArrayList<String>();
-        announcements.add("Sat Nov 12 2:13 PM\nAnnouncement!");
-        announcements.add("Sun Nov 13 10:59 AM\nAnnouncement again!");
+        announcements.add("Sat Nov 12 2:13 PM\nMatilda Permission Slips");
+        announcements.add("Sun Nov 13 10:59 AM\nClass cancelled");
         Collections.sort(announcements);
 
         ArrayAdapter<String> pAnnouncementsAdapter;
@@ -77,8 +77,7 @@ public class ParentClassTabActivity extends AppCompatActivity {
         // Create parent messages ListView
         ListView pMessagesListView = (ListView)findViewById(R.id.pMessagesListView);
         ArrayList<String> messages = new ArrayList<String>();
-        messages.add("Teacher name 1");
-        messages.add("Teacher name 2");
+        messages.add("Alfred Moor");
         Collections.sort(messages);
 
         ArrayAdapter<String> pMessagesAdapter;

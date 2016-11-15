@@ -7,7 +7,12 @@ import UI.Conversation;
  */
 
 public abstract class User {
-    public void sentMessage(Conversation conversation, String contents){
+
+    public void sentMessage (Conversation conversation, String contents){
         conversation.sendMessage(this, contents);
+    }
+
+    public void sentFile (Conversation conversation, byte[] file){
+        conversation.sendFile(this, file);
     }
 }
