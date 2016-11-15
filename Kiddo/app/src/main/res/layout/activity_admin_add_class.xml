@@ -29,7 +29,7 @@
         android:text="Cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/cancelButton"
         android:background="@color/colorPrimary"
         android:textColor="@color/colorWhite"
 
@@ -43,7 +43,7 @@
         android:text="Confirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/confirmButton"
         android:background="@color/colorPrimary"
         android:textColor="@color/colorWhite"
 
@@ -57,22 +57,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Class Room"
+        android:hint="Class Room"
         android:ems="10"
         android:id="@+id/editText2"
         android:layout_below="@+id/editText"
         android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText" />
+        android:layout_alignStart="@+id/editText"
+        android:textColor="@color/colorGrey"
+        android:background="@android:color/transparent"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Class Name"
+        android:hint="Class Name"
         android:ems="10"
         android:layout_marginTop="103dp"
         android:id="@+id/editText"
         android:layout_below="@+id/adTeachersTextView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorGrey"
+        android:background="@android:color/transparent"/>
 
 </RelativeLayout>

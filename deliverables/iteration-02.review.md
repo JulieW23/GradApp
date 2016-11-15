@@ -52,6 +52,8 @@ Goals/tasks that were met/completed:
   * Data model for database: [kiddodbModel.pdf](kiddodbModel.pdf)
 * (8) Create web interface for administrator users to create batches of teacher accounts/classes
   * Web interface site: url
+* (9) UML for Java code
+    https://www.gliffy.com/go/share/sgfb68agy568wj2fyo1a
 
 Goals/tasks that were planned but not met/completed:
 

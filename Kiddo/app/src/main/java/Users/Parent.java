@@ -5,4 +5,6 @@ package Users;
  */
 
 public class Parent extends User{
+
+
 }

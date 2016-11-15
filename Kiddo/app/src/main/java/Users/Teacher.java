@@ -1,5 +1,6 @@
 package Users;
 
+import UI.Calendar;
 import UI.Classroom;
 
 /**
@@ -16,4 +17,15 @@ public class Teacher extends User{
         classroom.addParent(parent);
     }
 
+    public void createCalanderEvent(){
+
+    }
+
+    public void editCalanderEvent(Calendar.CalenderEvent event){
+
+    }
+
+    public void deleteCalanderEvent(Calendar.CalenderEvent event){
+
+    }
 }

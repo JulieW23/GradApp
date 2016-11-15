@@ -11,7 +11,7 @@
 
 <body>
 
-<jsp:include page="Header.jsp"></jsp:include>
+  <jsp:include page="Header.jsp"></jsp:include> 
        
        <div id="content">
               
@@ -35,6 +35,9 @@
                       
        </div> <!-- End of content-->
        
+       <div id= "footer">
+       <p id="footmessage">&#169;Copyright 2016 Kiddo, All rights reserved.</p>
+       </div>
         
 </body>
 </html>
