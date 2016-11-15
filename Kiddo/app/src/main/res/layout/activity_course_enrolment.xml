@@ -12,7 +12,7 @@
     tools:context="com.team_05.kiddo.CourseEnrolmentActivity">
 
     <TextView
-        android:text="Course Enrolment"
+        android:text="Class Enrolment"
         android:layout_width="match_parent"
         android:layout_height="@dimen/headerHeight"
         android:id="@+id/childEnrolTextView"
