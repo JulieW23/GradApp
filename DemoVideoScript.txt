@@ -20,4 +20,4 @@ Similarly, the admin can view (manage classes screen), create (create class scre
 Conclusion
 ----------
 That concludes the demo. We saw the main workflow of the parent user and discussed the features in the teacher and admin user types. 
-We have completed most of the user interfaces and we plan to concentrate on building the back-end functionality. 
+We have completed most of the 3 user interfaces and we plan to concentrate on building the back-end functionality. 
