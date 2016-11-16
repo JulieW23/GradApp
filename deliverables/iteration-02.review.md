@@ -14,6 +14,7 @@ Decisions that turned out well:
  * Also, choosing to include an administrator role whose main responsibility to view/create/delete teacher accounts and classes
    * this was something that we had a lot of difficulty figuring out because so many possible arrangements exist with different benefits and drawbacks
    * we had a number of factors to consider, including privacy, usability, time spent by users
+   * ultimately, we decided to include the admin role because we felt it would be more secure to have one user to manage teachers and classes to prevent anyone from signing up as a teacher and adding a phony class. The admin role would be given to the school principal or a staff appointed by the school with knowledge of all teachers and classes. 
    * *see* user workflow diagram: https://www.gliffy.com/go/publish/11406769
  * Adding an administrator web interface
    * this is something that we considered in our product design in iteration 01, in order to simplify the administrator's job, but initially decided not to do because we thought it would be too much to tackle in a single iteration
@@ -43,26 +44,23 @@ Goals/tasks that were met/completed:
   * Wireframe diagram for parent user: https://www.gliffy.com/go/publish/11409309
   * Wireframe diagram for administrator user: https://www.gliffy.com/go/share/sxaaegccvguge0dflxu6
 * (3) Create teacher interface
-  * [video](videoFile)
 * (4) Create parent interface
-  * [video](videoFile)
 * (5) Create administrator interface
-  * [video](videoFile)
-* (7) Create database
+* (6) Create database
   * Data model for database: [kiddodbModel.pdf](kiddodbModel.pdf)
-* (8) Create web interface for administrator users to create batches of teacher accounts/classes
+* (7) Create web interface for administrator users to create batches of teacher accounts/classes
   * Web interface site: url
-* (9) UML for Java code
+* (8) UML for Java code
     https://www.gliffy.com/go/share/sgfb68agy568wj2fyo1a
 
 Goals/tasks that were planned but not met/completed:
 
-* (3) Create teacher interface: display class events on a calendar
+* (1) Create teacher interface: display class events on a calendar
     * currently only displayed as list of events
-* (4) Create parent interface: display class events on a calendar
+* (2) Create parent interface: display class events on a calendar
     * currently only displayed as list of events
-* (6) Create app class structure: create database queries as part of methods
-* (7) Create database: connect database to front-end
+* (3) Create app class structure: create database queries as part of methods
+* (4) Create database: connect database to front-end
     * currently, database query results are mocked-up
 
 Going into the next iteration, our main insights are:
