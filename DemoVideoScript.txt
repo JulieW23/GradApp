@@ -10,9 +10,9 @@ We will demo the main workflow of the parent user and discuss the other 2 user t
 Parent Demo
 ------------
 A parent can sign up for an account to use this application. 
-Once they have signed up, they are able to log in to their account, where they can associate their children to their account, and enrol in the classes that their children attend. 
+Once they have signed up, they are able to log in to their account, where they can associate their children to their account, and then enrol in classes that their children attend. 
 Afterwards, clicking their child will display the classes and a calendar with upcoming events that the child is involved in.
-Clicking a class will lead to a page with announcements that the class teacher has posted. These announcements may be reminders, notifications of emergencies, or text and photo updates of interesting things happening in that class. Announcements can get very cluttered, so there is a function for the parent user to view only the announcements for a certain month. Announcement details are shown when an announcement is clicked. 
+Clicking a class will lead to a page with announcements that the class teacher has posted. These announcements may be reminders, notifications of emergencies, or text and photo updates of interesting things happening in that class. Because there may be a lot of announcements, there is a function for the parent user to view only the announcements for a certain month. Clicking an announcement will lead to a display of announcement details. 
 The messaging feature provides a way for parents to contact the teacher, and for teachers to respond or send text and photo updates specifically of the child to the parent. 
 Parents can change their account password or sign out anytime they want. 
 
