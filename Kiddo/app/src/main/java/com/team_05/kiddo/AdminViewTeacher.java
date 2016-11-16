@@ -43,7 +43,7 @@ public class AdminViewTeacher extends AppCompatActivity {
 
         });
 
-        // Create teachers ListView
+        // Create teaching ListView
         ListView teachingListView = (ListView)findViewById(R.id.adTeacherListView);
         ArrayList<String> teaching = new ArrayList<String>();
         teaching.add("Junior Kindergarten\nRoom 101");
@@ -55,7 +55,7 @@ public class AdminViewTeacher extends AppCompatActivity {
 
         teachingListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> teacher, View view, int position, long id) {
                 Intent intent = new Intent(AdminViewTeacher.this, AdminViewClass.class);
                 startActivity(intent);
             }

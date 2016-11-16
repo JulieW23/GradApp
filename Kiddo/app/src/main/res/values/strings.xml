@@ -80,4 +80,12 @@
         <item>November 2016</item>
     </string-array>
     <string name="title_activity_admin_manage_classes">AdminManageClasses</string>
+
+    <string name="anouncement_details">Full Announcement:\n
+        Permission slips are due tomorrow for the class trip to see Matilda. \n
+        Just a reminder of the details for the trip - the showing of Matilda will be at 1:00PM
+        on November 23rd at Xxxxx Theatre.\n\n
+
+        Date posted: Sat Nov 12\n
+        Time posted: 2:13 PM</string>
 </resources>

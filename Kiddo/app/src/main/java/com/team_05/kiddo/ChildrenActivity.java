@@ -33,7 +33,7 @@ public class ChildrenActivity extends AppCompatActivity {
         // Create children ListView
         ListView childrenListView = (ListView)findViewById(R.id.childrenListView);
         ArrayList<String> children = new ArrayList<String>();
-        children.add("Tony Sung");
+        children.add("Tony Lang");
         children.add("Laura Lang");
         Collections.sort(children);
 

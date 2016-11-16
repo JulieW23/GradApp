@@ -26,7 +26,7 @@ public class CourseEnrolmentActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CourseEnrolmentActivity.this, AddChildActivity.class);
+                Intent intent = new Intent(CourseEnrolmentActivity.this, ParentTabActivity.class);
                 finish();
                 startActivity(intent);
             }
@@ -37,6 +37,10 @@ public class CourseEnrolmentActivity extends AppCompatActivity {
         ArrayList<String> classes = new ArrayList<String>();
         classes.add("Science");
         classes.add("English");
+        classes.add("Math");
+        classes.add("Gym");
+        classes.add("Art");
+        classes.add("Music");
         Collections.sort(classes);
 
         ArrayAdapter<String> classEnrolAdapter;
