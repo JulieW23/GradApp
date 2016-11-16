@@ -28,6 +28,7 @@
   * Class structures
     * Jason
 
+We divided up the roles and responsibilities like this in order to match the strengths and interests of the team.
 
 #### Events
 
