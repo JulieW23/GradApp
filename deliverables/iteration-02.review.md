@@ -91,3 +91,4 @@ Going into the next iteration, our main insights are:
    * Replace mocked-up data with real functionality
    * Populate database with fake data
    * Developers of different app layers will collaborate to make the process easier
+ * Test app functionality once all layers are complete
