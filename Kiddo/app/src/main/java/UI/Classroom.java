@@ -11,12 +11,14 @@ import Users.Teacher;
 public class Classroom {
 
     private ArrayList<Teacher> teachers;
-    private ArrayList<Parent> parents;
+    private ArrayList<Parent> parentsInClass;
+    private ArrayList<Parent> parentsJoined;
 
     public Classroom (String name, Teacher teacher){
         teachers = new ArrayList<Teacher>();
         teachers.add(teacher);
-        parents = new ArrayList<Parent>();
+        parentsInClass = new ArrayList<Parent>();
+        parentsJoined = new ArrayList<Parent>();
     }
 
     public void addTeacher (Teacher teacher){
@@ -32,10 +34,23 @@ public class Classroom {
     }
 
     public void addParent (Parent parent){
-        parents.add(parent);
+        parentsInClass.add(parent);
     }
 
     public void removeParent(Parent parent){
-        parents.remove(parent);
+        parentsInClass.remove(parent);
+    }
+
+    public void joinParent (Parent parent) throws IllegalArgumentException{
+        if (parentsInClass.contains(parent)){
+            parentsJoined.add(parent);
+        }
+        else {
+            throw new IllegalArgumentException();
+        }
+    }
+
+    public void leaveParent(Parent parent){
+        parentsJoined.remove(parent);
     }
 }
