@@ -1,7 +1,7 @@
 Introduction (~30s)
 ------------
 
-Hello, we are building an Android app to faciliate easier communication between teachers and parents. 
+We are building an Android app to faciliate easier communication between teachers and parents. 
 Teachers can use our app to post class and  student-specific updates to parents. 
 Parents can view these updates in the app and follow-up with the teachers via a private chat.
 The admin is in charge of managing teacher accounts and classes.
@@ -26,4 +26,5 @@ Similarly, the admin can view (manage classes screen), create (create class scre
 Conclusion
 ----------
 That concludes the demo. We saw the main workflow of the parent user and discussed the features in the teacher and admin user types. 
-We have completed most of the 3 user interfaces and we plan to concentrate on building the back-end functionality. We will finish linking our app to a database and writing the java classes required to manipulate the data.
+We have completed most of the 3 user interfaces and we plan to concentrate on building the back-end functionality. 
+We will finish linking our app to a database and writing the java classes required to manipulate the data.
