@@ -19,11 +19,11 @@ Parents can change their account password or sign out anytime they want.
 Teacher
 Teachers have an interface where they are in charge of enrolment requests from parents to join their class to ensure that strangers do not have free access. This is also the interface that allows teachers to put events into a calendar, post announcements, and send messages to parents. 
 
-Admin (~20s)
+Admin (15s)
 The admin can view (manage teachers screen), invite teachers to create an account (teacher invite screen), and delete teacher accounts (view teacher screen).
 Similarly, the admin can view (manage classes screen), create (create class screen) and delete classes (view class screen).
 
 Conclusion
 ----------
 That concludes the demo. We saw the main workflow of the parent user and discussed the features in the teacher and admin user types. 
-We have completed most of the 3 user interfaces and we plan to concentrate on building the back-end functionality. 
+We have completed most of the 3 user interfaces and we plan to concentrate on building the back-end functionality. We will finish linking our app to a database and writing the java classes required to manipulate the data.
