@@ -1,24 +1,36 @@
-Base on Functionality of Users:
-
-Admin:
-1. Create Teachers Account
+Based On Functionality of Each Table:
+____________________________________________________
+Query Type 1: Add/Remove data from table
+Query Type 2: Display info 
+Query Type 3: Edit one/a few data in the table.
+____________________________________________________
+Administrators:
+1. Create Teachers Account (*)
 
 * allow adamin adds a teacher into Teacher Table. 
 * idSchool is common key between admin and teacher.
 
-2. Display All Teachers From Same School
+1. Delete Teachers Account (*)
+
+* allow adamin removes a teacher into Teacher Table. 
+* idSchool is common key between admin and teacher.
+
+2. Display All Teachers From Same School (idSchool)
 
 * dispaly teachers with same idSchool.
 * idSchool is common key between admin and teacher.
 
-3. Display All Classes From Same School
+2. Display All Classes From Same School (idSchool)
 
 * dispaly class with same idSchool.
 * idSchool is common key between admin and class.
 
-4. Allow Change Adamin Password.
+2. Display Admin information (email)
+
+* include uname and email based on email. //assume email can't be modify
+
+3. Allow Change Adamin Password (pass)
 
 * only allow adamin change pass
 * modify adamin table data
 
-Teachers:
