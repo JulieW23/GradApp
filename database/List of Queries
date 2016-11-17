@@ -34,3 +34,35 @@ Administrators:
 * only allow adamin change pass
 * modify adamin table data
 
+Teachers
+3. Add parents's kid to class(parents.idStudent,student.idParent1/2,student.<idClass>)
+
+* assign parents' students class to given classID.
+* parents.idStudent <--> student.idParent1/2 --> student.<idClass>.
+
+3. Remove parents's kid to class(parents.idStudent,student.idParent1/2,student.<idClass>)
+
+* remove parents' students class to given classID.
+* parents.idStudent <--> student.idParent1/2 --> student.<idClass>.
+
+1. Create Events(name, location, startTime, endTime, comments)
+
+* create an event in Event Table
+
+1. Remove Events(name, location, startTime, endTime, comments)
+
+* delete an event in Event Table
+
+3. Edit Calander Event(name, location, startTime, endTime, comments)
+
+* edit event info
+
+2. Display all classes associate with teacher (idTeacher)
+
+* Teacher.idTeacher <==> Classes.idTeacher
+
+2. Display all messages associate with user(teacher) (idSender/idRecipient/idTeacher)
+
+* display all users' conversation.
+
+Parents:
