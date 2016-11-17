@@ -1,0 +1,24 @@
+Base on Functionality of Users:
+
+Admin:
+1. Create Teachers Account
+
+* allow adamin adds a teacher into Teacher Table. 
+* idSchool is common key between admin and teacher.
+
+2. Display All Teachers From Same School
+
+* dispaly teachers with same idSchool.
+* idSchool is common key between admin and teacher.
+
+3. Display All Classes From Same School
+
+* dispaly class with same idSchool.
+* idSchool is common key between admin and class.
+
+4. Allow Change Adamin Password.
+
+* only allow adamin change pass
+* modify adamin table data
+
+Teachers:
