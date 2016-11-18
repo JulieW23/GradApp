@@ -44,8 +44,11 @@ Goals/tasks that were met/completed:
   * Wireframe diagram for parent user: https://www.gliffy.com/go/publish/11409309
   * Wireframe diagram for administrator user: https://www.gliffy.com/go/share/sxaaegccvguge0dflxu6
 * (3) Create teacher interface
+  * Demo video: [video](video) or [link](demo_video_link)
 * (4) Create parent interface
+  * Demo video: [video](video) or [link](demo_video_link)
 * (5) Create administrator interface
+  * Demo video: [video](video) or [link](demo_video_link)
 * (6) Create database
   * Data model for database: [kiddodbModel.pdf](kiddodbModel.pdf)
 * (8) Create app class structure
@@ -70,7 +73,6 @@ Goals/tasks that were planned but not met/completed:
 Goals/tasks that were not originally planned, but ended up being met/completed:
 
 * (7) Create web interface for administrator users to create batches of teacher accounts/classes
-  * Web interface: url
     * (from above) this is something that we considered in our product design in iteration 01, in order to simplify the administrator's job, but initially decided not to do because we thought it would be too much to tackle in a single iteration
     * (from above) we ended up having enough team resources to re-add this to our list of tasks
     * we thought that this would be extremely valuable for the administrator, particularly with a large number of classes and/or teachers - without it, he/she would have to use the administrator interface of the app, which only allows a single teacher account or single class to be created at a time
