@@ -27,33 +27,37 @@ function hide(elem){
 // -------------------First Email Processing-------------------------
 
 function isEmailEmpty() {
-	
 	var val = document.getElementById("email");
 	if (val.value == '') {
 		$("#email_err").show();
 		val.style.borderColor = "red";
 		document.getElementById("email_err").style.visibility = "visible";
-	} 
+		document.getElementById("email_err").innerHTML = 'Please Enter a Valid Email Address';
+		return true;
+    }else{
+    	$("#email_err").hide();
+		val.style.borderColor = "#dedede";
+		return false;
+    }
+	
 }
 
 // -----------------------------Second Email Processing
 // -----------------------------------
 
-/*function isEmail2Empty() {
+function isEmail2Empty() {
 	var val = document.getElementById("email2");
 	if (val.value == '') {
-		email2_valid = -2; // -2, this input has been visited and left empty.
-		$("#email2_alert").show();
-		$("#email2_err").hide();
+		$("#email2_err").show();
 		val.style.borderColor = "red";
-		document.getElementById("email2_err").focus();
-		document.getElementById("email2_err").childNodes[2].innerHTML = 'This Field is Required.';
-	} else {
-		email2_valid = 0; // has some value.
+		document.getElementById("email2_err").style.visibility = "visible";
+		document.getElementById("email2_err").innerHTML = 'Please Re-Enter The Email Address';
+		return true;
+	}else{
+	  	$("#email2_err").hide();
 		val.style.borderColor = "#dedede";
-		$("#email2_alert").hide();
-		$("#email2_err").hide();
-	}
+		return false;
+    }  
 }
 
 // -----------------------------Password Processing
@@ -64,24 +68,17 @@ function isPassEmpty() {
 	var val = document.getElementById("password");
 
 	if (val.value == '') {
-		pass_valid = -2; // -2, this input has been visited and left empty.
 		val.style.borderColor = "red";
 		
-		$("#pass_alert").show();
-		$("#pass_err").hide();
-		document.getElementById("pass_err").focus();
-		document.getElementById("pass_err").childNodes[2].innerHTML = 'This Field is Required.';
+		$("#pass_err").show();
+		document.getElementById("pass_err").style.visibility = "visible";
+		document.getElementById("pass_err").innerHTML = 'Please Enter a Valid Password.';
+		return true;
 	} else {
-		pass_valid = 0; // has some value.
-		val.style.borderColor = "#dedede";
-		
-		$("#pass_alert").hide();
 		$("#pass_err").hide();
-	}
-}
-
-function showPassHelp(){
-	document.getElementById("pass_help").style.visibility = "visible";
+		val.style.borderColor = "#dedede";
+		return false;
+    }
 }
 
 
@@ -91,20 +88,18 @@ function showPassHelp(){
 function isNameEmpty() {
 
 	var name = document.getElementById("name");
-
+	
 	if (name.value == '') {
-		name_valid = -2; // -2, this input has been visited and left empty.
-		$("#name_alert").show();
-		$("#name_err").hide();
-
+		
+		$("#name_err").show();
 		name.style.borderColor = "red";
-		document.getElementById("name_err").focus();
-		document.getElementById("name_err").childNodes[2].innerHTML = 'This Field is Required.';
+		document.getElementById("name_err").style.visibility = "visible";
+		document.getElementById("name_err").innerHTML = 'Please Enter Teachers Name.';
+		return true;
 	} else {
-		name_valid = 0; // has some value.
-		name.style.borderColor = "#dedede";
-		$("#name_alert").hide();
 		$("#name_err").hide();
+		name.style.borderColor = "#dedede";
+		return false;
 	}
 }
 
@@ -114,61 +109,139 @@ function isLastNameEmpty() {
 
 	if (lastname.value == '') {
 		
-		lastname_valid = -2; // -2, this input has been visited and left
-							// empty.
-		$("#last_name_alert").show();
-		$("#last_name_err").hide();
-		
+		$("#lastname_err").show();
+
 		lastname.style.borderColor = "red";
-		document.getElementById("last_name_err").childNodes[2].innerHTML = 'This Field is Required.';
+		document.getElementById("lastname_err").style.visibility = "visible";
+		document.getElementById("lastname_err").innerHTML = 'Please Enter Teachers Last Name.';
+		return true;
 	} else {
-		lastname_valid = 0; // has some value.
+		$("#lastname_err").hide();
 		lastname.style.borderColor = "#dedede";
+		return false;
 		
-		$("#last_name_alert").hide();
-		$("#last_name_err").hide();
 	}
+
 }
 
 // ------------------------------ form processing before
 // submission-----------------------
 
-function isEmail(element) {
+function isEmail(elem_name) {
+	
 	var regx = /^[=`{|}~/_a-z0-9A-Z!#$%&'*+-]+([\.][=`{|}~/_a-z0-9A-Z!#$%&'*+-]+)*@[a-z0-9A-Z]+[-]?[a-z0-9A-Z]+([\.]([a-z0-9A-Z]+[-]?[a-z0-9A-Z]+))+$/;
-	var value = element;
+	var element = document.getElementById(elem_name);
+	var value = element.value;
+	
+	if ( !regx.test(value) ){
+		$("#"+elem_name+"_err").show();
+		element.style.borderColor = "red";
+		document.getElementById(elem_name+"_err").style.visibility = "visible";
+		document.getElementById(elem_name+"_err").innerHTML = 'You Entered an Invalid Email.';
+	}else{
+    	$("#"+elem_name+"_err").hide();
+		element.style.borderColor = "#dedede";
+    }
+					
 	return regx.test(value);
 }
 
-function isPassword(element) {
+function isPassword() {
+	
 	var regx = /(?=((.)*[a-z]))(?=((.)*[A-Z]))(?=((.)*[0-9])){8,}/;
-	return regx.test(element);
+	var val = document.getElementById("password");
+	
+	if ( !regx.test(val.value) ) {
+		val.style.borderColor = "red";
+		$("#pass_err").show();
+		document.getElementById("pass_err").style.visibility = "visible";
+		document.getElementById("pass_err").innerHTML = 'Password Must be Between 6-15 Characters, and Consist of at least one UpperCase Letter, '+
+		                                                'one LowerCase Letter, one digit.';
+	}else {
+		$("#pass_err").hide();
+		val.style.borderColor = "#dedede";
+	}	
+	
+	
+	return regx.test(val.value);
 }
 
-function isName(element) {
+
+function isWord(elem_name) {
+	
 	var regx = /^[a-zA-Z]+$/;
-	return regx.test(element);
+	
+	var element = document.getElementById(elem_name);
+	var value = element.value;
+		
+	if ( !regx.test(value) ){
+		$("#"+elem_name+"_err").show();
+		element.style.borderColor = "red";
+		document.getElementById(elem_name+"_err").style.visibility = "visible";
+		document.getElementById(elem_name+"_err").innerHTML = elem_name + ' Can Only Consist Of English Characters.';
+	}else{
+    	$("#"+elem_name+"_err").hide();
+		element.style.borderColor = "#dedede";
+    }
+					
+	return regx.test(value);
+	
 }
 
-function changePass(pass) {
-
-	if (pass.checked)
-		document.getElementById("password").type = "text";
-	else
-		document.getElementById("password").type = "password";
-
-}*/
 
 function check_form() {
 
 	var allchecked = 0;
 	var email1, email2;
 
-	if ( isEmailEmpty()) {
+	if ( isEmailEmpty() ) {
 		allchecked = -1 ;
-    }	
+    }else if ( !isEmail("email") ) {
+    	allchecked = -1 ;
+	}
+	
+	if ( isEmail2Empty()) {
+		allchecked = -1 ;
+    }else if ( !isEmail("email2") ) {
+    	allchecked = -1 ;
+	}
+	
+	if ( isPassEmpty()) {
+		allchecked = -1 ;
+    }else if ( !isPassword() ) {
+    	allchecked = -1 ;    	
+    }
+	
+	if ( isNameEmpty()) {
+		allchecked = -1 ;
+    }else if ( !isWord("name") ) {
+    	allchecked = -1 ;    	
+    }
+	
+	if ( isLastNameEmpty()) {
+		allchecked = -1 ;
+    }else if ( !isWord("lastname") ) {
+    	allchecked = -1 ;    	
+    }
+			
+    var em1 = document.getElementById("email");
+    var em2 = document.getElementById("email2");
 		
+    if ( !(em1.value == em2.value) && !isEmailEmpty() && !isEmail2Empty() ) {
+		
+		allchecked = -1 ;
+		
+		$("#email2_err").show();
+
+		em2.style.borderColor = "red";
+		document.getElementById("email2_err").style.visibility = "visible";
+		document.getElementById("email2_err").innerHTML = 'You Re-Entered a Different Email. Emails Must be Same';
+	}    
+
 	if (allchecked != 0) {
 		return false;
-}
+    }
+	
+    
 }
 
