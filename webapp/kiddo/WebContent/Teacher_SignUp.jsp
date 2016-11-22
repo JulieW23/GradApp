@@ -25,41 +25,28 @@
              
                <tr><td>
                  <input type="text" id="email" class="textinput" name="email"  placeholder="Email Address"/>
-                 <div class="errors" id="email_err" ><p></p></div>
+                 <div class="errors" id="email_err" ><p>hello</p></div>
                </td></tr>
                
                <tr><td>
                   <input type="text" class="textinput" id="email2" name="email2" placeholder="Re-Enter Email Addresss" />
-                  <div class="errors" id="email2_err" ><p></p></div>
+                  <div class="errors" id="email2_err" ><p>hello</p></div>
                </td></tr>
                   
                <tr><td>
                   <input type="password"  id="password" class="textinput" name="password" placeholder="Password"/>
-                  <div id="pass_err" class="errors" ><p></p></div>
+                  <div id="pass_err" class="errors" ><p>hello</p></div>
                </td></tr>
-               <tr><td>
-                 <span class="check_box">
-                      <em id="pass_help_msg" onclick="showPassHelp();">Password Guide</em></br>
-                 </span>
-                 <div id="pass_err" class="errors" > 
-                 <p>Password Must be Between 6-15 Characters, and Consist of at least one UpperCase Letter,
-				    one LowerCase Letter, one digit.</p></div>
-               </td>
-               </tr>   
+                  
                <tr><td>
                   <input type="text" class="textinput" id="name"  name="firstname" placeholder="First Name"/>
+                  <div id="name_err" class="errors" ><p>hello</p></div>
                </td></tr>
                <tr><td>
                   <input type="text" class="textinput" id="lastname"   name="lastname" placeholder="Last Name" /> 
-                  <div id="last_name_err" class="errors" ><p></p></div>
+                  <div id="lastname_err" class="errors" ><p>hello</p></div>
                </td></tr>
                
-               <tr>
-                <td>                        
-                  <div id="name_err" class="errors" ><p></p></div>
-                </td>
-               </tr> 
-                
                <tr><td>   
                   <button type="button" id="form_submit" onclick="check_form()" >Register</button>
                </td></tr>
