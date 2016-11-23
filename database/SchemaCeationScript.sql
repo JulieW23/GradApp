@@ -92,6 +92,7 @@ SHOW WARNINGS;
 CREATE TABLE IF NOT EXISTS `kiddodb`.`Students` (
   `idStudent` INT NOT NULL,
   `name` VARCHAR(90) NOT NULL,
+    -- ----------idclass should a set----
   `idClass` INT NOT NULL,
   `idParent1` INT NOT NULL,
   `idParent2` INT NOT NULL,
