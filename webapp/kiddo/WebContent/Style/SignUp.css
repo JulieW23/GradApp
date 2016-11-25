@@ -69,8 +69,8 @@ body> #content{
 
 #signupformpanel{
 	width: 30em;
-	height: 35em;
-	margin: 0 auto; /*6em*/
+	height: 29em;
+	margin: 2em auto; /*6em*/
 	border-radius: 15px;
 }
 
@@ -92,12 +92,39 @@ body> #content{
 }
   	
 #formpanel button{
-	height: 2em;
+	height: 3.2em;
 	margin: .6em auto;
 	border-radius: 5px;
-	font: 1em Arial, Helvetica, sans-serif;
+	font: 1.2em Arial, Helvetica, sans-serif;
 	font-weight: bold;
 }
+
+#formpanel a{
+   text-decoration:none;
+}
+
+#formpanel a div{
+	width: 100%;
+    border: 3px solid purple;
+	color:#00004d;
+	background : white;
+	box-shadow: 0 .1em .1em #888888;
+	outline: none;
+	height: 3.2em;
+	text-align: center;
+	margin: .1em auto;
+	border-radius: 5px;
+	font: 1.2em Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+
+#formpanel a div:hover{
+	color:white;	
+	background : purple;
+	cursor: pointer;
+}	
+
 
 #signupbottomline{
   margin: 17em 1.4em;
