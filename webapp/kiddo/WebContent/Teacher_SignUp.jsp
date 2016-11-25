@@ -19,7 +19,7 @@
            <div id="topline"> </div>
            <!--  sign up form -->
             
-           <form id="signupform" onsubmit="return checkform()">
+           <form id="signupform" onsubmit="return checkform()" method="get" action="Register_Teacher">
            
              <table>
              
