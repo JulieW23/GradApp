@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+<%@ taglib prefix="c" 
+           uri="http://java.sun.com/jsp/jstl/core" %>
+               
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -14,15 +18,20 @@
 <jsp:include page="Header.jsp"></jsp:include>
        
        <div id="content">
+       
+          <c:if test="${not empty error}">
+             <div id="error_div"><h6 id="err_message">${error}</h6></div>                 
+          </c:if>
+          
           <div id="signupdiv">
-           <p id="signupmessage">Teacher Registration Form</p>
+           <p id="signupmessage">Teacher Registration Form </p>
            <div id="topline"> </div>
            <!--  sign up form -->
             
-           <form id="signupform" onsubmit="return checkform()" method="get" action="Register_Teacher">
+           <form id="signupform"  onsubmit="return check_form()" method="get" action="Register_Teacher">
            
              <table>
-             
+               
                <tr><td>
                  <input type="text" id="email" class="textinput" name="email"  placeholder="Email Address"/>
                  <div class="errors" id="email_err" ><p>hello</p></div>
@@ -48,12 +57,18 @@
                </td></tr>
                
                <tr><td>   
-                  <button type="button" id="form_submit" onclick="check_form()" >Register</button>
+                  <button type="submit" id="form_submit" >Register</button>
                </td></tr>
-                                    
+                                          
              </table> 
               
             </form>
+            
+             <div id="bottomline"> </div>
+                <table id="nav_tab">
+                 <tr><td><a href="SignUp.jsp">Click To Go To Your Dashboard</a></td></tr>
+             </table>
+              
            
           </div> <!-- end of signupdiv -->
        </div>
