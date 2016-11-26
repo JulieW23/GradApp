@@ -238,8 +238,10 @@ function check_form() {
 		document.getElementById("email2_err").innerHTML = 'You Re-Entered a Different Email. Emails Must be Same';
 	}    
 
-	if (allchecked != 0) {
+    if (allchecked != 0) {
 		return false;
+    }else{
+    	return true;    	
     }
 	
     

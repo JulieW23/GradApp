@@ -18,8 +18,8 @@
    </resource-ref>
   
   <servlet>
-    <servlet-name>Register_Teach_Serv</servlet-name>
-    <servlet-class>utility.Register_Teacher</servlet-class>
+    <servlet-name>Register_Teach</servlet-name>
+    <servlet-class>utility.Register_Teach_Serv</servlet-class>
   </servlet>
   
   <servlet>
@@ -34,7 +34,7 @@
 
 
   <servlet-mapping>
-    <servlet-name>Register_Teach_Serv</servlet-name>
+    <servlet-name>Register_Teach</servlet-name>
     <url-pattern>/Register_Teacher</url-pattern>
   </servlet-mapping>
   

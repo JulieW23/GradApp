@@ -22,8 +22,7 @@
           <c:if test="${not empty error}">
              <div id="error_div"><h6 id="err_message">${error}</h6></div>                 
           </c:if>
-               
-          
+                   
           <div id="logindiv">
            <p id="loginmessage"> Login</p>
            <div id="topline"> </div>
