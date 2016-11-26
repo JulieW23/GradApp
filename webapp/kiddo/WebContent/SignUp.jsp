@@ -15,8 +15,8 @@
           <p id="signuptitle">How Can We Help ?</p>
           <div id="signuptopline"> </div>
           <div id="formpanel">
-             <a href="Teacher_SignUp.jsp"><div><p>List Of Teachers</p></div></a><br>
-             <a href="#"><div><p>Add Teacher Profile</p></div></a><br>
+             <a href="#"><div><p>List Of Teachers</p></div></a><br>
+             <a href="Teacher_SignUp.jsp"><div><p>Add Teacher Profile</p></div></a><br>
              <a href="#"><div><p>Lookup a Teacher Profile</p></div></a><br>
              <a href="#"><div><p>Lookup a List Of Classes</p></div></a><br>
           </div>
