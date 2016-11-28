@@ -6,49 +6,53 @@ Query Type 3: Edit one/a few data in the table.
 ____________________________________________________
 Administrators:
 1. Create Teachers Account (*)
-
 * allow adamin adds a teacher into Teacher Table. 
 * idSchool is common key between admin and teacher.
+/idTeacher should be auto genertated /
 
 insert into Teachers values (`idTeacher`, `idSchool`, `email`, `uname`, `pass`, `fName`, `lName`)
 
 1. Delete Teachers Account (*)
-
 * allow adamin removes a teacher into Teacher Table. 
 * idSchool is common key between admin and teacher.
 
-delete from Teachers where idSchool = (select idSchool from Administrators where email = ?) and idTeacher = (select idTeacher from Teacher where email = ?)
+delete 
+from Teachers 
+where idSchool = (select idSchool from Administrators where email = ?) 
+and idTeacher = (select idTeacher from Teacher where email = ?)
 
 2. Display All Teachers From Same School (idSchool)
-
 * dispaly teachers with same idSchool.
 * idSchool is common key between admin and teacher.
 
-select name from Teacher where idSchool = (select idSchool from Admin where email = ?)
+select name 
+from Teacher 
+where idSchool = (select idSchool from Admin where email = ?)
 
 2. Display All Classes From Same School (idSchool)
-
 * dispaly class with same idSchool.
 * idSchool is common key between admin and class.
 
-select name from Class where idSchool = ?
+select name 
+from Class 
+where idSchool = ?
 
-2. Display Admin information (email)
+2. Display Admin information (idAdministrator) //I changed this from email to idAdministrator (Matthew)
+* include uname and email based on email. 
 
-* include uname and email based on email. //assume email can't be modify
+select * 
+from Admin 
+where idAdministrator = ?
 
-select * from Admin where email = ?
-
-3. Allow Change Adamin Password (pass)
-
+3. Allow Change Adamin Password (pass) //??
 * only allow adamin change pass
 * modify adamin table data
 
-update Admin set pass = ? where username = ?
+update Admin set pass = ? 
+where idAdministrator = ?
 
 Teachers
 3. Add parents's kid to class(parents.idStudent,student.idParent1/2,student.<idClass>)
-
 * assign parents' students class to given classID.
 * parents.idStudent <--> student.idParent1/2 --> student.<idClass>.
 
