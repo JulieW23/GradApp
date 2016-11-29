@@ -18,6 +18,12 @@
    </resource-ref>
   
   <servlet>
+    <servlet-name>LookUp_Teach</servlet-name>
+    <servlet-class>utility.LookUp_Teacher</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
     <servlet-name>Register_Teach</servlet-name>
     <servlet-class>utility.Register_Teach_Serv</servlet-class>
   </servlet>
@@ -26,6 +32,12 @@
     <servlet-name>Admin_Login</servlet-name>
     <servlet-class>utility.Admin_Login</servlet-class>
   </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LookUp_Teach</servlet-name>
+    <url-pattern>/LookUp_Teacher</url-pattern>
+  </servlet-mapping>
+  
   
   <servlet-mapping>
     <servlet-name>Admin_Login</servlet-name>
