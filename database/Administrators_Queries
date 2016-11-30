@@ -7,7 +7,7 @@ VALUES (idTeacher?, idSchool?, email?, uname?, pass?, fName?, lName?);
 (Yes, we need delete, because we need a way to modify teacher table)
 
 DELETE FROM Teachers
-WHERE idSchool = 'idSchool?' AND idTeacher = 'idTeacher?'
+WHERE Teachers.idSchool = 'idSchool?' AND Teachers.idTeacher = 'idTeacher?'
 
 2. Display All Teachers From Same School
 
