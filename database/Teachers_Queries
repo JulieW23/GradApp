@@ -8,6 +8,24 @@ VALUES ('idEvent?', 'idClass?', 'name?', 'location?', 'startTime?', 'endTime?', 
 DELETE FROM Events
 WHERE Events.idClass = 'idClass?' AND Events.idEvent = 'idEvent?'
 
+1. Teacher Can Create an Announcement
+
+INSERT INTO Announcements ('postTime', 'idClass', 'title', 'body', 'media')
+VALUES ('postTime?', 'idClass?', 'title?', 'body?', 'media?');
+
+1. Teacher can create a class
+
+INSERT INTO Classes ('idClass', 'idSchool', 'idTeacher', 'name')
+VALUES ('idClass?', 'idSchool?', 'idTeacher?', 'name?');
+
+
+2. Display Teacher information
+
+SELECT * 
+FROM Teachers
+WHERE Teachers.idTeacher = 'Teachers.idTeacher?'
+
+
 2. Display all classes associate with teacher
 
 SELECT Classes.name 
@@ -26,6 +44,11 @@ UPDATE name, location, startTime, endTime, comments
 FROM Events
 WHERE Events.idClass = 'idClass?' AND Events.idEvent = 'idEvent?';
 
+3. Teacher can change their infomation
+
+UPDATE email, uname, pass
+FROM Teacher
+WHERE Teacher.idTeacher = 'idTeacher';
 
 /*___________________________Need to finish it_____________________________*/
 /*
@@ -45,4 +68,3 @@ WHERE Students.idParent1 = 'idParent' OR Students.idParent2 = 'idParent';
 UPDATE idClass
 FROM Students
 WHERE Students.idParent1 = 'idParent' OR Students.idParent2 = 'idParent';
-
