@@ -1,6 +1,7 @@
 package UI;
 
 import java.sql.Connection;
+import java.util.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
@@ -9,8 +10,8 @@ import java.text.SimpleDateFormat;
  * Created by Jason Qian on 01/12/2016.
  */
 
-public class CalendarEvent{
-
+public class CalendarEvent implements Comparable<CalendarEvent>{
+    Date startTime;
 
     public CalendarEvent(Calendar calendar, String name, String location, String startTime, String endTime, String comments){
         Connection con = null;
@@ -42,6 +43,9 @@ public class CalendarEvent{
                 }
             }
         }
+        try {
+            this.startTime = simpleDateFormat.parse(startTime);
+        }catch(Exception e){}
     }
 
     public void update(String name, String location, String startTime, String endTime, String comments){
@@ -75,6 +79,9 @@ public class CalendarEvent{
                 }
             }
         }
+        try {
+            this.startTime = simpleDateFormat.parse(startTime);
+        }catch(Exception e){}
     }
 
     public void delete(){
@@ -103,5 +110,10 @@ public class CalendarEvent{
             }
         }
     }
+
+    public int compareTo(CalendarEvent event){
+        return (this.startTime.before(event.startTime)) ? -1 : 1;
+    }
+
 
 }

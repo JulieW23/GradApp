@@ -1,6 +1,7 @@
 package UI;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -17,5 +18,9 @@ public class Calendar {
 
     public void addEvent(CalendarEvent event){
         this.events.add(event);
+    }
+
+    public ArrayList<CalendarEvent> getEvents(){
+        return Collections.sort(this.events);
     }
 }
