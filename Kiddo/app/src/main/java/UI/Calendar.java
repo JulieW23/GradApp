@@ -14,13 +14,14 @@ import java.text.SimpleDateFormat;
 
 public class Calendar {
     //not sure what to do with this, might be using a framework instead
-    ArrayList<CalendarEvent> events = new ArrayList<CalendarEvent>();
+    private ArrayList<CalendarEvent> events = new ArrayList<CalendarEvent>();
 
     public void addEvent(CalendarEvent event){
         this.events.add(event);
     }
 
     public ArrayList<CalendarEvent> getEvents(){
-        return Collections.sort(this.events);
+        Collections.sort(this.events);
+        return this.events;
     }
 }

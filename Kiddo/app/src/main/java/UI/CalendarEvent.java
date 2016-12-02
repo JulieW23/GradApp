@@ -5,6 +5,7 @@ import java.util.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 
 /**
  * Created by Jason Qian on 01/12/2016.
@@ -22,8 +23,8 @@ public class CalendarEvent implements Comparable<CalendarEvent>{
             statement = con.prepareStatement(sqlString);
             statement.setString(1, name);
             statement.setString(2, location);
-            statement.setDateTime(3, simpleDateFormat.parse(startTime));
-            statement.setDateTime(4, simpleDateFormat.parse(endTime));
+            statement.setDateTime(3, LocalDateTime.parse(startTime, simpleDateFormat));
+            statement.setDateTime(4, LocalDateTime.parse(endTime, simpleDateFormat));
             statement.setString(5, comments);
             statement.executeUpdate();
             con.commit();
@@ -57,8 +58,8 @@ public class CalendarEvent implements Comparable<CalendarEvent>{
             statement = con.prepareStatement(sqlString);
             statement.setString(1, name);
             statement.setString(2, location);
-            statement.setDateTime(3, simpleDateFormat.parse(startTime));
-            statement.setDateTime(4, simpleDateFormat.parse(endTime));
+            statement.setDateTime(3, LocalDateTime.parse(startTime, simpleDateFormat));
+            statement.setDateTime(4, LocalDateTime.parse(endTime, simpleDateFormat));
             statement.setString(5, comments);
             statement.setInt(6, idEvent);
             statement.setInt(7, idClass);
