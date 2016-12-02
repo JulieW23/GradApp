@@ -40,6 +40,35 @@ public class Admin extends User{
         }
     }
 
+    public void login(String username, String password) throws UserDoesNotExistException{
+        PreparedStatement statement = null;
+        String sqlString = "SELECT idSchool FROM Administrators WHERE user = ? and pass = ?";
+        try {
+            statement = con.prepareStatement(sqlString);
+            statement.setString(1, username);
+            statement.setString(2, password);
+            ResultSet result = statement.executeQuery();
+            if (!result.isBeforeFirst() ) {
+                throw new UserDoesNotExistException();
+            }
+            this.setID(result.getInt("idSchool"));
+        }catch (SQLException e ) {
+            if (con != null) {
+                try {
+                    con.rollback();
+                } catch(SQLException ex) {
+                }
+            }
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                }
+            }
+        }
+    }
+
     public void createTeacher (String username, String password, String email, String fName, String lName){
         new Teacher(username, password, email, fName, lName);
     }
@@ -50,7 +79,7 @@ public class Admin extends User{
         String sqlString = "INSERT into Classes (idSchool, idTeacher, name) VALUES(?, ?, ?)";
         try {
             statement = con.prepareStatement(sqlString);
-            statement.setString(1, getIDSchool());
+            statement.setInt(1, this.getID());
             statement.setString(2, getIDTeacher(teacher));
             statement.setString(3, className);
             statement.executeUpdate();
@@ -86,9 +115,10 @@ public class Admin extends User{
         }
     }
 
+    /*
     public String getIDSchool(){
         PreparedStatement statement = null;
-        String sqlString = "SELECT idSchool FROM Administrators where email = ?";
+        String sqlString = "SELECT idSchool FROM Administrators WHERE email = ?";
 
         try {
             statement = con.prepareStatement(sqlString);
@@ -113,15 +143,16 @@ public class Admin extends User{
         //probably throw an error here
         return null;
     }
+    */
 
     public String getIDTeacher(Teacher teacher){
         PreparedStatement statement = null;
-        String sqlString = "SELECT idTeacher FROM Teachers where email = ? and idSchool = ?";
+        String sqlString = "SELECT idTeacher FROM Teachers WHERE email = ? and idSchool = ?";
 
         try {
             statement = con.prepareStatement(sqlString);
             statement.setString(1, teacher.getEmail());
-            statement.setString(2, getIDSchool());
+            statement.setInt(2, this.getID());
             ResultSet result = statement.executeQuery();
             return result.getString("idTeacher");
         }catch (SQLException e ) {
@@ -151,7 +182,7 @@ public class Admin extends User{
             statement = con.prepareStatement(sqlString);
             statement.setString(1, username);
             statement.setString(2, password);
-            statement.setString(3, getIDSchool());
+            statement.setInt(3, this.getID());
             statement.executeUpdate();
             con.commit();
         }catch (SQLException e ) {
@@ -173,11 +204,11 @@ public class Admin extends User{
 
     public ResultSet allClasses(){
         PreparedStatement statement = null;
-        String sqlString = "SELECT * FROM Classes where idSchool = ?";
+        String sqlString = "SELECT * FROM Classes WHERE idSchool = ?";
 
         try {
             statement = con.prepareStatement(sqlString);
-            statement.setString(1, getIDSchool());
+            statement.setInt(1, this.getID());
             return statement.executeQuery();
         }catch (SQLException e ) {
             if (con != null) {
@@ -199,11 +230,11 @@ public class Admin extends User{
 
     public ResultSet allTeachers(){
         PreparedStatement statement = null;
-        String sqlString = "SELECT * FROM Teachers where idSchool = ?";
+        String sqlString = "SELECT * FROM Teachers WHERE idSchool = ?";
 
         try {
             statement = con.prepareStatement(sqlString);
-            statement.setString(1, getIDSchool());
+            statement.setInt(1, this.getID());
             return statement.executeQuery();
         }catch (SQLException e ) {
             if (con != null) {
@@ -222,5 +253,35 @@ public class Admin extends User{
         }
         return null;
     }
+
+    public ResultSet adminInfo(){
+        PreparedStatement statement = null;
+        String sqlString = "SELECT * FROM Administrators WHERE idSchool = ?";
+
+        try {
+            statement = con.prepareStatement(sqlString);
+            statement.setInt(1, this.getID());
+            return statement.executeQuery();
+        }catch (SQLException e ) {
+            if (con != null) {
+                try {
+                    con.rollback();
+                } catch(SQLException ex) {
+                }
+            }
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                }
+            }
+        }
+        return null;
+    }
+
+    //Should we have this? If you create a Teacher object and then call this, the Teacher Object
+    //will still exist but not be in the database
+    //public void deleteTeacher(){}
 
 }

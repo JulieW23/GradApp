@@ -1,6 +1,7 @@
 package Users;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import UI.Classroom;
@@ -72,6 +73,35 @@ public class Parent extends User{
         }
     }
 
+    public void login(String username, String password) throws UserDoesNotExistException{
+        PreparedStatement statement = null;
+        String sqlString = "SELECT idParent FROM Parents WHERE user = ? and pass = ?";
+        try {
+            statement = con.prepareStatement(sqlString);
+            statement.setString(1, username);
+            statement.setString(2, password);
+            ResultSet result = statement.executeQuery();
+            if (!result.isBeforeFirst() ) {
+                throw new UserDoesNotExistException();
+            }
+            this.setID(result.getInt("idParent"));
+        }catch (SQLException e ) {
+            if (con != null) {
+                try {
+                    con.rollback();
+                } catch(SQLException ex) {
+                }
+            }
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                }
+            }
+        }
+    }
+
     public void joinClass (Classroom classroom){
         try{
             classroom.joinParent(this);
@@ -79,5 +109,118 @@ public class Parent extends User{
         catch (Exception e){
             //what do??
         }
+    }
+
+    public void updateInfo(String username, String password){
+        PreparedStatement statement = null;
+        String sqlString = "UPDATE Parents SET uname = ?, pass = ? WHERE idParent = ?";
+
+        try {
+            statement = con.prepareStatement(sqlString);
+            statement.setString(1, username);
+            statement.setString(2, password);
+            statement.setInt(3, this.getID());
+            statement.executeUpdate();
+            con.commit();
+        }catch (SQLException e ) {
+            if (con != null) {
+                try {
+                    con.rollback();
+                } catch(SQLException ex) {
+                }
+            }
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                }
+            }
+        }
+    }
+
+    public ResultSet parentInfo(){
+        PreparedStatement statement = null;
+        String sqlString = "SELECT * FROM Parents WHERE idParent = ?";
+
+        try {
+            statement = con.prepareStatement(sqlString);
+            statement.setInt(1, this.getID());
+            return statement.executeQuery();
+        }catch (SQLException e ) {
+            if (con != null) {
+                try {
+                    con.rollback();
+                } catch(SQLException ex) {
+                }
+            }
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                }
+            }
+        }
+        return null;
+    }
+
+    public ResultSet childrenInfo(){
+        PreparedStatement statement = null;
+        String sqlString = "SELECT * FROM Students WHERE idStudent = ?";
+        PreparedStatement query1 = null;
+        String query1String = "SELECT Students.idStudent FROM Students, Parents WHERE Students.idParent1 = ? OR Students.idParent2 = ?";
+
+        try {
+            query1 = con.prepareStatement(query1String);
+            query1.setInt(1, this.getID());
+            query1.setInt(2, this.getID());
+            ResultSet result = query1.executeQuery();
+
+            statement = con.prepareStatement(sqlString);
+            statement.setInt(1, result.getInt("idStudent"));
+            return statement.executeQuery();
+        }catch (SQLException e ) {
+            if (con != null) {
+                try {
+                    con.rollback();
+                } catch(SQLException ex) {
+                }
+            }
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                }
+            }
+        }
+        return null;
+    }
+
+    public ResultSet allMessages(){
+        PreparedStatement statement = null;
+        String sqlString = "SELECT * FROM Messages WHERE Messages.idSender = ? or Messages.idRecipient = ?";
+        
+        try {
+            statement = con.prepareStatement(sqlString);
+            statement.setInt(1, this.getID());
+            return statement.executeQuery();
+        }catch (SQLException e ) {
+            if (con != null) {
+                try {
+                    con.rollback();
+                } catch(SQLException ex) {
+                }
+            }
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                }
+            }
+        }
+        return null;
     }
 }

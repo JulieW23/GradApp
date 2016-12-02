@@ -12,6 +12,7 @@ public abstract class User {
     public static Connection con;
     private String username;
     private String email;
+    private int id;
 
     public User(String username, String email){
         this.username = username;
@@ -33,5 +34,19 @@ public abstract class User {
 
     public String getEmail(){
         return this.email;
+    }
+
+    public int getID(){
+        return this.id;
+    }
+
+    public void setID(int id){
+        this.id = id;
+    }
+
+    public class UserDoesNotExistException extends Exception{
+        public UserDoesNotExistException(){
+            super();
+        }
     }
 }

@@ -2,6 +2,7 @@ package Users;
 
 import UI.Calendar;
 import UI.Classroom;
+import UI.CalendarEvent;
 import java.sql.* ;
 
 /**
@@ -40,19 +41,126 @@ public class Teacher extends User{
         }
     }
 
+    public void login(String username, String password) throws UserDoesNotExistException{
+        PreparedStatement statement = null;
+        String sqlString = "SELECT idTeacher FROM Teachers WHERE user = ? and pass = ?";
+        try {
+            statement = con.prepareStatement(sqlString);
+            statement.setString(1, username);
+            statement.setString(2, password);
+            ResultSet result = statement.executeQuery();
+            if (!result.isBeforeFirst() ) {
+                throw new UserDoesNotExistException();
+            }
+            this.setID(result.getInt("idParent"));
+        }catch (SQLException e ) {
+            if (con != null) {
+                try {
+                    con.rollback();
+                } catch(SQLException ex) {
+                }
+            }
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                }
+            }
+        }
+    }
+
     public void addParent(Classroom classroom, Parent parent){
         classroom.addParent(parent);
     }
 
     public void createCalendarEvent(String name, String location, String startTime, String endTime, String comments){
-        //new Calendar.CalendarEvent(name, location, startTime, endTime, comments);
+        new CalendarEvent(name, location, startTime, endTime, comments);
     }
 
-    public void editCalendarEvent(Calendar.CalendarEvent event){
-
+    public void editCalendarEvent(CalendarEvent event, String name, String location, String startTime, String endTime, String comments){
+        event.update(name, location, startTime, endTime, comments);
     }
 
-    public void deleteCalendarEvent(Calendar.CalendarEvent event){
+    public void deleteCalendarEvent(CalendarEvent event){
+        event.delete();
+    }
 
+    public ResultSet teacherInfo(){
+        PreparedStatement statement = null;
+        String sqlString = "SELECT * FROM Teachers WHERE idTeacher = ?";
+
+        try {
+            statement = con.prepareStatement(sqlString);
+            statement.setInt(1, this.getID());
+            return statement.executeQuery();
+        }catch (SQLException e ) {
+            if (con != null) {
+                try {
+                    con.rollback();
+                } catch(SQLException ex) {
+                }
+            }
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                }
+            }
+        }
+        return null;
+    }
+
+    public ResultSet allClasses(){
+        PreparedStatement statement = null;
+        String sqlString = "SELECT * FROM Classes WHERE Classes.idTeacher = ?";
+
+        try {
+            statement = con.prepareStatement(sqlString);
+            statement.setInt(1, this.getID());
+            return statement.executeQuery();
+        }catch (SQLException e ) {
+            if (con != null) {
+                try {
+                    con.rollback();
+                } catch(SQLException ex) {
+                }
+            }
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                }
+            }
+        }
+        return null;
+    }
+
+    public ResultSet allMessages(){
+        PreparedStatement statement = null;
+        String sqlString = "SELECT * FROM Messages WHERE Messages.idSender = ? or Messages.idRecipient = ?";
+
+        try {
+            statement = con.prepareStatement(sqlString);
+            statement.setInt(1, this.getID());
+            return statement.executeQuery();
+        }catch (SQLException e ) {
+            if (con != null) {
+                try {
+                    con.rollback();
+                } catch(SQLException ex) {
+                }
+            }
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException e) {
+                }
+            }
+        }
+        return null;
     }
 }
