@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat;
 public class CalendarEvent{
 
 
-    public CalendarEvent(String name, String location, String startTime, String endTime, String comments){
+    public CalendarEvent(Calendar calendar, String name, String location, String startTime, String endTime, String comments){
         Connection con = null;
         PreparedStatement statement = null;
         String sqlString = "INSERT into Events (name, location, pass, fName, comments) VALUES(?, ?, ?, ?, ?)";
@@ -26,6 +26,7 @@ public class CalendarEvent{
             statement.setString(5, comments);
             statement.executeUpdate();
             con.commit();
+            calendar.addEvent(this);
         }catch (SQLException e ) {
             if (con != null) {
                 try {

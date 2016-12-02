@@ -1,5 +1,6 @@
 package UI;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -12,6 +13,9 @@ import java.text.SimpleDateFormat;
 
 public class Calendar {
     //not sure what to do with this, might be using a framework instead
-    Map<Date, CalendarEvent> events = new HashMap<Date, CalendarEvent>();
+    ArrayList<CalendarEvent> events = new ArrayList<CalendarEvent>();
 
+    public void addEvent(CalendarEvent event){
+        this.events.add(event);
+    }
 }

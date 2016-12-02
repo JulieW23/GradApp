@@ -74,8 +74,8 @@ public class Teacher extends User{
         classroom.addParent(parent);
     }
 
-    public void createCalendarEvent(String name, String location, String startTime, String endTime, String comments){
-        new CalendarEvent(name, location, startTime, endTime, comments);
+    public void createCalendarEvent(Calendar calendar, String name, String location, String startTime, String endTime, String comments){
+        new CalendarEvent(calendar, name, location, startTime, endTime, comments);
     }
 
     public void editCalendarEvent(CalendarEvent event, String name, String location, String startTime, String endTime, String comments){
