@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	
+<%@ page import="utility.Teacher" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
@@ -24,21 +26,32 @@
 		</c:if>
 
 		<div id="infoDiv">
-			<p id="signupmessage">Teacher Information Lookup</p>
+			<p id="signupmessage">List Of Teachers</p>
 			<div id="topline"></div>
 			<!--  sign up form -->
 			<c:if test="${not empty teachers}">
-			  <c:forEach var="cur_Teacher" items="teachers">
+			  <c:forEach items="${teachers}" var="cur_Teacher">
 			   <div class="teacher_div">
 			     <table>
-		              <tr> <td> Name: </td> <td> ${cur_Teacher.name} </td><td> Last Name: </td> <td> ${cur_Teacher.lname} </td></tr>
-		              <tr> <td> Email: </td> <td> ${cur_Teacher.email} </td> <td> User Name: </td> <td> ${cur_Teacher.uname} </td></tr>
-		         </table>
+		              <tr> <td> Name: </td> <td> ${cur_Teacher.name} </td></tr>
+		              <tr><td> Last Name: </td> <td> ${cur_Teacher.lname} </td></tr>
+		              <tr> <td> User Name: </td> <td> ${cur_Teacher.uname} </td></tr>
+		              <tr> <td> Email: </td> <td> ${cur_Teacher.email} </td></tr>
+		        </table>
+		        
+		                
 		       </div>
+		       
+		       <c:url value="/DeleteTeacher" var="myURL">
+                    <c:param name="idT" value="${cur_Teacher.idTeacher}"/>
+               </c:url>
+               
+               <a href="<c:out value="${myURL}"/>"><h5>Delete Record</h5></a>                                                  
+		       <div id="bottomline"></div>
 		      </c:forEach>   	
 			</c:if>
 			
-         	<div id="bottomline"></div>
+         	
 			<table id="nav_tab">
 				<tr>
 					<td><a href="SignUp.jsp">Click To Go To Your Dashboard</a></td>
