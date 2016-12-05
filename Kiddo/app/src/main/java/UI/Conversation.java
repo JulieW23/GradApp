@@ -3,8 +3,8 @@ package UI;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.sql.* ;
-import javax.sql.rowset.serial.SerialBlob;
-import java.time.LocalDateTime;
+//import javax.sql.rowset.serial.SerialBlob;
+//import java.time.LocalDateTime;
 
 import Users.User;
 
@@ -48,10 +48,10 @@ public class Conversation {
                 statement.setInt(2, sentTo.getID());
 
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm");
-                statement.setDateTime(3, LocalDateTime.parse(timestamp, simpleDateFormat));
+                //statement.setDateTime(3, LocalDateTime.parse(timestamp, simpleDateFormat));
 
                 statement.setString(4, contents);
-                statement.setBlob(5, new SerialBlob(file));
+                //statement.setBlob(5, new SerialBlob(file));
                 statement.executeUpdate();
                 con.commit();
             }catch (SQLException e ) {
