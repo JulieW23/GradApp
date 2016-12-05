@@ -8,10 +8,14 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.SearchView;
 
 import java.util.ArrayList;
-
-public class AdminClassList extends AppCompatActivity {
+public class AdminClassList extends AppCompatActivity{
+//public class AdminClassList extends AppCompatActivity implements SearchView.OnQueryTextListener{
+    private SearchView classSearch;
+    private ListView classListView;
+    private ArrayAdapter<String> studentsAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +47,7 @@ public class AdminClassList extends AppCompatActivity {
         });
 
         // Create class list ListView
-        ListView classListView = (ListView)findViewById(R.id.classListView);
+        classListView = (ListView)findViewById(R.id.classListView);
         ArrayList<String> students = new ArrayList<String>();
         students.add("Jessica Alberts");
         students.add("Jim Cole");
@@ -54,7 +58,7 @@ public class AdminClassList extends AppCompatActivity {
         students.add("Steve Kim");
         students.add("Rachel Williams");
 
-        ArrayAdapter<String> studentsAdapter;
+
         studentsAdapter = new ArrayAdapter<String>(AdminClassList.this, android.R.layout.simple_list_item_1, students);
         classListView.setAdapter(studentsAdapter);
 
@@ -66,5 +70,38 @@ public class AdminClassList extends AppCompatActivity {
             }
         }); */
 
+   /*     // Create class list SearchView
+        classSearch = (SearchView)findViewById(R.id.search);
+        classSearch.setAdapter(studentsAdapter);
+
+        classSearch.setTextFilterEnabled(true);
+        setupSearchView();
+
     }
-}
+
+    private void setupSearchView()
+    {
+        classSearch.setIconifiedByDefault(false);
+        classSearch.setOnQueryTextListener(this);
+        classSearch.setSubmitButtonEnabled(true);
+        classSearch.setQueryHint("Search Here");
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText)
+    {
+
+        if (TextUtils.isEmpty(newText)) {
+            classSearch.clearTextFilter();
+        } else {
+            classSearch.setFilterText(newText);
+        }
+        return true;
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String query)
+    {
+        return false;
+    }*/
+}}

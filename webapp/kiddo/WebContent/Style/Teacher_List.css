@@ -91,8 +91,9 @@ body>#content {
 	padding-top: 6em;
 }
 	
-#signupdiv {
+#infoDiv {
 	background: #ffffff;
+	min-height: 10em;
 	height: auto; /*----------*/
 	margin: 2em auto;
 	border-radius: 15px;
@@ -220,69 +221,28 @@ body>#content {
 
 #bottomline{
 	width: 90%; 
-	margin: -1.2em 1.4em; 
+	margin: 1.2em 1.4em; 
 	border-bottom: 1px solid #dedede;"
 }
 
-#info_div table{
-	width: auto;
-	margin: 1em auto;
+
+#infoDiv a{
+	text-decoration: none;
+	
 }
 
-#info_div table td{
-	height: 3em;
-	font: 1.2em Arial, Helvetica, sans-serif;
-	color: #00004d;
-	min-width: 4em;
+#infoDiv h5{
+	width: 20%;
+    margin: 2em auto;
+}
 	
-}	
-
-#info_div table th{
-	height: 3em;
-	font: 1.2em Arial, Helvetica, sans-serif;
-	color: #00004d;
-	min-width: 4em;
-	
-}	
-
-	
-#info_div{
-	background: #ffffff;
+.teacher_div{
+	width: 80%;
 	margin: 2em auto;
-	border-radius: 15px;
-	border: 1px solid #a6a6a6;
-	box-shadow: 0px 5px 12px #888888;
-	min-width: 30em;
-	max-width: 40em;
-	width: auto;
-	margin: 1em auto;
-	height : auto ;
-}
-
-
-#delete_submit{
-	margin : 1em auto;
-	width: 8em;
-	height: 2em;
-	font: 1em Arial, Helvetica, sans-serif;
-	transition: background .3s, color .3s;
+	font: .85em Arial, Helvetica, sans-serif;
 	color: #00004d;
-	background: #ffffff;
-	border: 2px solid #00004d;
 	font-weight: bold;
-	border-radius: 5px;
-	outline: none;
-	cursor: pointer;
-}
-
-.sepLine {
-	border-bottom: 1px solid #dedede;
-    width: 90%;
-	margin: 0 auto;
+    background:yellow;
 }
 
 
-#delete_submit:hover {
-	background: #00004d;
-	color: white;
-}

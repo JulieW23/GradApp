@@ -48,11 +48,12 @@ public class Conversation {
 
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm");
                 //statement.setDateTime(3, LocalDateTime.parse(timestamp, simpleDateFormat));
-
                 statement.setString(4, contents);
+
                 Blob blob = con.createBlob();
                 blob.setBytes(0, file);
                 statement.setBlob(5, blob);
+
                 statement.executeUpdate();
                 con.commit();
             }catch (SQLException e ) {
