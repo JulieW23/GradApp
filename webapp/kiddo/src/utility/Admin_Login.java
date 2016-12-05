@@ -43,6 +43,7 @@ private static final long serialVersionUID = 1L;
 			ResultSet rs = st.executeQuery();
 			if ( rs.next() ) {
 				req.getSession().setAttribute("schoolId", rs.getString(3));
+				req.getSession().setAttribute("LogedIn","isLoggedIn");
 				resp.sendRedirect("SignUp.jsp");				
 			}else{
 				req.setAttribute("error","The Username and Password you Entered Dont Exist in Our System Please Try Again");

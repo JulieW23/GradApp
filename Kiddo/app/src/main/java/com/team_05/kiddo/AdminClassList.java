@@ -11,8 +11,8 @@ import android.widget.ListView;
 import android.widget.SearchView;
 
 import java.util.ArrayList;
-
-public class AdminClassList extends AppCompatActivity implements SearchView.OnQueryTextListener{
+public class AdminClassList extends AppCompatActivity{
+//public class AdminClassList extends AppCompatActivity implements SearchView.OnQueryTextListener{
     private SearchView classSearch;
     private ListView classListView;
     private ArrayAdapter<String> studentsAdapter;
@@ -70,7 +70,7 @@ public class AdminClassList extends AppCompatActivity implements SearchView.OnQu
             }
         }); */
 
-        // Create class list SearchView
+   /*     // Create class list SearchView
         classSearch = (SearchView)findViewById(R.id.search);
         classSearch.setAdapter(studentsAdapter);
 
@@ -103,5 +103,5 @@ public class AdminClassList extends AppCompatActivity implements SearchView.OnQu
     public boolean onQueryTextSubmit(String query)
     {
         return false;
-    }
-}
+    }*/
+}}
