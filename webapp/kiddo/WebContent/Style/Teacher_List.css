@@ -221,6 +221,28 @@ body>#content {
 
 #bottomline{
 	width: 90%; 
-	margin: -1.2em 1.4em; 
+	margin: 1.2em 1.4em; 
 	border-bottom: 1px solid #dedede;"
 }
+
+
+#infoDiv a{
+	text-decoration: none;
+	
+}
+
+#infoDiv h5{
+	width: 20%;
+    margin: 2em auto;
+}
+	
+.teacher_div{
+	width: 80%;
+	margin: 2em auto;
+	font: .85em Arial, Helvetica, sans-serif;
+	color: #00004d;
+	font-weight: bold;
+    background:yellow;
+}
+
+

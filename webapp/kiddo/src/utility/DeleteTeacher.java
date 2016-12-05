@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class ListTeachers extends HttpServlet {
-
+public class DeleteTeacher extends HttpServlet {
+	
 	private static final long serialVersionUID = 1L;
 
 	Connection connection;
@@ -24,39 +24,32 @@ public class ListTeachers extends HttpServlet {
 
 		try {
 
-    		Class.forName("com.mysql.jdbc.Driver").newInstance();
+		    Class.forName("com.mysql.jdbc.Driver").newInstance();
 			Connection connection = DriverManager.getConnection(
 					"jdbc:mysql://localhost/kiddodb", "root", "551360");
 			
 			String schoolId = (String) req.getSession()
 					.getAttribute("schoolId"); // Integer.getInteger((String)req.getSession().getAttribute("schoolId"));
-
-			String query = "SELECT idTeacher,email,fname,lname,uname FROM teachers";
+			
+			String teacherId = (String) req.getParameter("idT");
+			
+			String query = "DELETE FROM teachers WHERE (idTeacher = ? AND idSchool=?)";
 
 			PreparedStatement st = connection.prepareStatement(query);
-
-			ResultSet rs = st.executeQuery();
-			List<Teacher> teachers = new ArrayList<Teacher>();
 			
-		    while (rs.next() ){
-				Teacher t = new Teacher(rs.getString(1),schoolId,rs.getString(3),rs.getString(4), rs.getString(5),rs.getString(2));
-				teachers.add(t);
-			}
+			st.setString(1,teacherId);
+			st.setString(2,schoolId);
 			
-			    
-		    req.setAttribute("schoolId", schoolId);
-			req.setAttribute("teachers", teachers);
+			st.executeLargeUpdate();
 			
-			req.getRequestDispatcher("TeacherList.jsp").forward(req, resp);
+			req.getRequestDispatcher("/List_Teachers").forward(req, resp);
 			
 		 } catch (Exception e) {
 			e.printStackTrace();
-			req.setAttribute("error","There Is No Such an Email in Our Records. Please Try again.");
+			req.setAttribute("error","There Is an Error In Our System.");
 			req.getRequestDispatcher("TeacherList.jsp").forward(req, resp);
 
 		}
   	  }
-		
+
 }
-	
-	
