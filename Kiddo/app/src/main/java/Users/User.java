@@ -17,15 +17,25 @@ public abstract class User {
     public User(String username, String email){
         this.username = username;
         this.email = email;
-        con = null; //TODO: Fix this
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            System.out.println("a");
+        }
+        String host = "jdbc:mysql://35.160.73.118";
+        //ec2-35-160-73-118.us-west-2.compute.amazonaws.com
+        String user = "guest";
+        String pass = "guest";
+        try {
+            con = DriverManager.getConnection(host, user, pass);
+            System.out.println("working");
+        } catch (SQLException e) {
+            System.out.println("b");
+        }
     }
 
-    public void sentMessage (Conversation conversation, String contents){
-        conversation.sendMessage(this, contents);
-    }
-
-    public void sentFile (Conversation conversation, byte[] file){
-        conversation.sendFile(this, file);
+    public void sendMessage (Conversation conversation, User sentBy, User sentTo, String contents, byte[] file){
+        conversation.sendMessage(sentBy, sentTo, contents, file);
     }
 
     public String getUsername(){

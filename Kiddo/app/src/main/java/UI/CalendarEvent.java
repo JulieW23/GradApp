@@ -5,7 +5,7 @@ import java.util.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
+//import java.time.LocalDateTime;
 
 /**
  * Created by Jason Qian on 01/12/2016.
@@ -23,8 +23,8 @@ public class CalendarEvent implements Comparable<CalendarEvent>{
             statement = con.prepareStatement(sqlString);
             statement.setString(1, name);
             statement.setString(2, location);
-            statement.setDateTime(3, LocalDateTime.parse(startTime, simpleDateFormat));
-            statement.setDateTime(4, LocalDateTime.parse(endTime, simpleDateFormat));
+            //statement.setDateTime(3, LocalDateTime.parse(startTime, simpleDateFormat));
+            //statement.setDateTime(4, LocalDateTime.parse(endTime, simpleDateFormat));
             statement.setString(5, comments);
             statement.executeUpdate();
             con.commit();
@@ -58,11 +58,11 @@ public class CalendarEvent implements Comparable<CalendarEvent>{
             statement = con.prepareStatement(sqlString);
             statement.setString(1, name);
             statement.setString(2, location);
-            statement.setDateTime(3, LocalDateTime.parse(startTime, simpleDateFormat));
-            statement.setDateTime(4, LocalDateTime.parse(endTime, simpleDateFormat));
+            //statement.setDateTime(3, LocalDateTime.parse(startTime, simpleDateFormat));
+            //statement.setDateTime(4, LocalDateTime.parse(endTime, simpleDateFormat));
             statement.setString(5, comments);
-            statement.setInt(6, idEvent);
-            statement.setInt(7, idClass);
+            //statement.setInt(6, idEvent);
+            //statement.setInt(7, idClass);
             statement.executeUpdate();
             con.commit();
         }catch (SQLException e ) {
@@ -91,8 +91,8 @@ public class CalendarEvent implements Comparable<CalendarEvent>{
         String sqlString = "DELETE FROM Events WHERE idEvent = ? and idClass = ?";
         try {
             statement = con.prepareStatement(sqlString);
-            statement.setInt(1, idEvent);
-            statement.setInt(2, idClass);
+            //statement.setInt(1, idEvent);
+            //statement.setInt(2, idClass);
             statement.executeUpdate();
             con.commit();
         }catch (SQLException e ) {
