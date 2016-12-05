@@ -35,7 +35,13 @@
 				
 					<li>
 						<div id="Login_Info">
-							<a href="Login.jsp" style="text-decoration: none; margin-left: .4em; border-right: 1px solid #888888;">								Login</a>
+				            <c:if test="${ empty LogedIn}">
+							   <a href="Login.jsp" style="text-decoration: none; margin-left: .4em; border-right: 1px solid #888888;">								Login</a>
+							</c:if>
+							
+							<c:if test="${not empty LogedIn}">
+							   <a href="/LogOut" style="text-decoration: none; margin-left: .4em; border-right: 1px solid #888888;">								LogOut</a>
+							</c:if>
 						</div>
 					</li>
 				    <li><a href="https://www.google.com" style="text-decoration: none; margin-left: -.4em; border-right: 1px solid #888888;">
