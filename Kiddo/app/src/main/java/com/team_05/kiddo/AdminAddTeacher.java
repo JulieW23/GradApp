@@ -29,7 +29,8 @@ public class AdminAddTeacher extends AppCompatActivity {
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //username =
+                //createTeacher (username, String password, String email, String fName, String lName)
                 Intent intent = new Intent(AdminAddTeacher.this, AdminTeacherInvite.class);
                 finish();
                 startActivity(intent);

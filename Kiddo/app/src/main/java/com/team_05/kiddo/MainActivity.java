@@ -1,5 +1,6 @@
 package com.team_05.kiddo;
 
+import android.content.Context;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 import android.widget.EditText;
+import android.widget.Toast;
+
 import Users.*;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,11 +42,21 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
 
-                // Admin
-                else {
+                //admin
+                else if (email.getText().toString().equals("admin@email.com")){
                     Intent intent = new Intent(MainActivity.this, AdminMainMenu.class);
                     finish();
                     startActivity(intent);
+                }
+
+                // display error message for invalid credentials
+                else {
+                    Context context = getApplicationContext();
+                    CharSequence text = "Invalid username and/or password.";
+                    int duration = Toast.LENGTH_SHORT;
+
+                    Toast toast = Toast.makeText(context, text, duration);
+                    toast.show();
                 }
 
             }

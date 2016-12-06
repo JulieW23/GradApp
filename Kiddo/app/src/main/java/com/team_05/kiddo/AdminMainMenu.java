@@ -37,5 +37,16 @@ public class AdminMainMenu extends AppCompatActivity {
             }
         });
 
+        Button updateInfo = (Button)(findViewById(R.id.updateAdminButton));
+        manageTeachers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(AdminMainMenu.this, AdminUpdateInfo.class);
+                finish();
+                startActivity(intent);
+            }
+        });
+
     }
 }
