@@ -6,7 +6,6 @@ import java.util.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
-import org.joda.time.*;
 
 /**
  * Created by Jason Qian on 01/12/2016.
@@ -61,9 +60,6 @@ public class CalendarEvent implements Comparable<CalendarEvent>{
                 }
             }
         }
-        try {
-            this.startTime = simpleDateFormat.parse(startTime);
-        }catch(Exception e){}
     }
 
     public void update(String name, String location, String startTime, String endTime, String comments){
