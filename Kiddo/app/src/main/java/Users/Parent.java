@@ -14,17 +14,26 @@ public class Parent extends User{
 
     public Parent (String username, String password, String email, String fName, String lName){
         super(username, email);
+        PreparedStatement query = null;
+        String queryString = "SELECT * FROM Parents WHERE user = ? and pass = ?";
         PreparedStatement statement = null;
         String sqlString = "INSERT into Parents (email, uname, pass, fName, lName) VALUES(?, ?, ?, ?, ?)";
         try {
-            statement = con.prepareStatement(sqlString);
-            statement.setString(1, email);
-            statement.setString(2, username);
-            statement.setString(3, password);
-            statement.setString(4, fName);
-            statement.setString(5, lName);
-            statement.executeUpdate();
-            con.commit();
+            query = con.prepareStatement(queryString);
+            query.setString(1, username);
+            query.setString(2, password);
+            ResultSet result = query.executeQuery();
+
+            if (!result.isBeforeFirst()) {
+                statement = con.prepareStatement(sqlString);
+                statement.setString(1, email);
+                statement.setString(2, username);
+                statement.setString(3, password);
+                statement.setString(4, fName);
+                statement.setString(5, lName);
+                statement.executeUpdate();
+                con.commit();
+            }
         }catch (SQLException e ) {
             if (con != null) {
                 try {
@@ -44,18 +53,27 @@ public class Parent extends User{
 
     public Parent (String username, String password, String email, String fName, String lName, int studentID){
         super(username, email);
+        PreparedStatement query = null;
+        String queryString = "SELECT * FROM Parents WHERE user = ? and pass = ?";
         PreparedStatement statement = null;
         String sqlString = "INSERT into Parents (email, uname, pass, fName, lName, idStudent) VALUES(?, ?, ?, ?, ?, ?)";
         try {
-            statement = con.prepareStatement(sqlString);
-            statement.setString(1, email);
-            statement.setString(2, username);
-            statement.setString(3, password);
-            statement.setString(4, fName);
-            statement.setString(5, lName);
-            statement.setInt(6, studentID);
-            statement.executeUpdate();
-            con.commit();
+            query = con.prepareStatement(queryString);
+            query.setString(1, username);
+            query.setString(2, password);
+            ResultSet result = query.executeQuery();
+
+            if (!result.isBeforeFirst()) {
+                statement = con.prepareStatement(sqlString);
+                statement.setString(1, email);
+                statement.setString(2, username);
+                statement.setString(3, password);
+                statement.setString(4, fName);
+                statement.setString(5, lName);
+                statement.setInt(6, studentID);
+                statement.executeUpdate();
+                con.commit();
+            }
         }catch (SQLException e ) {
             if (con != null) {
                 try {
@@ -73,18 +91,20 @@ public class Parent extends User{
         }
     }
 
-    public void login(String username, String password) throws UserDoesNotExistException{
+    public static Parent login(String username, String password) throws UserDoesNotExistException{
+        Parent parent = null;
         PreparedStatement statement = null;
-        String sqlString = "SELECT idParent FROM Parents WHERE user = ? and pass = ?";
+        String sqlString = "SELECT * FROM Parents WHERE user = ? and pass = ?";
         try {
             statement = con.prepareStatement(sqlString);
             statement.setString(1, username);
             statement.setString(2, password);
             ResultSet result = statement.executeQuery();
-            if (!result.isBeforeFirst() ) {
+            if (!result.isBeforeFirst()) {
                 throw new UserDoesNotExistException();
             }
-            this.setID(result.getInt("idParent"));
+            parent = new Parent(result.getString("user"), result.getString("pass"), result.getString("email"), result.getString("fName"), result.getString("lName"), result.getInt("idStudent"));
+            parent.setID(result.getInt("idParent"));
         }catch (SQLException e ) {
             if (con != null) {
                 try {
@@ -99,6 +119,7 @@ public class Parent extends User{
                 } catch (SQLException e) {
                 }
             }
+            return parent;
         }
     }
 

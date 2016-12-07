@@ -13,17 +13,26 @@ public class Teacher extends User{
 
     public Teacher (String username, String password, String email, String fName, String lName){
         super(username, email);
+        PreparedStatement query = null;
+        String queryString = "SELECT * FROM Teachers WHERE user = ? and pass = ?";
         PreparedStatement statement = null;
         String sqlString = "INSERT into Teachers (email, uname, pass, fName, lName) VALUES(?, ?, ?, ?, ?)";
         try {
-            statement = con.prepareStatement(sqlString);
-            statement.setString(1, email);
-            statement.setString(2, username);
-            statement.setString(3, password);
-            statement.setString(4, fName);
-            statement.setString(5, lName);
-            statement.executeUpdate();
-            con.commit();
+            query = con.prepareStatement(queryString);
+            query.setString(1, username);
+            query.setString(2, password);
+            ResultSet result = query.executeQuery();
+
+            if (!result.isBeforeFirst()) {
+                statement = con.prepareStatement(sqlString);
+                statement.setString(1, email);
+                statement.setString(2, username);
+                statement.setString(3, password);
+                statement.setString(4, fName);
+                statement.setString(5, lName);
+                statement.executeUpdate();
+                con.commit();
+            }
         }catch (SQLException e ) {
             if (con != null) {
                 try {
@@ -41,9 +50,10 @@ public class Teacher extends User{
         }
     }
 
-    public void login(String username, String password) throws UserDoesNotExistException{
+    public static Teacher login(String username, String password) throws UserDoesNotExistException{
+        Teacher teacher = null;
         PreparedStatement statement = null;
-        String sqlString = "SELECT idTeacher FROM Teachers WHERE user = ? and pass = ?";
+        String sqlString = "SELECT * FROM Teachers WHERE user = ? and pass = ?";
         try {
             statement = con.prepareStatement(sqlString);
             statement.setString(1, username);
@@ -52,7 +62,8 @@ public class Teacher extends User{
             if (!result.isBeforeFirst() ) {
                 throw new UserDoesNotExistException();
             }
-            this.setID(result.getInt("idParent"));
+            teacher = new Teacher(result.getString("user"), result.getString("pass"), result.getString("email"), result.getString("fName"), result.getString("lName"));
+            teacher.setID(result.getInt("idTeacher"));
         }catch (SQLException e ) {
             if (con != null) {
                 try {
@@ -67,6 +78,7 @@ public class Teacher extends User{
                 } catch (SQLException e) {
                 }
             }
+            return teacher;
         }
     }
 

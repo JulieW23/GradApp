@@ -55,7 +55,7 @@ public abstract class User {
         this.id = id;
     }
 
-    public class UserDoesNotExistException extends Exception{
+    public static class UserDoesNotExistException extends Exception{
         public UserDoesNotExistException(){
             super();
         }

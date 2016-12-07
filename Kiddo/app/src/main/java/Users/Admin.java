@@ -14,15 +14,24 @@ public class Admin extends User{
 
     public Admin (String username, String password, String email){
         super(username, email);
+        PreparedStatement query = null;
+        String queryString = "SELECT * FROM Administrators WHERE user = ? and pass = ?";
         PreparedStatement statement = null;
         String sqlString = "INSERT into Administrators (email, uname, pass) VALUES(?, ?, ?)";
         try {
-            statement = con.prepareStatement(sqlString);
-            statement.setString(1, email);
-            statement.setString(2, username);
-            statement.setString(3, password);
-            statement.executeUpdate();
-            con.commit();
+            query = con.prepareStatement(queryString);
+            query.setString(1, username);
+            query.setString(2, password);
+            ResultSet result = query.executeQuery();
+
+            if (!result.isBeforeFirst()) {
+                statement = con.prepareStatement(sqlString);
+                statement.setString(1, email);
+                statement.setString(2, username);
+                statement.setString(3, password);
+                statement.executeUpdate();
+                con.commit();
+            }
         }catch (SQLException e ) {
             if (con != null) {
                 try {
@@ -40,9 +49,10 @@ public class Admin extends User{
         }
     }
 
-    public void login(String username, String password) throws UserDoesNotExistException{
+    public static Admin login(String username, String password) throws UserDoesNotExistException{
+        Admin admin = null;
         PreparedStatement statement = null;
-        String sqlString = "SELECT idSchool FROM Administrators WHERE user = ? and pass = ?";
+        String sqlString = "SELECT * FROM Administrators WHERE user = ? and pass = ?";
         try {
             statement = con.prepareStatement(sqlString);
             statement.setString(1, username);
@@ -51,7 +61,8 @@ public class Admin extends User{
             if (!result.isBeforeFirst() ) {
                 throw new UserDoesNotExistException();
             }
-            this.setID(result.getInt("idSchool"));
+            admin = new Admin(result.getString("user"), result.getString("pass"), result.getString("email"));
+            admin.setID(result.getInt("idSchool"));
         }catch (SQLException e ) {
             if (con != null) {
                 try {
@@ -66,6 +77,7 @@ public class Admin extends User{
                 } catch (SQLException e) {
                 }
             }
+            return admin;
         }
     }
 
