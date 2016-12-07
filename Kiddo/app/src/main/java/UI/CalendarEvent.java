@@ -1,11 +1,12 @@
 package UI;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.util.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
-//import java.time.LocalDateTime;
+import org.joda.time.*;
 
 /**
  * Created by Jason Qian on 01/12/2016.
@@ -16,15 +17,31 @@ public class CalendarEvent implements Comparable<CalendarEvent>{
 
     public CalendarEvent(Calendar calendar, String name, String location, String startTime, String endTime, String comments){
         Connection con = null;
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            System.out.println("a");
+        }
+        String host = "jdbc:mysql://35.160.73.118";
+        //ec2-35-160-73-118.us-west-2.compute.amazonaws.com
+        String user = "guest";
+        String pass = "guest";
+        try {
+            con = DriverManager.getConnection(host, user, pass);
+            System.out.println("working");
+        } catch (SQLException e) {
+            System.out.println("b");
+        }
         PreparedStatement statement = null;
         String sqlString = "INSERT into Events (name, location, pass, fName, comments) VALUES(?, ?, ?, ?, ?)";
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+        //SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+        //DateTimeFormatter formatter = DateTimeFormat.forPattern("dd/MM/yyyy HH:mm:ss");
         try {
             statement = con.prepareStatement(sqlString);
             statement.setString(1, name);
             statement.setString(2, location);
-            //statement.setDateTime(3, LocalDateTime.parse(startTime, simpleDateFormat));
-            //statement.setDateTime(4, LocalDateTime.parse(endTime, simpleDateFormat));
+            //statement.setDateTime(3, formatter.parseDateTime(startTime));
+            //statement.setDateTime(4, formatter.parseDateTime(endTime));
             statement.setString(5, comments);
             statement.executeUpdate();
             con.commit();

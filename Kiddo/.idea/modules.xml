@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Kiddo.iml" filepath="$PROJECT_DIR$/Kiddo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/joda-time-2.9.6-javadoc/joda-time-2.9.6-javadoc.iml" filepath="$PROJECT_DIR$/joda-time-2.9.6-javadoc/joda-time-2.9.6-javadoc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysql-connector-java-5.1.40-bin/mysql-connector-java-5.1.40-bin.iml" filepath="$PROJECT_DIR$/mysql-connector-java-5.1.40-bin/mysql-connector-java-5.1.40-bin.iml" />
     </modules>
   </component>
 </project>

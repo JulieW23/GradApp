@@ -17,10 +17,24 @@ public class Conversation {
     Connection con;
 
     public Conversation(User[] users){
-        this.con = null;
         messages = new ArrayList<Message>();
         for (User user : users){
             this.users.add(user);
+        }
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            System.out.println("a");
+        }
+        String host = "jdbc:mysql://35.160.73.118";
+        //ec2-35-160-73-118.us-west-2.compute.amazonaws.com
+        String user = "guest";
+        String pass = "guest";
+        try {
+            con = DriverManager.getConnection(host, user, pass);
+            System.out.println("working");
+        } catch (SQLException e) {
+            System.out.println("b");
         }
     }
 
