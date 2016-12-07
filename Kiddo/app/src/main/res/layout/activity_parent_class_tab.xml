@@ -12,7 +12,7 @@
     tools:context="com.team_05.kiddo.ParentClassTabActivity">
 
     <TextView
-        android:text="Class Name"
+        android:text="English"
         android:layout_width="match_parent"
         android:layout_height="@dimen/headerHeight"
         android:id="@+id/classNameTextView"

@@ -24,7 +24,7 @@ public class MessageActivity extends AppCompatActivity {
 
     String newMessage = "";
 
-    public static ArrayList<String> messages = new ArrayList<String>();
+    public ArrayList<String> messages = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

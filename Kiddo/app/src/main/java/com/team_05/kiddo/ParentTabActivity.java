@@ -92,38 +92,39 @@ public class ParentTabActivity extends AppCompatActivity {
         });
 
         // Create events ListView
-//        ListView pEventsListView = (ListView) findViewById(R.id.pEventsListView);
-//        ArrayList<String> events = new ArrayList<String>();
-//        events.add("Event 1");
-//        events.add("Event 2");
-//        Collections.sort(classes);
-//
-//        ArrayAdapter<String> pEventsAdapter;
-//        pEventsAdapter = new ArrayAdapter<String>(ParentTabActivity.this, android.R.layout.simple_list_item_1, events);
-//        pEventsListView.setAdapter(pEventsAdapter);
-//
-//        pEventsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Intent intent = new Intent(ParentTabActivity.this, EventDetailsActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        ListView pEventsListView = (ListView) findViewById(R.id.pEventsListView);
+        ArrayList<String> events = new ArrayList<String>();
+        events.add("Fri Dec 9 11:00 AM\nScience Fair");
+        events.add("Sat Dec 10 11:00AM\nCreative Writing Contest");
+        events.add("Tue Dec 20 2:00 PM\nChristmas Party");
+        Collections.sort(classes);
 
-        CalendarView simpleCalendarView;
-        simpleCalendarView = (CalendarView) findViewById(R.id.simpleCalendarView); // get the reference of CalendarView
+        ArrayAdapter<String> pEventsAdapter;
+        pEventsAdapter = new ArrayAdapter<String>(ParentTabActivity.this, android.R.layout.simple_list_item_1, events);
+        pEventsListView.setAdapter(pEventsAdapter);
+
+        pEventsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(ParentTabActivity.this, EventDetailsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+//        CalendarView simpleCalendarView;
+//        simpleCalendarView = (CalendarView) findViewById(R.id.simpleCalendarView); // get the reference of CalendarView
 //        simpleCalendarView.setFocusedMonthDateColor(Color.RED); // set the red color for the dates of  focused month
 //        simpleCalendarView.setUnfocusedMonthDateColor(Color.BLUE); // set the yellow color for the dates of an unfocused month
 //        simpleCalendarView.setSelectedWeekBackgroundColor(Color.RED); // red color for the selected week's background
 //        simpleCalendarView.setWeekSeparatorLineColor(Color.GREEN); // green color for the week separator line
         // perform setOnDateChangeListener event on CalendarView
-        simpleCalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
-            @Override
-            public void onSelectedDayChange(CalendarView view, int year, int month, int dayOfMonth) {
-                // display the selected date by using a toast
-                Toast.makeText(getApplicationContext(), dayOfMonth + "/" + month + "/" + year, Toast.LENGTH_LONG).show();
-            }
-        });
+//        simpleCalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+//            @Override
+//            public void onSelectedDayChange(CalendarView view, int year, int month, int dayOfMonth) {
+//                // display the selected date by using a toast
+//                Toast.makeText(getApplicationContext(), dayOfMonth + "/" + month + "/" + year, Toast.LENGTH_LONG).show();
+//            }
+//        });
 
     }
 
